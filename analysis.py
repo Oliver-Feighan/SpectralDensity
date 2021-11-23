@@ -2,7 +2,6 @@ import argparse
 import numpy as np
 import pandas as pd
 import pathlib
-import matplotlib.pyplot as plt
 import scipy
 import scipy.signal
 import mdtraj
