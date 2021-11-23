@@ -116,7 +116,8 @@ if __name__ == "__main__":
     print("loading trajectory...")
     traj = load_dcd_file(str(dcd_path), str(prmtop_path))
     top = traj.top
-    
+
+    print(f"n. frames : {traj.n_frames}")   
     
     print("calculating spectral density...")
     dt = args.sample_period
