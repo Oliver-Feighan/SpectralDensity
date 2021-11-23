@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=10ps_2fs_LHII
-#SBATCH --output=10ps_2fs_LHII.out
-#SBATCH --error=100s_2fs_LHII.err
+#SBATCH --job-name=1000ps_100fs_LHII
+#SBATCH --output=1000ps_100fs_LHII.out
+#SBATCH --error=1000ps_100fs_LHII.err
 #SBATCH --time=0-15:00:00
 #SBATCH --gpus=1
 #SBATCH --mem=80gb
@@ -36,10 +36,10 @@ echo -e "\n[Running job script]\n"
 
 mkdir -p ${RESULT_DIR}
 
-export OUTPUT_NAME="10ps_2fs_LHII"
-export LENGTH=10       # ps
+export OUTPUT_NAME="1000ps_100fs_LHII"
+export LENGTH=1000     # ps
 export INTEGRATOR_DT=2 # fs
-export REPORTER_DT=2 # fs
+export REPORTER_DT=100 # fs
 
 time python ${INPUT_SCRIPT}
 
