@@ -1,0 +1,5 @@
+*.dcd
+*.prmtop
+*.inpcrd
+*.xml
+LHII_MD/cofactors/*

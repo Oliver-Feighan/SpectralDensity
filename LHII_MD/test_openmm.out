@@ -1,0 +1,29 @@
+Host:    bp1-gpu007.data.bp.acrc.priv
+Time:    Fri Nov 19 01:43:30 GMT 2021
+Dir:     /user/work/of15641/LH2_MD/LH2_files
+Job ID:  36085
+Nodelist:
+  bp1-gpu007
+Conda env:  openmm
+Python:     /user/home/of15641/.conda/envs/openmm/bin/python
+
+OpenMM Version: 7.6
+Git Revision: ad113a0cb37991a2de67a08026cf3b91616bafbe
+
+There are 4 Platforms available:
+
+1 Reference - Successfully computed forces
+2 CPU - Successfully computed forces
+3 CUDA - Successfully computed forces
+4 OpenCL - Successfully computed forces
+
+Median difference in forces between platforms:
+
+Reference vs. CPU: 6.30014e-06
+Reference vs. CUDA: 6.72394e-06
+CPU vs. CUDA: 7.44478e-07
+Reference vs. OpenCL: 6.76294e-06
+CPU vs. OpenCL: 8.14191e-07
+CUDA vs. OpenCL: 2.63332e-07
+
+All differences are within tolerance.

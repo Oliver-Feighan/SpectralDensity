@@ -1,0 +1,6 @@
+cpu-bind=MASK - bp1-gpu003, task 4294967295 4294967295 [0]: mask 0x2020 set
+Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+
+real	474m42.592s
+user	430m5.390s
+sys	39m49.239s

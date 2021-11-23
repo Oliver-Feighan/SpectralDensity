@@ -1,0 +1,35 @@
+Host:    bp1-gpu003.data.bp.acrc.priv
+Time:    Sun Nov 21 17:17:11 GMT 2021
+Dir:     /user/work/of15641/LH2_MD/LH2_files
+Job ID:  101973
+Nodelist:
+  bp1-gpu003
+Conda env:  openmm
+Python:     /user/home/of15641/.conda/envs/openmm/bin/python
+Job script: /user/work/of15641/LH2_MD/LH2_files/run_openmm_simulation.py
+Result dir: /user/work/of15641/LH2_MD/LH2_files/output
+
+[Running job script]
+
+Running MD with GPU platform
+
+output folder made at /user/work/of15641/LH2_MD/LH2_files/output
+Reading system coordinates, topology and forcefield from /user/work/of15641/LH2_MD/LH2_files/LH2.inpcrd, /user/work/of15641/LH2_MD/LH2_files/LH2.prmtop
+setup system
+setup integration
+setup simulation
+Building system...
+Performing energy minimization...
+time for energy minimization: 0:02:38.887396
+
+Equilibrating: 30000 steps at 2 fs fs time steps
+time for equilibration: 0:02:53.203408
+
+Production: 1000000.0 steps at 2 fs fs time steps - total of 1000 ps
+ saving step every 100 fs - total of 10000.0 frames
+time for production: 7:48:42.206505
+
+[Job script finished]
+
+Copying job script results to /user/work/of15641/LH2_MD/LH2_files/output
+
