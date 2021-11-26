@@ -7,4 +7,4 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=5G
 
-~/.local/src/Qcore/release/bin/qcore -f json hessian.in > hessian.out
+~/.local/src/Qcore/release/bin/qcore hessian.in > hessian.out
