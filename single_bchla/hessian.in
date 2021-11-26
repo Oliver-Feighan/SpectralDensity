@@ -1,11 +1,4 @@
-xtb(
-structure(file = 'bchla.xyz')
-model='chlorophyll'
-
-)
-
-
-hessian(
+hess := hessian(
 	structure(file='bchla.xyz')
 	xtb(model='chlorophyll')
 )
