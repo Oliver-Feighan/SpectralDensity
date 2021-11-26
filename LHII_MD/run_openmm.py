@@ -24,12 +24,8 @@ print(f"Reading system coordinates, topology and forcefield from {inpcrd_path}, 
 prmtop = AmberPrmtopFile(prmtop_path)
 inpcrd = AmberInpcrdFile(inpcrd_path)
 
-# System Configuration
-print("setup system")
 
-
-# Integration Options
-print("setup integration")
+# Timestep Options
 dt = int(os.environ["INTEGRATOR_DT"])
 dt_fs = dt * femtoseconds
 
@@ -38,8 +34,6 @@ print(f"Integrator timestep : {dt_fs}")
 reporter_dt = int(os.environ["REPORTER_DT"]) # (int) time between saving frames in the reporters
 reporter_dt_fs = reporter_dt * femtosecond   # (openmm.unit.femtosecond)  "
 reporter_dt_timesteps = reporter_dt / dt     # time between saving frames in units of timesteps - saving every 10fs at 2fs dt should give saving every 5 timesteps
-
-
 
 print(f"Reporter timestep : {reporter_dt_fs}")
 
@@ -54,8 +48,10 @@ rigidWater = True
 topology = prmtop.topology
 positions = inpcrd.positions
 
+
 system = prmtop.createSystem(nonbondedMethod=nonbondedMethod, nonbondedCutoff=nonbondedCutoff, 
                              constraints=constraints, rigidWater=rigidWater, ewaldErrorTolerance=ewaldErrorTolerance)
+
 
 temperature = 300*kelvin
 friction = 1.0/picosecond
@@ -63,18 +59,23 @@ pressure = 1.0*atmospheres
 barostatInterval = 25
 system.addForce(MonteCarloBarostat(pressure, temperature, barostatInterval))
 
-integrator = LangevinMiddleIntegrator(temperature, friction, dt)
+
+integrator = LangevinMiddleIntegrator(temperature, friction, dt_fs)
+
 
 constraintTolerance = 0.000001
 integrator.setConstraintTolerance(constraintTolerance)
+
 
 platform = Platform.getPlatformByName('OpenCL')
 platformProperties = {'Precision': 'double'}
 simulation = Simulation(topology, system, integrator, platformProperties=platformProperties)
 
+
 simulation.context.setPositions(positions)
 if inpcrd.boxVectors is not None:
-simulation.context.setPeriodicBoxVectors(*inpcrd.boxVectors)
+	simulation.context.setPeriodicBoxVectors(*inpcrd.boxVectors)
+
 
 # Minimize and Equilibrate
 print('Performing energy minimization...')

@@ -1,0 +1,16 @@
+cpu-bind=MASK - bp1-gpu017, task 4294967295 4294967295 [0]: mask 0x101 set
+Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+Traceback (most recent call last):
+  File "/user/work/of15641/SpectralDensity/LHII_MD/run_openmm.py", line 92, in <module>
+    simulation.step(equilibrationSteps)
+  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/simulation.py", line 134, in step
+    self._simulate(endStep=self.currentStep+steps)
+  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/simulation.py", line 199, in _simulate
+    self.integrator.step(10) # Only take 10 steps at a time, to give Python more chances to respond to a control-c.
+  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/openmm.py", line 9599, in step
+    return _openmm.LangevinMiddleIntegrator_step(self, steps)
+openmm.OpenMMException: Particle coordinate is nan
+
+real	3m36.292s
+user	4m11.262s
+sys	0m15.345s

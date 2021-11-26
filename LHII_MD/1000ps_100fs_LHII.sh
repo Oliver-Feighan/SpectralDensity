@@ -2,7 +2,7 @@
 #SBATCH --job-name=1000ps_100fs_LHII
 #SBATCH --output=1000ps_100fs_LHII.out
 #SBATCH --error=1000ps_100fs_LHII.err
-#SBATCH --time=0-15:00:00
+#SBATCH --time=0-5:40:00
 #SBATCH --gpus=1
 #SBATCH --mem=80gb
 
