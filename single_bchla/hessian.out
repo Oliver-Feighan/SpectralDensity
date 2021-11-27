@@ -14,7 +14,7 @@
  Build type:   Release
  Version:      2.3.0-162-g029f7e3
 
- Start time:   Fri Nov 26 21:23:40 2021
+ Start time:   Sat Nov 27 11:20:58 2021
 
  Data directory: /user/home/of15641/.local/src/Qcore/release/share/entos/qcore/data
  Number of threads: 24
@@ -23,7 +23,7 @@
  --------------------------------------------------------------------------------
                                  command: hessian                                
  --------------------------------------------------------------------------------
- Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.132 seconds
 
  -------------------------------
   Numerical Geometrical Hessian 
@@ -31,1269 +31,720 @@
 
  Compute hessian using two-point central differentiation.
  Step size (bohr):                       0.0100
- Time for excitations:                                   0.716 seconds
- Time for excitations:                                   1.756 seconds
- Time for excitations:                                   0.819 seconds
- Time for excitations:                                   0.732 seconds
- Time for excitations:                                   1.018 seconds
- Time for excitations:                                   0.699 seconds
- Time for excitations:                                   1.487 seconds
- Time for excitations:                                   1.572 seconds
- Time for excitations:                                   0.746 seconds
- Time for excitations:                                   0.632 seconds
- Time for excitations:                                   0.933 seconds
- Time for excitations:                                   1.216 seconds
- Time for excitations:                                   0.820 seconds
- Time for excitations:                                   0.547 seconds
- Time for excitations:                                   1.674 seconds
- Time for excitations:                                   0.765 seconds
- Time for excitations:                                   0.851 seconds
- Time for excitations:                                   0.745 seconds
- Time for excitations:                                   0.575 seconds
- Time for excitations:                                   1.953 seconds
- Time for excitations:                                   0.815 seconds
- Time for excitations:                                   0.679 seconds
- Time for excitations:                                   1.569 seconds
- Time for excitations:                                   0.712 seconds
- Time for excitations:                                   0.598 seconds
- Time for excitations:                                   0.815 seconds
- Time for excitations:                                   0.830 seconds
- Time for excitations:                                   0.597 seconds
- Time for excitations:                                   0.759 seconds
- Time for excitations:                                   1.633 seconds
- Time for excitations:                                   1.537 seconds
- Time for excitations:                                   1.967 seconds
- Time for excitations:                                   0.630 seconds
- Time for excitations:                                   0.535 seconds
- Time for excitations:                                   0.971 seconds
- Time for excitations:                                   0.876 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.599 seconds
- Time for excitations:                                   0.880 seconds
- Time for excitations:                                   0.598 seconds
- Time for excitations:                                   1.503 seconds
- Time for excitations:                                   0.747 seconds
- Time for excitations:                                   0.808 seconds
- Time for excitations:                                   0.838 seconds
- Time for excitations:                                   0.918 seconds
- Time for excitations:                                   1.763 seconds
- Time for excitations:                                   0.818 seconds
- Time for excitations:                                   0.732 seconds
- Time for excitations:                                   0.926 seconds
- Time for excitations:                                   1.294 seconds
- Time for excitations:                                   0.670 seconds
- Time for excitations:                                   0.565 seconds
- Time for excitations:                                   1.693 seconds
- Time for excitations:                                   1.637 seconds
- Time for excitations:                                   0.657 seconds
- Time for excitations:                                   0.715 seconds
- Time for excitations:                                   1.604 seconds
- Time for excitations:                                   1.448 seconds
- Time for excitations:                                   0.667 seconds
- Time for excitations:                                   0.561 seconds
- Time for excitations:                                   1.681 seconds
- Time for excitations:                                   0.948 seconds
- Time for excitations:                                   1.107 seconds
- Time for excitations:                                   1.777 seconds
- Time for excitations:                                   0.797 seconds
- Time for excitations:                                   0.733 seconds
- Time for excitations:                                   1.476 seconds
- Time for excitations:                                   0.787 seconds
- Time for excitations:                                   0.866 seconds
- Time for excitations:                                   0.668 seconds
- Time for excitations:                                   0.835 seconds
- Time for excitations:                                   0.780 seconds
- Time for excitations:                                   0.525 seconds
- Time for excitations:                                   0.796 seconds
- Time for excitations:                                   0.553 seconds
- Time for excitations:                                   0.798 seconds
- Time for excitations:                                   0.818 seconds
- Time for excitations:                                   0.798 seconds
- Time for excitations:                                   0.689 seconds
- Time for excitations:                                   0.701 seconds
- Time for excitations:                                   0.673 seconds
- Time for excitations:                                   0.955 seconds
- Time for excitations:                                   0.733 seconds
- Time for excitations:                                   0.838 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.855 seconds
- Time for excitations:                                   0.985 seconds
- Time for excitations:                                   0.993 seconds
- Time for excitations:                                   0.912 seconds
- Time for excitations:                                   1.572 seconds
- Time for excitations:                                   0.937 seconds
- Time for excitations:                                   0.835 seconds
- Time for excitations:                                   0.737 seconds
- Time for excitations:                                   0.662 seconds
- Time for excitations:                                   1.683 seconds
- Time for excitations:                                   0.845 seconds
- Time for excitations:                                   0.952 seconds
- Time for excitations:                                   0.751 seconds
- Time for excitations:                                   1.877 seconds
- Time for excitations:                                   2.041 seconds
- Time for excitations:                                   0.972 seconds
- Time for excitations:                                   0.909 seconds
- Time for excitations:                                   0.737 seconds
- Time for excitations:                                   1.644 seconds
- Time for excitations:                                   1.579 seconds
- Time for excitations:                                   1.806 seconds
- Time for excitations:                                   1.691 seconds
- Time for excitations:                                   0.837 seconds
- Time for excitations:                                   1.447 seconds
- Time for excitations:                                   0.654 seconds
- Time for excitations:                                   0.634 seconds
- Time for excitations:                                   0.563 seconds
- Time for excitations:                                   0.710 seconds
- Time for excitations:                                   1.771 seconds
- Time for excitations:                                   0.979 seconds
- Time for excitations:                                   0.921 seconds
- Time for excitations:                                   0.834 seconds
- Time for excitations:                                   1.493 seconds
- Time for excitations:                                   1.801 seconds
- Time for excitations:                                   0.989 seconds
- Time for excitations:                                   0.687 seconds
- Time for excitations:                                   0.896 seconds
- Time for excitations:                                   1.170 seconds
- Time for excitations:                                   0.688 seconds
- Time for excitations:                                   0.529 seconds
- Time for excitations:                                   0.816 seconds
- Time for excitations:                                   0.739 seconds
- Time for excitations:                                   0.843 seconds
- Time for excitations:                                   0.667 seconds
- Time for excitations:                                   1.431 seconds
- Time for excitations:                                   0.940 seconds
- Time for excitations:                                   0.556 seconds
- Time for excitations:                                   1.756 seconds
- Time for excitations:                                   0.832 seconds
- Time for excitations:                                   0.880 seconds
- Time for excitations:                                   0.814 seconds
- Time for excitations:                                   0.532 seconds
- Time for excitations:                                   0.655 seconds
- Time for excitations:                                   1.780 seconds
- Time for excitations:                                   1.855 seconds
- Time for excitations:                                   0.481 seconds
- Time for excitations:                                   0.832 seconds
- Time for excitations:                                   0.897 seconds
- Time for excitations:                                   1.636 seconds
- Time for excitations:                                   0.882 seconds
- Time for excitations:                                   0.797 seconds
- Time for excitations:                                   0.823 seconds
- Time for excitations:                                   1.010 seconds
- Time for excitations:                                   1.585 seconds
- Time for excitations:                                   0.952 seconds
- Time for excitations:                                   0.812 seconds
- Time for excitations:                                   0.998 seconds
- Time for excitations:                                   1.042 seconds
- Time for excitations:                                   0.787 seconds
- Time for excitations:                                   0.861 seconds
- Time for excitations:                                   1.001 seconds
- Time for excitations:                                   0.560 seconds
- Time for excitations:                                   0.881 seconds
- Time for excitations:                                   1.049 seconds
- Time for excitations:                                   1.792 seconds
- Time for excitations:                                   1.816 seconds
- Time for excitations:                                   1.611 seconds
- Time for excitations:                                   0.931 seconds
- Time for excitations:                                   0.860 seconds
- Time for excitations:                                   0.862 seconds
- Time for excitations:                                   0.865 seconds
- Time for excitations:                                   0.826 seconds
- Time for excitations:                                   0.668 seconds
- Time for excitations:                                   0.967 seconds
- Time for excitations:                                   0.788 seconds
- Time for excitations:                                   0.646 seconds
- Time for excitations:                                   0.581 seconds
- Time for excitations:                                   0.888 seconds
- Time for excitations:                                   0.979 seconds
- Time for excitations:                                   1.718 seconds
- Time for excitations:                                   1.753 seconds
- Time for excitations:                                   0.793 seconds
- Time for excitations:                                   0.727 seconds
- Time for excitations:                                   0.747 seconds
- Time for excitations:                                   0.568 seconds
- Time for excitations:                                   1.691 seconds
- Time for excitations:                                   1.789 seconds
- Time for excitations:                                   0.870 seconds
- Time for excitations:                                   1.023 seconds
- Time for excitations:                                   0.943 seconds
- Time for excitations:                                   0.769 seconds
- Time for excitations:                                   0.730 seconds
- Time for excitations:                                   0.855 seconds
- Time for excitations:                                   0.728 seconds
- Time for excitations:                                   1.623 seconds
- Time for excitations:                                   1.747 seconds
- Time for excitations:                                   0.709 seconds
- Time for excitations:                                   0.760 seconds
- Time for excitations:                                   0.462 seconds
- Time for excitations:                                   0.978 seconds
- Time for excitations:                                   0.683 seconds
- Time for excitations:                                   1.682 seconds
- Time for excitations:                                   0.899 seconds
- Time for excitations:                                   0.677 seconds
- Time for excitations:                                   1.057 seconds
- Time for excitations:                                   1.056 seconds
- Time for excitations:                                   0.915 seconds
- Time for excitations:                                   0.760 seconds
- Time for excitations:                                   0.676 seconds
- Time for excitations:                                   0.834 seconds
- Time for excitations:                                   0.707 seconds
- Time for excitations:                                   0.577 seconds
- Time for excitations:                                   0.985 seconds
- Time for excitations:                                   0.709 seconds
- Time for excitations:                                   1.868 seconds
- Time for excitations:                                   0.660 seconds
- Time for excitations:                                   0.605 seconds
- Time for excitations:                                   1.035 seconds
- Time for excitations:                                   0.918 seconds
- Time for excitations:                                   0.817 seconds
- Time for excitations:                                   0.744 seconds
- Time for excitations:                                   1.876 seconds
- Time for excitations:                                   1.864 seconds
- Time for excitations:                                   1.834 seconds
- Time for excitations:                                   1.077 seconds
- Time for excitations:                                   1.055 seconds
- Time for excitations:                                   1.745 seconds
- Time for excitations:                                   0.758 seconds
- Time for excitations:                                   0.662 seconds
- Time for excitations:                                   0.953 seconds
- Time for excitations:                                   0.876 seconds
- Time for excitations:                                   0.893 seconds
- Time for excitations:                                   0.670 seconds
- Time for excitations:                                   1.128 seconds
- Time for excitations:                                   0.807 seconds
- Time for excitations:                                   0.563 seconds
- Time for excitations:                                   1.618 seconds
- Time for excitations:                                   0.952 seconds
- Time for excitations:                                   0.731 seconds
- Time for excitations:                                   1.788 seconds
- Time for excitations:                                   0.891 seconds
- Time for excitations:                                   0.846 seconds
- Time for excitations:                                   0.737 seconds
- Time for excitations:                                   1.688 seconds
- Time for excitations:                                   1.681 seconds
- Time for excitations:                                   0.661 seconds
- Time for excitations:                                   0.761 seconds
- Time for excitations:                                   0.585 seconds
- Time for excitations:                                   1.914 seconds
- Time for excitations:                                   0.826 seconds
- Time for excitations:                                   1.114 seconds
- Time for excitations:                                   0.619 seconds
- Time for excitations:                                   0.574 seconds
- Time for excitations:                                   1.755 seconds
- Time for excitations:                                   1.637 seconds
- Time for excitations:                                   0.667 seconds
- Time for excitations:                                   0.516 seconds
- Time for excitations:                                   0.937 seconds
- Time for excitations:                                   0.654 seconds
- Time for excitations:                                   0.833 seconds
- Time for excitations:                                   0.674 seconds
- Time for excitations:                                   0.814 seconds
- Time for excitations:                                   0.670 seconds
- Time for excitations:                                   0.521 seconds
- Time for excitations:                                   2.007 seconds
- Time for excitations:                                   0.571 seconds
- Time for excitations:                                   1.789 seconds
- Time for excitations:                                   0.781 seconds
- Time for excitations:                                   0.879 seconds
- Time for excitations:                                   0.751 seconds
- Time for excitations:                                   0.733 seconds
- Time for excitations:                                   0.726 seconds
- Time for excitations:                                   0.629 seconds
- Time for excitations:                                   0.636 seconds
- Time for excitations:                                   0.529 seconds
- Time for excitations:                                   1.945 seconds
- Time for excitations:                                   1.770 seconds
- Time for excitations:                                   0.807 seconds
- Time for excitations:                                   0.949 seconds
- Time for excitations:                                   1.126 seconds
- Time for excitations:                                   0.620 seconds
- Time for excitations:                                   1.018 seconds
- Time for excitations:                                   0.856 seconds
- Time for excitations:                                   0.772 seconds
- Time for excitations:                                   0.848 seconds
- Time for excitations:                                   0.863 seconds
- Time for excitations:                                   0.798 seconds
- Time for excitations:                                   0.870 seconds
- Time for excitations:                                   0.791 seconds
- Time for excitations:                                   0.887 seconds
- Time for excitations:                                   0.689 seconds
- Time for excitations:                                   0.654 seconds
- Time for excitations:                                   0.583 seconds
- Time for excitations:                                   1.924 seconds
- Time for excitations:                                   0.774 seconds
- Time for excitations:                                   0.647 seconds
- Time for excitations:                                   1.364 seconds
- Time for excitations:                                   1.805 seconds
- Time for excitations:                                   0.867 seconds
- Time for excitations:                                   0.872 seconds
- Time for excitations:                                   1.726 seconds
- Time for excitations:                                   0.847 seconds
- Time for excitations:                                   0.770 seconds
- Time for excitations:                                   0.820 seconds
- Time for excitations:                                   0.661 seconds
- Time for excitations:                                   0.883 seconds
- Time for excitations:                                   0.751 seconds
- Time for excitations:                                   1.644 seconds
- Time for excitations:                                   0.766 seconds
- Time for excitations:                                   0.500 seconds
- Time for excitations:                                   0.709 seconds
- Time for excitations:                                   0.601 seconds
- Time for excitations:                                   1.921 seconds
- Time for excitations:                                   1.632 seconds
- Time for excitations:                                   0.948 seconds
- Time for excitations:                                   1.105 seconds
- Time for excitations:                                   0.921 seconds
- Time for excitations:                                   0.573 seconds
- Time for excitations:                                   0.734 seconds
- Time for excitations:                                   0.827 seconds
- Time for excitations:                                   1.695 seconds
- Time for excitations:                                   1.594 seconds
- Time for excitations:                                   1.463 seconds
- Time for excitations:                                   0.929 seconds
- Time for excitations:                                   0.870 seconds
- Time for excitations:                                   1.422 seconds
- Time for excitations:                                   0.643 seconds
- Time for excitations:                                   0.520 seconds
- Time for excitations:                                   0.843 seconds
- Time for excitations:                                   0.871 seconds
- Time for excitations:                                   0.776 seconds
- Time for excitations:                                   0.810 seconds
- Time for excitations:                                   0.642 seconds
- Time for excitations:                                   0.496 seconds
- Time for excitations:                                   1.747 seconds
- Time for excitations:                                   0.840 seconds
- Time for excitations:                                   0.812 seconds
- Time for excitations:                                   0.724 seconds
- Time for excitations:                                   0.932 seconds
- Time for excitations:                                   0.646 seconds
- Time for excitations:                                   0.552 seconds
- Time for excitations:                                   1.121 seconds
- Time for excitations:                                   0.919 seconds
- Time for excitations:                                   0.713 seconds
- Time for excitations:                                   0.904 seconds
- Time for excitations:                                   0.749 seconds
- Time for excitations:                                   0.607 seconds
- Time for excitations:                                   0.887 seconds
- Time for excitations:                                   0.882 seconds
- Time for excitations:                                   1.651 seconds
- Time for excitations:                                   1.809 seconds
- Time for excitations:                                   1.044 seconds
- Time for excitations:                                   0.640 seconds
- Time for excitations:                                   0.918 seconds
- Time for excitations:                                   0.737 seconds
- Time for excitations:                                   1.194 seconds
- Time for excitations:                                   1.061 seconds
- Time for excitations:                                   1.837 seconds
- Time for excitations:                                   1.621 seconds
- Time for excitations:                                   1.774 seconds
- Time for excitations:                                   0.751 seconds
- Time for excitations:                                   1.807 seconds
- Time for excitations:                                   1.949 seconds
- Time for excitations:                                   0.493 seconds
- Time for excitations:                                   1.686 seconds
- Time for excitations:                                   1.026 seconds
- Time for excitations:                                   0.859 seconds
- Time for excitations:                                   1.231 seconds
- Time for excitations:                                   0.674 seconds
- Time for excitations:                                   0.580 seconds
- Time for excitations:                                   1.775 seconds
- Time for excitations:                                   1.419 seconds
- Time for excitations:                                   1.590 seconds
- Time for excitations:                                   1.560 seconds
- Time for excitations:                                   0.870 seconds
- Time for excitations:                                   0.892 seconds
- Time for excitations:                                   0.720 seconds
- Time for excitations:                                   0.520 seconds
- Time for excitations:                                   0.835 seconds
- Time for excitations:                                   0.552 seconds
- Time for excitations:                                   1.422 seconds
- Time for excitations:                                   0.786 seconds
- Time for excitations:                                   0.769 seconds
- Time for excitations:                                   0.633 seconds
- Time for excitations:                                   1.632 seconds
- Time for excitations:                                   1.719 seconds
- Time for excitations:                                   0.612 seconds
- Time for excitations:                                   0.701 seconds
- Time for excitations:                                   0.594 seconds
- Time for excitations:                                   1.949 seconds
- Time for excitations:                                   0.942 seconds
- Time for excitations:                                   0.823 seconds
- Time for excitations:                                   0.870 seconds
- Time for excitations:                                   0.878 seconds
- Time for excitations:                                   0.882 seconds
- Time for excitations:                                   0.922 seconds
- Time for excitations:                                   1.159 seconds
- Time for excitations:                                   0.742 seconds
- Time for excitations:                                   0.876 seconds
- Time for excitations:                                   0.708 seconds
- Time for excitations:                                   0.625 seconds
- Time for excitations:                                   0.739 seconds
- Time for excitations:                                   1.745 seconds
- Time for excitations:                                   1.935 seconds
- Time for excitations:                                   0.586 seconds
- Time for excitations:                                   1.620 seconds
- Time for excitations:                                   0.887 seconds
- Time for excitations:                                   1.058 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.548 seconds
- Time for excitations:                                   0.925 seconds
- Time for excitations:                                   0.834 seconds
- Time for excitations:                                   0.868 seconds
- Time for excitations:                                   0.898 seconds
- Time for excitations:                                   1.169 seconds
- Time for excitations:                                   0.963 seconds
- Time for excitations:                                   1.276 seconds
- Time for excitations:                                   0.914 seconds
- Time for excitations:                                   0.955 seconds
- Time for excitations:                                   0.786 seconds
- Time for excitations:                                   0.755 seconds
- Time for excitations:                                   0.843 seconds
- Time for excitations:                                   0.627 seconds
- Time for excitations:                                   0.643 seconds
- Time for excitations:                                   0.628 seconds
- Time for excitations:                                   0.641 seconds
- Time for excitations:                                   0.650 seconds
- Time for excitations:                                   0.732 seconds
- Time for excitations:                                   1.779 seconds
- Time for excitations:                                   1.979 seconds
- Time for excitations:                                   0.556 seconds
- Time for excitations:                                   1.942 seconds
- Time for excitations:                                   0.611 seconds
- Time for excitations:                                   0.773 seconds
- Time for excitations:                                   0.757 seconds
- Time for excitations:                                   0.564 seconds
- Time for excitations:                                   0.615 seconds
- Time for excitations:                                   0.704 seconds
- Time for excitations:                                   2.026 seconds
- Time for excitations:                                   1.910 seconds
- Time for excitations:                                   1.846 seconds
- Time for excitations:                                   0.892 seconds
- Time for excitations:                                   0.569 seconds
- Time for excitations:                                   1.039 seconds
- Time for excitations:                                   0.854 seconds
- Time for excitations:                                   1.470 seconds
- Time for excitations:                                   0.726 seconds
- Time for excitations:                                   0.588 seconds
- Time for excitations:                                   0.880 seconds
- Time for excitations:                                   1.030 seconds
- Time for excitations:                                   1.478 seconds
- Time for excitations:                                   1.578 seconds
- Time for excitations:                                   0.747 seconds
- Time for excitations:                                   0.801 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.772 seconds
- Time for excitations:                                   0.726 seconds
- Time for excitations:                                   0.632 seconds
- Time for excitations:                                   0.749 seconds
- Time for excitations:                                   0.575 seconds
- Time for excitations:                                   0.644 seconds
- Time for excitations:                                   0.560 seconds
- Time for excitations:                                   2.039 seconds
- Time for excitations:                                   1.837 seconds
- Time for excitations:                                   1.789 seconds
- Time for excitations:                                   0.642 seconds
- Time for excitations:                                   0.851 seconds
- Time for excitations:                                   0.820 seconds
- Time for excitations:                                   0.583 seconds
- Time for excitations:                                   0.813 seconds
- Time for excitations:                                   0.965 seconds
- Time for excitations:                                   0.687 seconds
- Time for excitations:                                   0.503 seconds
- Time for excitations:                                   1.595 seconds
- Time for excitations:                                   1.615 seconds
- Time for excitations:                                   0.877 seconds
- Time for excitations:                                   0.705 seconds
- Time for excitations:                                   1.362 seconds
- Time for excitations:                                   1.938 seconds
- Time for excitations:                                   1.045 seconds
- Time for excitations:                                   0.952 seconds
- Time for excitations:                                   1.001 seconds
- Time for excitations:                                   0.741 seconds
- Time for excitations:                                   1.706 seconds
- Time for excitations:                                   0.819 seconds
- Time for excitations:                                   0.861 seconds
- Time for excitations:                                   0.973 seconds
- Time for excitations:                                   0.548 seconds
- Time for excitations:                                   1.867 seconds
- Time for excitations:                                   0.698 seconds
- Time for excitations:                                   0.700 seconds
- Time for excitations:                                   0.709 seconds
- Time for excitations:                                   0.581 seconds
- Time for excitations:                                   0.861 seconds
- Time for excitations:                                   0.950 seconds
- Time for excitations:                                   0.704 seconds
- Time for excitations:                                   0.614 seconds
- Time for excitations:                                   1.670 seconds
- Time for excitations:                                   0.854 seconds
- Time for excitations:                                   0.739 seconds
- Time for excitations:                                   0.904 seconds
- Time for excitations:                                   0.574 seconds
- Time for excitations:                                   1.593 seconds
- Time for excitations:                                   0.981 seconds
- Time for excitations:                                   1.243 seconds
- Time for excitations:                                   0.819 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.654 seconds
- Time for excitations:                                   0.527 seconds
- Time for excitations:                                   1.733 seconds
- Time for excitations:                                   0.865 seconds
- Time for excitations:                                   0.764 seconds
- Time for excitations:                                   0.867 seconds
- Time for excitations:                                   0.825 seconds
- Time for excitations:                                   0.916 seconds
- Time for excitations:                                   0.732 seconds
- Time for excitations:                                   1.176 seconds
- Time for excitations:                                   0.833 seconds
- Time for excitations:                                   0.732 seconds
- Time for excitations:                                   0.627 seconds
- Time for excitations:                                   1.805 seconds
- Time for excitations:                                   1.792 seconds
- Time for excitations:                                   0.470 seconds
- Time for excitations:                                   0.984 seconds
- Time for excitations:                                   0.592 seconds
- Time for excitations:                                   0.944 seconds
- Time for excitations:                                   0.684 seconds
- Time for excitations:                                   1.391 seconds
- Time for excitations:                                   0.765 seconds
- Time for excitations:                                   0.568 seconds
- Time for excitations:                                   0.867 seconds
- Time for excitations:                                   0.732 seconds
- Time for excitations:                                   0.665 seconds
- Time for excitations:                                   0.617 seconds
- Time for excitations:                                   0.630 seconds
- Time for excitations:                                   0.649 seconds
- Time for excitations:                                   0.742 seconds
- Time for excitations:                                   0.536 seconds
- Time for excitations:                                   1.752 seconds
- Time for excitations:                                   0.899 seconds
- Time for excitations:                                   0.552 seconds
- Time for excitations:                                   0.848 seconds
- Time for excitations:                                   1.008 seconds
- Time for excitations:                                   0.696 seconds
- Time for excitations:                                   0.667 seconds
- Time for excitations:                                   0.947 seconds
- Time for excitations:                                   0.634 seconds
- Time for excitations:                                   0.902 seconds
- Time for excitations:                                   0.735 seconds
- Time for excitations:                                   1.482 seconds
- Time for excitations:                                   1.783 seconds
- Time for excitations:                                   1.156 seconds
- Time for excitations:                                   0.605 seconds
- Time for excitations:                                   1.055 seconds
- Time for excitations:                                   0.901 seconds
- Time for excitations:                                   1.432 seconds
- Time for excitations:                                   1.306 seconds
- Time for excitations:                                   0.998 seconds
- Time for excitations:                                   0.717 seconds
- Time for excitations:                                   0.869 seconds
- Time for excitations:                                   0.822 seconds
- Time for excitations:                                   0.704 seconds
- Time for excitations:                                   0.730 seconds
- Time for excitations:                                   1.440 seconds
- Time for excitations:                                   1.006 seconds
- Time for excitations:                                   0.712 seconds
- Time for excitations:                                   0.762 seconds
- Time for excitations:                                   0.900 seconds
- Time for excitations:                                   0.936 seconds
- Time for excitations:                                   0.492 seconds
- Time for excitations:                                   0.971 seconds
- Time for excitations:                                   0.684 seconds
- Time for excitations:                                   0.717 seconds
- Time for excitations:                                   0.585 seconds
- Time for excitations:                                   0.819 seconds
- Time for excitations:                                   0.821 seconds
- Time for excitations:                                   0.710 seconds
- Time for excitations:                                   1.189 seconds
- Time for excitations:                                   1.691 seconds
- Time for excitations:                                   0.697 seconds
- Time for excitations:                                   1.672 seconds
- Time for excitations:                                   1.812 seconds
- Time for excitations:                                   0.759 seconds
- Time for excitations:                                   0.733 seconds
- Time for excitations:                                   1.367 seconds
- Time for excitations:                                   0.787 seconds
- Time for excitations:                                   0.506 seconds
- Time for excitations:                                   0.832 seconds
- Time for excitations:                                   1.009 seconds
- Time for excitations:                                   0.748 seconds
- Time for excitations:                                   0.755 seconds
- Time for excitations:                                   0.819 seconds
- Time for excitations:                                   0.744 seconds
- Time for excitations:                                   1.739 seconds
- Time for excitations:                                   0.923 seconds
- Time for excitations:                                   0.812 seconds
- Time for excitations:                                   1.408 seconds
- Time for excitations:                                   1.747 seconds
- Time for excitations:                                   0.720 seconds
- Time for excitations:                                   1.788 seconds
- Time for excitations:                                   1.956 seconds
- Time for excitations:                                   0.525 seconds
- Time for excitations:                                   0.835 seconds
- Time for excitations:                                   0.587 seconds
- Time for excitations:                                   0.820 seconds
- Time for excitations:                                   0.791 seconds
- Time for excitations:                                   1.174 seconds
- Time for excitations:                                   1.708 seconds
- Time for excitations:                                   1.015 seconds
- Time for excitations:                                   0.709 seconds
- Time for excitations:                                   0.972 seconds
- Time for excitations:                                   0.801 seconds
- Time for excitations:                                   0.716 seconds
- Time for excitations:                                   1.535 seconds
- Time for excitations:                                   1.240 seconds
- Time for excitations:                                   1.015 seconds
- Time for excitations:                                   0.780 seconds
- Time for excitations:                                   0.925 seconds
- Time for excitations:                                   0.769 seconds
- Time for excitations:                                   0.754 seconds
- Time for excitations:                                   0.768 seconds
- Time for excitations:                                   0.677 seconds
- Time for excitations:                                   0.688 seconds
- Time for excitations:                                   0.637 seconds
- Time for excitations:                                   0.635 seconds
- Time for excitations:                                   0.548 seconds
- Time for excitations:                                   0.752 seconds
- Time for excitations:                                   0.494 seconds
- Time for excitations:                                   0.841 seconds
- Time for excitations:                                   0.854 seconds
- Time for excitations:                                   0.605 seconds
- Time for excitations:                                   0.574 seconds
- Time for excitations:                                   0.745 seconds
- Time for excitations:                                   0.721 seconds
- Time for excitations:                                   0.701 seconds
- Time for excitations:                                   0.661 seconds
- Time for excitations:                                   0.767 seconds
- Time for excitations:                                   0.575 seconds
- Time for excitations:                                   1.778 seconds
- Time for excitations:                                   1.518 seconds
- Time for excitations:                                   0.662 seconds
- Time for excitations:                                   0.574 seconds
- Time for excitations:                                   1.894 seconds
- Time for excitations:                                   0.902 seconds
- Time for excitations:                                   0.524 seconds
- Time for excitations:                                   0.857 seconds
- Time for excitations:                                   0.676 seconds
- Time for excitations:                                   1.712 seconds
- Time for excitations:                                   0.783 seconds
- Time for excitations:                                   0.536 seconds
- Time for excitations:                                   0.772 seconds
- Time for excitations:                                   0.556 seconds
- Time for excitations:                                   0.623 seconds
- Time for excitations:                                   1.772 seconds
- Time for excitations:                                   2.024 seconds
- Time for excitations:                                   0.626 seconds
- Time for excitations:                                   0.778 seconds
- Time for excitations:                                   0.862 seconds
- Time for excitations:                                   0.945 seconds
- Time for excitations:                                   0.955 seconds
- Time for excitations:                                   1.688 seconds
- Time for excitations:                                   1.723 seconds
- Time for excitations:                                   0.635 seconds
- Time for excitations:                                   0.615 seconds
- Time for excitations:                                   0.581 seconds
- Time for excitations:                                   1.724 seconds
- Time for excitations:                                   1.847 seconds
- Time for excitations:                                   0.553 seconds
- Time for excitations:                                   0.883 seconds
- Time for excitations:                                   0.826 seconds
- Time for excitations:                                   0.971 seconds
- Time for excitations:                                   0.649 seconds
- Time for excitations:                                   1.026 seconds
- Time for excitations:                                   1.250 seconds
- Time for excitations:                                   0.760 seconds
- Time for excitations:                                   0.625 seconds
- Time for excitations:                                   1.791 seconds
- Time for excitations:                                   0.946 seconds
- Time for excitations:                                   0.769 seconds
- Time for excitations:                                   1.809 seconds
- Time for excitations:                                   1.728 seconds
- Time for excitations:                                   1.006 seconds
- Time for excitations:                                   0.605 seconds
- Time for excitations:                                   1.865 seconds
- Time for excitations:                                   0.904 seconds
- Time for excitations:                                   1.090 seconds
- Time for excitations:                                   0.892 seconds
- Time for excitations:                                   0.750 seconds
- Time for excitations:                                   0.841 seconds
- Time for excitations:                                   0.556 seconds
- Time for excitations:                                   0.667 seconds
- Time for excitations:                                   0.533 seconds
- Time for excitations:                                   0.687 seconds
- Time for excitations:                                   0.746 seconds
- Time for excitations:                                   0.721 seconds
- Time for excitations:                                   0.561 seconds
- Time for excitations:                                   0.609 seconds
- Time for excitations:                                   0.660 seconds
- Time for excitations:                                   0.697 seconds
- Time for excitations:                                   1.615 seconds
- Time for excitations:                                   1.743 seconds
- Time for excitations:                                   1.643 seconds
- Time for excitations:                                   1.937 seconds
- Time for excitations:                                   0.547 seconds
- Time for excitations:                                   0.709 seconds
- Time for excitations:                                   0.552 seconds
- Time for excitations:                                   0.676 seconds
- Time for excitations:                                   0.728 seconds
- Time for excitations:                                   1.728 seconds
- Time for excitations:                                   0.631 seconds
- Time for excitations:                                   0.894 seconds
- Time for excitations:                                   0.625 seconds
- Time for excitations:                                   0.595 seconds
- Time for excitations:                                   0.708 seconds
- Time for excitations:                                   0.667 seconds
- Time for excitations:                                   0.707 seconds
- Time for excitations:                                   1.818 seconds
- Time for excitations:                                   1.867 seconds
- Time for excitations:                                   1.737 seconds
- Time for excitations:                                   1.803 seconds
- Time for excitations:                                   0.755 seconds
- Time for excitations:                                   1.596 seconds
- Time for excitations:                                   1.050 seconds
- Time for excitations:                                   0.974 seconds
- Time for excitations:                                   1.282 seconds
- Time for excitations:                                   0.676 seconds
- Time for excitations:                                   0.603 seconds
- Time for excitations:                                   0.764 seconds
- Time for excitations:                                   0.870 seconds
- Time for excitations:                                   1.813 seconds
- Time for excitations:                                   0.953 seconds
- Time for excitations:                                   0.890 seconds
- Time for excitations:                                   0.917 seconds
- Time for excitations:                                   0.653 seconds
- Time for excitations:                                   0.731 seconds
- Time for excitations:                                   1.096 seconds
- Time for excitations:                                   1.689 seconds
- Time for excitations:                                   1.514 seconds
- Time for excitations:                                   0.820 seconds
- Time for excitations:                                   0.947 seconds
- Time for excitations:                                   0.896 seconds
- Time for excitations:                                   0.606 seconds
- Time for excitations:                                   1.790 seconds
- Time for excitations:                                   0.676 seconds
- Time for excitations:                                   0.663 seconds
- Time for excitations:                                   0.808 seconds
- Time for excitations:                                   0.749 seconds
- Time for excitations:                                   1.109 seconds
- Time for excitations:                                   0.937 seconds
- Time for excitations:                                   0.944 seconds
- Time for excitations:                                   0.728 seconds
- Time for excitations:                                   0.853 seconds
- Time for excitations:                                   1.842 seconds
- Time for excitations:                                   1.848 seconds
- Time for excitations:                                   0.834 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.573 seconds
- Time for excitations:                                   1.899 seconds
- Time for excitations:                                   0.779 seconds
- Time for excitations:                                   0.550 seconds
- Time for excitations:                                   1.876 seconds
- Time for excitations:                                   0.694 seconds
- Time for excitations:                                   1.967 seconds
- Time for excitations:                                   1.851 seconds
- Time for excitations:                                   0.589 seconds
- Time for excitations:                                   0.696 seconds
- Time for excitations:                                   0.638 seconds
- Time for excitations:                                   0.633 seconds
- Time for excitations:                                   0.563 seconds
- Time for excitations:                                   1.719 seconds
- Time for excitations:                                   0.782 seconds
- Time for excitations:                                   1.035 seconds
- Time for excitations:                                   0.630 seconds
- Time for excitations:                                   0.668 seconds
- Time for excitations:                                   0.795 seconds
- Time for excitations:                                   0.614 seconds
- Time for excitations:                                   0.627 seconds
- Time for excitations:                                   0.602 seconds
- Time for excitations:                                   1.470 seconds
- Time for excitations:                                   1.248 seconds
- Time for excitations:                                   1.590 seconds
- Time for excitations:                                   0.937 seconds
- Time for excitations:                                   0.746 seconds
- Time for excitations:                                   0.888 seconds
- Time for excitations:                                   0.662 seconds
- Time for excitations:                                   1.261 seconds
- Time for excitations:                                   1.672 seconds
- Time for excitations:                                   0.927 seconds
- Time for excitations:                                   0.618 seconds
- Time for excitations:                                   0.971 seconds
- Time for excitations:                                   0.584 seconds
- Time for excitations:                                   1.929 seconds
- Time for excitations:                                   0.937 seconds
- Time for excitations:                                   0.707 seconds
- Time for excitations:                                   1.557 seconds
- Time for excitations:                                   0.595 seconds
- Time for excitations:                                   0.760 seconds
- Time for excitations:                                   0.628 seconds
- Time for excitations:                                   1.847 seconds
- Time for excitations:                                   1.903 seconds
- Time for excitations:                                   0.648 seconds
- Time for excitations:                                   1.053 seconds
- Time for excitations:                                   0.642 seconds
- Time for excitations:                                   1.622 seconds
- Time for excitations:                                   0.580 seconds
- Time for excitations:                                   0.731 seconds
- Time for excitations:                                   0.808 seconds
- Time for excitations:                                   0.580 seconds
- Time for excitations:                                   0.750 seconds
- Time for excitations:                                   0.698 seconds
- Time for excitations:                                   0.755 seconds
- Time for excitations:                                   0.606 seconds
- Time for excitations:                                   0.672 seconds
- Time for excitations:                                   0.605 seconds
- Time for excitations:                                   1.695 seconds
- Time for excitations:                                   0.798 seconds
- Time for excitations:                                   0.621 seconds
- Time for excitations:                                   0.843 seconds
- Time for excitations:                                   0.801 seconds
- Time for excitations:                                   2.004 seconds
- Time for excitations:                                   0.794 seconds
- Time for excitations:                                   0.788 seconds
- Time for excitations:                                   0.908 seconds
- Time for excitations:                                   0.839 seconds
- Time for excitations:                                   1.043 seconds
- Time for excitations:                                   0.492 seconds
- Time for excitations:                                   0.838 seconds
- Time for excitations:                                   0.999 seconds
- Time for excitations:                                   1.450 seconds
- Time for excitations:                                   0.766 seconds
- Time for excitations:                                   0.987 seconds
- Time for excitations:                                   0.663 seconds
- Time for excitations:                                   0.799 seconds
- Time for excitations:                                   0.743 seconds
- Time for excitations:                                   0.830 seconds
- Time for excitations:                                   1.232 seconds
- Time for excitations:                                   0.630 seconds
- Time for excitations:                                   0.618 seconds
- Time for excitations:                                   0.748 seconds
- Time for excitations:                                   0.702 seconds
- Time for excitations:                                   1.744 seconds
- Time for excitations:                                   1.545 seconds
- Time for excitations:                                   0.875 seconds
- Time for excitations:                                   0.259 seconds
+ Time for excitations:                                   0.297 seconds
+ Time for excitations:                                   0.365 seconds
+ Time for excitations:                                   0.327 seconds
+ Time for excitations:                                   0.306 seconds
+ Time for excitations:                                   0.290 seconds
+ Time for excitations:                                   0.290 seconds
+ Time for excitations:                                   0.296 seconds
+ Time for excitations:                                   0.385 seconds
+ Time for excitations:                                   0.361 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.322 seconds
+ Time for excitations:                                   0.244 seconds
+ Time for excitations:                                   0.231 seconds
+ Time for excitations:                                   0.296 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.272 seconds
+ Time for excitations:                                   0.273 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.271 seconds
+ Time for excitations:                                   0.271 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.319 seconds
+ Time for excitations:                                   0.313 seconds
+ Time for excitations:                                   0.198 seconds
+ Time for excitations:                                   0.327 seconds
+ Time for excitations:                                   0.314 seconds
+ Time for excitations:                                   0.330 seconds
+ Time for excitations:                                   0.350 seconds
+ Time for excitations:                                   0.340 seconds
+ Time for excitations:                                   0.322 seconds
+ Time for excitations:                                   0.364 seconds
+ Time for excitations:                                   0.350 seconds
+ Time for excitations:                                   0.354 seconds
+ Time for excitations:                                   0.364 seconds
+ Time for excitations:                                   0.361 seconds
+ Time for excitations:                                   0.251 seconds
+ Time for excitations:                                   0.291 seconds
+ Time for excitations:                                   0.338 seconds
+ Time for excitations:                                   0.355 seconds
+ Time for excitations:                                   0.341 seconds
+ Time for excitations:                                   0.276 seconds
+ Time for excitations:                                   0.329 seconds
+ Time for excitations:                                   0.238 seconds
+ Time for excitations:                                   0.315 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.276 seconds
+ Time for excitations:                                   0.209 seconds
+ Time for excitations:                                   0.305 seconds
+ Time for excitations:                                   0.347 seconds
+ Time for excitations:                                   0.302 seconds
+ Time for excitations:                                   0.273 seconds
+ Time for excitations:                                   0.274 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.272 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.271 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.280 seconds
+ Time for excitations:                                   0.197 seconds
+ Time for excitations:                                   0.403 seconds
+ Time for excitations:                                   0.361 seconds
+ Time for excitations:                                   0.356 seconds
+ Time for excitations:                                   0.322 seconds
+ Time for excitations:                                   0.355 seconds
+ Time for excitations:                                   0.375 seconds
+ Time for excitations:                                   0.358 seconds
+ Time for excitations:                                   0.385 seconds
+ Time for excitations:                                   0.369 seconds
+ Time for excitations:                                   0.367 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.289 seconds
+ Time for excitations:                                   0.294 seconds
+ Time for excitations:                                   0.224 seconds
+ Time for excitations:                                   0.216 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.308 seconds
+ Time for excitations:                                   0.311 seconds
+ Time for excitations:                                   0.312 seconds
+ Time for excitations:                                   0.219 seconds
+ Time for excitations:                                   0.368 seconds
+ Time for excitations:                                   0.337 seconds
+ Time for excitations:                                   0.280 seconds
+ Time for excitations:                                   0.238 seconds
+ Time for excitations:                                   0.369 seconds
+ Time for excitations:                                   0.225 seconds
+ Time for excitations:                                   0.350 seconds
+ Time for excitations:                                   0.256 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.256 seconds
+ Time for excitations:                                   0.250 seconds
+ Time for excitations:                                   0.251 seconds
+ Time for excitations:                                   0.255 seconds
+ Time for excitations:                                   0.258 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.271 seconds
+ Time for excitations:                                   0.214 seconds
+ Time for excitations:                                   0.304 seconds
+ Time for excitations:                                   0.329 seconds
+ Time for excitations:                                   0.310 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.225 seconds
+ Time for excitations:                                   0.370 seconds
+ Time for excitations:                                   0.344 seconds
+ Time for excitations:                                   0.404 seconds
+ Time for excitations:                                   0.376 seconds
+ Time for excitations:                                   0.416 seconds
+ Time for excitations:                                   0.375 seconds
+ Time for excitations:                                   0.344 seconds
+ Time for excitations:                                   0.288 seconds
+ Time for excitations:                                   0.360 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.219 seconds
+ Time for excitations:                                   0.317 seconds
+ Time for excitations:                                   0.235 seconds
+ Time for excitations:                                   0.325 seconds
+ Time for excitations:                                   0.255 seconds
+ Time for excitations:                                   0.300 seconds
+ Time for excitations:                                   0.326 seconds
+ Time for excitations:                                   0.305 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.252 seconds
+ Time for excitations:                                   0.279 seconds
+ Time for excitations:                                   0.298 seconds
+ Time for excitations:                                   0.340 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.271 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.258 seconds
+ Time for excitations:                                   0.258 seconds
+ Time for excitations:                                   0.256 seconds
  Time for excitations:                                   0.257 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.246 seconds
+ Time for excitations:                                   0.368 seconds
+ Time for excitations:                                   0.363 seconds
+ Time for excitations:                                   0.313 seconds
+ Time for excitations:                                   0.331 seconds
+ Time for excitations:                                   0.336 seconds
+ Time for excitations:                                   0.308 seconds
+ Time for excitations:                                   0.304 seconds
+ Time for excitations:                                   0.247 seconds
+ Time for excitations:                                   0.367 seconds
+ Time for excitations:                                   0.219 seconds
+ Time for excitations:                                   0.252 seconds
+ Time for excitations:                                   0.236 seconds
+ Time for excitations:                                   0.297 seconds
+ Time for excitations:                                   0.298 seconds
+ Time for excitations:                                   0.318 seconds
+ Time for excitations:                                   0.300 seconds
+ Time for excitations:                                   0.296 seconds
+ Time for excitations:                                   0.323 seconds
+ Time for excitations:                                   0.322 seconds
+ Time for excitations:                                   0.299 seconds
+ Time for excitations:                                   0.375 seconds
+ Time for excitations:                                   0.345 seconds
+ Time for excitations:                                   0.371 seconds
+ Time for excitations:                                   0.340 seconds
+ Time for excitations:                                   0.370 seconds
+ Time for excitations:                                   0.312 seconds
+ Time for excitations:                                   0.302 seconds
+ Time for excitations:                                   0.297 seconds
+ Time for excitations:                                   0.315 seconds
+ Time for excitations:                                   0.302 seconds
+ Time for excitations:                                   0.312 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.284 seconds
+ Time for excitations:                                   0.301 seconds
+ Time for excitations:                                   0.360 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.285 seconds
+ Time for excitations:                                   0.276 seconds
+ Time for excitations:                                   0.317 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.274 seconds
+ Time for excitations:                                   0.273 seconds
+ Time for excitations:                                   0.272 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.279 seconds
+ Time for excitations:                                   0.278 seconds
+ Time for excitations:                                   0.279 seconds
+ Time for excitations:                                   0.277 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.205 seconds
+ Time for excitations:                                   0.296 seconds
+ Time for excitations:                                   0.345 seconds
+ Time for excitations:                                   0.381 seconds
+ Time for excitations:                                   0.353 seconds
+ Time for excitations:                                   0.369 seconds
+ Time for excitations:                                   0.402 seconds
+ Time for excitations:                                   0.423 seconds
+ Time for excitations:                                   0.325 seconds
+ Time for excitations:                                   0.282 seconds
+ Time for excitations:                                   0.334 seconds
+ Time for excitations:                                   0.259 seconds
+ Time for excitations:                                   0.352 seconds
+ Time for excitations:                                   0.404 seconds
+ Time for excitations:                                   0.347 seconds
+ Time for excitations:                                   0.328 seconds
+ Time for excitations:                                   0.302 seconds
+ Time for excitations:                                   0.240 seconds
+ Time for excitations:                                   0.200 seconds
+ Time for excitations:                                   0.314 seconds
+ Time for excitations:                                   0.300 seconds
+ Time for excitations:                                   0.307 seconds
+ Time for excitations:                                   0.296 seconds
+ Time for excitations:                                   0.324 seconds
+ Time for excitations:                                   0.318 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.349 seconds
+ Time for excitations:                                   0.223 seconds
+ Time for excitations:                                   0.255 seconds
+ Time for excitations:                                   0.256 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.287 seconds
+ Time for excitations:                                   0.287 seconds
+ Time for excitations:                                   0.245 seconds
+ Time for excitations:                                   0.362 seconds
+ Time for excitations:                                   0.366 seconds
+ Time for excitations:                                   0.250 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.325 seconds
+ Time for excitations:                                   0.284 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.272 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.208 seconds
+ Time for excitations:                                   0.307 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.350 seconds
+ Time for excitations:                                   0.313 seconds
+ Time for excitations:                                   0.224 seconds
+ Time for excitations:                                   0.323 seconds
+ Time for excitations:                                   0.288 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.283 seconds
+ Time for excitations:                                   0.305 seconds
+ Time for excitations:                                   0.250 seconds
+ Time for excitations:                                   0.230 seconds
+ Time for excitations:                                   0.299 seconds
+ Time for excitations:                                   0.348 seconds
+ Time for excitations:                                   0.301 seconds
+ Time for excitations:                                   0.249 seconds
+ Time for excitations:                                   0.305 seconds
+ Time for excitations:                                   0.256 seconds
+ Time for excitations:                                   0.257 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.254 seconds
+ Time for excitations:                                   0.254 seconds
+ Time for excitations:                                   0.254 seconds
+ Time for excitations:                                   0.259 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.258 seconds
+ Time for excitations:                                   0.259 seconds
+ Time for excitations:                                   0.259 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.257 seconds
+ Time for excitations:                                   0.257 seconds
+ Time for excitations:                                   0.257 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.217 seconds
+ Time for excitations:                                   0.315 seconds
+ Time for excitations:                                   0.238 seconds
+ Time for excitations:                                   0.292 seconds
+ Time for excitations:                                   0.348 seconds
+ Time for excitations:                                   0.305 seconds
+ Time for excitations:                                   0.208 seconds
+ Time for excitations:                                   0.378 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.255 seconds
+ Time for excitations:                                   0.257 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.256 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.255 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.288 seconds
+ Time for excitations:                                   0.303 seconds
+ Time for excitations:                                   0.291 seconds
+ Time for excitations:                                   0.332 seconds
+ Time for excitations:                                   0.214 seconds
+ Time for excitations:                                   0.317 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.286 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.273 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.308 seconds
+ Time for excitations:                                   0.299 seconds
+ Time for excitations:                                   0.365 seconds
+ Time for excitations:                                   0.287 seconds
+ Time for excitations:                                   0.339 seconds
+ Time for excitations:                                   0.303 seconds
+ Time for excitations:                                   0.282 seconds
+ Time for excitations:                                   0.287 seconds
+ Time for excitations:                                   0.351 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.230 seconds
+ Time for excitations:                                   0.299 seconds
+ Time for excitations:                                   0.335 seconds
+ Time for excitations:                                   0.336 seconds
+ Time for excitations:                                   0.300 seconds
+ Time for excitations:                                   0.309 seconds
+ Time for excitations:                                   0.355 seconds
+ Time for excitations:                                   0.368 seconds
+ Time for excitations:                                   0.306 seconds
+ Time for excitations:                                   0.246 seconds
+ Time for excitations:                                   0.282 seconds
+ Time for excitations:                                   0.280 seconds
+ Time for excitations:                                   0.277 seconds
+ Time for excitations:                                   0.276 seconds
+ Time for excitations:                                   0.280 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.194 seconds
+ Time for excitations:                                   0.223 seconds
+ Time for excitations:                                   0.300 seconds
+ Time for excitations:                                   0.310 seconds
+ Time for excitations:                                   0.297 seconds
+ Time for excitations:                                   0.231 seconds
+ Time for excitations:                                   0.180 seconds
+ Time for excitations:                                   0.338 seconds
+ Time for excitations:                                   0.281 seconds
+ Time for excitations:                                   0.246 seconds
+ Time for excitations:                                   0.284 seconds
+ Time for excitations:                                   0.319 seconds
+ Time for excitations:                                   0.216 seconds
+ Time for excitations:                                   0.285 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.261 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.267 seconds
+ Time for excitations:                                   0.269 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.262 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.263 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.271 seconds
+ Time for excitations:                                   0.274 seconds
+ Time for excitations:                                   0.281 seconds
+ Time for excitations:                                   0.274 seconds
+ Time for excitations:                                   0.275 seconds
+ Time for excitations:                                   0.277 seconds
+ Time for excitations:                                   0.277 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.314 seconds
+ Time for excitations:                                   0.256 seconds
+ Time for excitations:                                   0.189 seconds
+ Time for excitations:                                   0.371 seconds
+ Time for excitations:                                   0.303 seconds
+ Time for excitations:                                   0.297 seconds
+ Time for excitations:                                   0.205 seconds
+ Time for excitations:                                   0.316 seconds
+ Time for excitations:                                   0.260 seconds
+ Time for excitations:                                   0.341 seconds
+ Time for excitations:                                   0.396 seconds
+ Time for excitations:                                   0.348 seconds
+ Time for excitations:                                   0.207 seconds
+ Time for excitations:                                   0.363 seconds
+ Time for excitations:                                   0.338 seconds
+ Time for excitations:                                   0.318 seconds
+ Time for excitations:                                   0.325 seconds
+ Time for excitations:                                   0.337 seconds
+ Time for excitations:                                   0.250 seconds
+ Time for excitations:                                   0.253 seconds
+ Time for excitations:                                   0.331 seconds
+ Time for excitations:                                   0.319 seconds
+ Time for excitations:                                   0.322 seconds
+ Time for excitations:                                   0.323 seconds
+ Time for excitations:                                   0.233 seconds
+ Time for excitations:                                   0.298 seconds
+ Time for excitations:                                   0.299 seconds
+ Time for excitations:                                   0.311 seconds
+ Time for excitations:                                   0.244 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.273 seconds
+ Time for excitations:                                   0.279 seconds
+ Time for excitations:                                   0.277 seconds
+ Time for excitations:                                   0.279 seconds
+ Time for excitations:                                   0.268 seconds
+ Time for excitations:                                   0.270 seconds
+ Time for excitations:                                   0.266 seconds
+ Time for excitations:                                   0.265 seconds
+ Time for excitations:                                   0.264 seconds
+ Time for excitations:                                   0.255 seconds
+ Time for excitations:                                   0.125 seconds
+ Time for excitations:                                   0.174 seconds
 
  Frequencies (including translational and rotational modes):
  mode    frequency (cm-1)
-    0              369.23 i (imaginary)
-    1              285.52 i (imaginary)
-    2              262.59 i (imaginary)
-    3              242.51 i (imaginary)
-    4              236.79 i (imaginary)
-    5              225.36 i (imaginary)
-    6              207.31 i (imaginary)
-    7              194.96 i (imaginary)
-    8              192.01 i (imaginary)
-    9              182.63 i (imaginary)
-   10              155.20 i (imaginary)
-   11              112.90 i (imaginary)
-   12               75.04 i (imaginary)
-   13               52.27 i (imaginary)
-   14               51.86 i (imaginary)
-   15                5.25 i (imaginary)
-   16                1.88 i (imaginary)
-   17                0.59 i (imaginary)
-   18               11.08
-   19               14.06
-   20               15.43
-   21               16.85
-   22               24.70
-   23               34.39
-   24               37.30
-   25               42.99
-   26               45.36
-   27               48.36
-   28               52.17
-   29               57.24
-   30               61.06
-   31               62.07
-   32               68.45
-   33               70.46
-   34               72.04
-   35               73.68
-   36               82.35
-   37               85.77
-   38               90.38
-   39               91.99
-   40               92.40
-   41              102.03
-   42              106.04
-   43              110.54
-   44              121.17
-   45              126.58
-   46              135.20
-   47              139.05
-   48              141.48
-   49              148.47
-   50              155.91
-   51              156.35
-   52              160.92
-   53              164.12
-   54              169.65
-   55              172.20
-   56              178.03
-   57              181.63
-   58              183.77
-   59              187.52
-   60              191.79
-   61              194.65
-   62              198.48
-   63              203.36
-   64              213.24
-   65              217.04
-   66              220.61
-   67              223.49
-   68              228.08
-   69              237.31
-   70              239.79
-   71              243.77
-   72              252.68
-   73              253.79
-   74              258.20
-   75              262.07
-   76              268.57
-   77              271.13
-   78              275.31
-   79              283.84
-   80              291.71
-   81              295.67
-   82              302.17
-   83              306.36
-   84              316.52
-   85              319.05
-   86              319.10
-   87              329.12
-   88              331.07
-   89              334.79
-   90              341.47
-   91              348.98
-   92              353.60
-   93              357.75
-   94              359.68
-   95              365.82
-   96              367.23
-   97              368.42
-   98              370.07
-   99              380.20
-  100              389.27
-  101              391.81
-  102              398.22
-  103              401.54
-  104              405.37
-  105              421.68
-  106              425.80
-  107              426.70
-  108              438.14
-  109              441.99
-  110              448.97
-  111              463.65
-  112              483.68
-  113              487.14
-  114              488.96
-  115              497.37
-  116              506.62
-  117              513.41
-  118              516.00
-  119              522.57
-  120              529.42
-  121              545.22
-  122              549.57
-  123              566.90
-  124              579.99
-  125              591.21
-  126              594.92
-  127              599.06
-  128              617.20
-  129              627.52
-  130              634.95
-  131              637.74
-  132              646.28
-  133              649.36
-  134              666.44
-  135              674.07
-  136              686.65
-  137              693.61
-  138              698.30
-  139              704.81
-  140              714.25
-  141              716.30
-  142              717.47
-  143              720.55
-  144              734.53
-  145              739.11
-  146              744.25
-  147              745.85
-  148              746.67
-  149              756.91
-  150              766.58
-  151              769.14
-  152              772.50
-  153              777.79
-  154              783.54
-  155              790.39
-  156              802.15
-  157              802.93
-  158              816.51
-  159              819.39
-  160              828.35
-  161              834.18
-  162              838.79
-  163              842.45
-  164              843.04
-  165              843.79
-  166              846.39
-  167              849.46
-  168              859.51
-  169              862.33
-  170              863.31
-  171              866.89
-  172              870.46
-  173              877.59
-  174              878.79
-  175              879.85
-  176              883.29
-  177              889.15
-  178              890.14
-  179              893.05
-  180              899.30
-  181              901.23
-  182              904.50
-  183              908.63
-  184              910.21
-  185              911.20
-  186              914.56
-  187              921.73
-  188              922.86
-  189              926.99
-  190              927.58
-  191              934.00
-  192              936.61
-  193              940.74
-  194              942.05
-  195              947.26
-  196              951.85
-  197              953.77
-  198              958.95
-  199              967.78
-  200              972.58
-  201              977.63
-  202              986.64
-  203              986.72
-  204              994.36
-  205              996.09
-  206              999.03
-  207             1000.35
-  208             1007.51
-  209             1011.94
-  210             1014.40
-  211             1019.98
-  212             1022.94
-  213             1031.14
-  214             1033.82
-  215             1036.23
-  216             1042.23
-  217             1045.66
-  218             1047.37
-  219             1055.91
-  220             1061.61
-  221             1061.92
-  222             1073.52
-  223             1080.79
-  224             1083.56
-  225             1087.91
-  226             1091.47
-  227             1100.17
-  228             1104.62
-  229             1107.77
-  230             1113.41
-  231             1115.70
-  232             1118.16
-  233             1119.50
-  234             1122.78
-  235             1126.45
-  236             1136.17
-  237             1137.84
-  238             1143.88
-  239             1145.87
-  240             1150.05
-  241             1153.04
-  242             1153.61
-  243             1162.69
-  244             1166.60
-  245             1168.80
-  246             1170.64
-  247             1178.05
-  248             1179.89
-  249             1180.07
-  250             1182.94
-  251             1188.15
-  252             1191.19
-  253             1195.24
-  254             1196.34
-  255             1202.33
-  256             1207.54
-  257             1211.18
-  258             1214.07
-  259             1223.68
-  260             1223.82
-  261             1226.38
-  262             1229.71
-  263             1232.83
-  264             1235.21
-  265             1243.41
-  266             1249.72
-  267             1251.78
-  268             1255.75
-  269             1256.01
-  270             1258.54
-  271             1265.01
-  272             1268.93
-  273             1276.12
-  274             1280.04
-  275             1285.43
-  276             1286.36
-  277             1292.42
-  278             1303.37
-  279             1304.31
-  280             1310.82
-  281             1312.64
-  282             1323.30
-  283             1324.56
-  284             1326.63
-  285             1327.95
-  286             1330.43
-  287             1330.84
-  288             1331.46
-  289             1341.22
-  290             1342.32
-  291             1346.08
-  292             1346.49
-  293             1348.01
-  294             1349.66
-  295             1352.51
-  296             1354.11
-  297             1355.83
-  298             1360.46
-  299             1360.74
-  300             1360.99
-  301             1364.90
-  302             1368.04
-  303             1368.63
-  304             1369.34
-  305             1373.92
-  306             1374.19
-  307             1378.74
-  308             1379.45
-  309             1380.83
-  310             1381.90
-  311             1382.51
-  312             1384.37
-  313             1387.02
-  314             1389.15
-  315             1392.92
-  316             1393.77
-  317             1397.46
-  318             1401.08
-  319             1401.41
-  320             1404.44
-  321             1409.47
-  322             1421.87
-  323             1427.24
-  324             1428.08
-  325             1432.49
-  326             1434.88
-  327             1438.65
-  328             1441.84
-  329             1449.48
-  330             1479.98
-  331             1486.82
-  332             1489.63
-  333             1496.65
-  334             1517.04
-  335             1526.45
-  336             1531.08
-  337             1542.00
-  338             1561.57
-  339             1607.17
-  340             1696.17
-  341             1713.06
-  342             1794.23
-  343             1812.06
-  344             1814.37
-  345             1824.62
-  346             2945.76
-  347             2960.95
-  348             2965.42
-  349             2969.11
-  350             2971.33
-  351             2975.43
-  352             2976.88
-  353             2977.46
-  354             2978.72
-  355             2979.73
-  356             2980.22
-  357             2987.77
-  358             3003.69
-  359             3016.34
-  360             3027.63
-  361             3029.87
-  362             3033.03
-  363             3034.23
-  364             3036.27
-  365             3038.68
-  366             3039.95
-  367             3043.93
-  368             3051.51
-  369             3051.93
-  370             3053.32
-  371             3054.93
-  372             3059.33
-  373             3064.32
-  374             3071.35
-  375             3075.53
-  376             3082.18
-  377             3084.38
-  378             3087.95
-  379             3089.23
-  380             3089.69
-  381             3094.65
-  382             3098.66
-  383             3099.15
-  384             3099.85
-  385             3100.86
-  386             3101.75
-  387             3101.97
-  388             3104.04
-  389             3107.02
-  390             3107.37
-  391             3107.46
-  392             3109.87
-  393             3110.12
-  394             3110.82
-  395             3111.96
-  396             3115.04
-  397             3116.72
-  398             3117.05
-  399             3117.73
-  400             3117.87
-  401             3118.04
-  402             3118.80
-  403             3120.28
-  404             3120.81
-  405             3121.75
-  406             3123.44
-  407             3123.63
-  408             3124.70
-  409             3126.21
-  410             3126.53
-  411             3127.38
-  412             3127.90
-  413             3128.17
-  414             3128.53
-  415             3129.34
-  416             3130.29
-  417             3131.84
-  418             3133.46
-  419             3135.00
+    0              296.08 i (imaginary)
+    1              274.12 i (imaginary)
+    2              227.74 i (imaginary)
+    3              200.40 i (imaginary)
+    4              164.00 i (imaginary)
+    5               82.23 i (imaginary)
+    6               34.86 i (imaginary)
+    7                2.54 i (imaginary)
+    8                1.13 i (imaginary)
+    9                0.27 i (imaginary)
+   10               32.52
+   11               41.33
+   12               46.51
+   13               48.03
+   14               56.21
+   15               58.12
+   16               73.12
+   17               83.53
+   18               86.57
+   19               93.22
+   20              100.96
+   21              107.19
+   22              109.84
+   23              123.91
+   24              131.45
+   25              140.09
+   26              142.18
+   27              150.05
+   28              159.11
+   29              164.34
+   30              168.25
+   31              174.77
+   32              180.81
+   33              189.17
+   34              193.91
+   35              204.29
+   36              212.68
+   37              220.54
+   38              233.25
+   39              234.54
+   40              240.88
+   41              250.91
+   42              256.35
+   43              261.06
+   44              263.92
+   45              275.34
+   46              278.44
+   47              288.17
+   48              296.88
+   49              315.80
+   50              321.52
+   51              331.36
+   52              344.33
+   53              348.93
+   54              352.75
+   55              361.17
+   56              366.48
+   57              373.79
+   58              382.82
+   59              390.45
+   60              414.10
+   61              415.55
+   62              428.63
+   63              441.02
+   64              448.83
+   65              460.33
+   66              479.35
+   67              506.76
+   68              516.25
+   69              528.38
+   70              548.95
+   71              557.42
+   72              566.38
+   73              573.31
+   74              576.47
+   75              601.74
+   76              607.71
+   77              614.93
+   78              627.31
+   79              636.94
+   80              660.60
+   81              673.61
+   82              681.58
+   83              689.78
+   84              694.97
+   85              699.40
+   86              709.48
+   87              717.96
+   88              719.23
+   89              730.54
+   90              739.02
+   91              748.54
+   92              755.82
+   93              785.37
+   94              786.78
+   95              790.74
+   96              800.35
+   97              813.96
+   98              829.75
+   99              841.99
+  100              851.98
+  101              855.85
+  102              859.38
+  103              878.74
+  104              889.21
+  105              890.25
+  106              892.59
+  107              897.77
+  108              902.20
+  109              905.48
+  110              908.92
+  111              919.96
+  112              922.46
+  113              927.91
+  114              930.99
+  115              935.10
+  116              946.24
+  117              952.82
+  118              962.92
+  119              966.05
+  120              967.15
+  121              977.86
+  122              991.74
+  123             1008.61
+  124             1014.12
+  125             1015.65
+  126             1019.26
+  127             1023.60
+  128             1026.83
+  129             1035.13
+  130             1041.27
+  131             1056.51
+  132             1064.80
+  133             1073.03
+  134             1074.19
+  135             1080.87
+  136             1087.20
+  137             1097.95
+  138             1111.24
+  139             1122.42
+  140             1129.86
+  141             1133.72
+  142             1140.21
+  143             1142.39
+  144             1162.32
+  145             1169.78
+  146             1173.28
+  147             1186.53
+  148             1193.20
+  149             1194.86
+  150             1202.16
+  151             1209.46
+  152             1211.60
+  153             1215.70
+  154             1234.13
+  155             1239.85
+  156             1249.04
+  157             1252.85
+  158             1257.15
+  159             1262.28
+  160             1286.96
+  161             1296.77
+  162             1300.60
+  163             1302.48
+  164             1305.49
+  165             1308.58
+  166             1315.28
+  167             1318.42
+  168             1320.39
+  169             1323.40
+  170             1327.15
+  171             1328.68
+  172             1335.31
+  173             1340.75
+  174             1341.82
+  175             1346.18
+  176             1351.92
+  177             1356.84
+  178             1361.45
+  179             1362.14
+  180             1364.56
+  181             1368.79
+  182             1370.48
+  183             1377.02
+  184             1380.97
+  185             1387.23
+  186             1389.63
+  187             1399.09
+  188             1402.69
+  189             1424.40
+  190             1435.57
+  191             1454.75
+  192             1460.03
+  193             1481.46
+  194             1514.24
+  195             1522.68
+  196             1550.16
+  197             1560.48
+  198             1593.08
+  199             1638.79
+  200             1649.11
+  201             1748.46
+  202             2938.25
+  203             2951.54
+  204             2959.87
+  205             2961.53
+  206             2963.67
+  207             2964.78
+  208             2981.40
+  209             3019.97
+  210             3030.86
+  211             3040.20
+  212             3049.94
+  213             3061.21
+  214             3081.68
+  215             3082.57
+  216             3084.07
+  217             3085.97
+  218             3090.24
+  219             3092.45
+  220             3096.18
+  221             3097.33
+  222             3100.79
+  223             3107.38
+  224             3109.88
+  225             3111.41
+  226             3111.78
+  227             3112.92
+  228             3115.21
+  229             3117.99
+  230             3118.49
+  231             3118.82
+  232             3125.51
+  233             3125.84
+  234             3128.80
+  235             3129.94
+  236             3130.68
 
  Project out translational and rotational motions 
 
@@ -1301,424 +752,241 @@
 
  Vibrational frequencies:
  mode    frequency (cm-1)
-    0              369.20 i (imaginary)
-    1              285.50 i (imaginary)
-    2              262.57 i (imaginary)
-    3              242.49 i (imaginary)
-    4              236.79 i (imaginary)
-    5              225.32 i (imaginary)
-    6              207.27 i (imaginary)
-    7              194.64 i (imaginary)
-    8              191.98 i (imaginary)
-    9              182.51 i (imaginary)
-   10              155.19 i (imaginary)
-   11              112.82 i (imaginary)
-   12               74.66 i (imaginary)
-   13               51.58 i (imaginary)
-   14               48.40 i (imaginary)
-   15               14.74
-   16               15.81
-   17               24.38
-   18               34.10
-   19               37.43
-   20               44.76
-   21               47.79
-   22               51.81
-   23               56.61
-   24               60.65
-   25               61.30
-   26               68.36
-   27               69.58
-   28               71.57
-   29               73.52
-   30               81.76
-   31               85.69
-   32               90.28
-   33               91.50
-   34               91.81
-   35              101.91
-   36              105.96
-   37              110.48
-   38              120.70
-   39              126.52
-   40              134.94
-   41              139.05
-   42              141.40
-   43              148.45
-   44              155.75
-   45              156.28
-   46              160.91
-   47              164.02
-   48              169.61
-   49              172.19
-   50              177.97
-   51              181.43
-   52              183.68
-   53              187.50
-   54              191.75
-   55              194.51
-   56              198.46
-   57              203.34
-   58              213.17
-   59              217.03
-   60              220.56
-   61              223.47
-   62              228.06
-   63              237.18
-   64              239.76
-   65              243.76
-   66              252.64
-   67              253.73
-   68              258.19
-   69              262.05
-   70              268.53
-   71              271.11
-   72              275.29
-   73              283.84
-   74              291.69
-   75              295.57
-   76              302.17
-   77              306.33
-   78              316.52
-   79              319.02
-   80              319.09
-   81              329.11
-   82              331.04
-   83              334.78
-   84              341.46
-   85              348.96
-   86              353.58
-   87              357.75
-   88              359.67
-   89              365.78
-   90              367.23
-   91              368.41
-   92              370.07
-   93              380.19
-   94              389.17
-   95              391.80
-   96              398.22
-   97              401.52
-   98              405.37
-   99              421.68
-  100              425.79
-  101              426.70
-  102              438.13
-  103              441.98
-  104              448.94
-  105              463.65
-  106              483.67
-  107              487.13
-  108              488.95
-  109              497.37
-  110              506.61
-  111              513.40
-  112              516.00
-  113              522.57
-  114              529.42
-  115              545.21
-  116              549.57
-  117              566.90
-  118              579.96
-  119              591.21
-  120              594.89
-  121              599.06
-  122              617.19
-  123              627.52
-  124              634.95
-  125              637.74
-  126              646.27
-  127              649.35
-  128              666.44
-  129              674.06
-  130              686.65
-  131              693.61
-  132              698.30
-  133              704.80
-  134              714.25
-  135              716.30
-  136              717.45
-  137              720.55
-  138              734.53
-  139              739.10
-  140              744.25
-  141              745.85
-  142              746.67
-  143              756.91
-  144              766.57
-  145              769.14
-  146              772.50
-  147              777.78
-  148              783.54
-  149              790.39
-  150              802.14
-  151              802.92
-  152              816.51
-  153              819.38
-  154              828.35
-  155              834.18
-  156              838.79
-  157              842.45
-  158              843.03
-  159              843.79
-  160              846.39
-  161              849.45
-  162              859.50
-  163              862.33
-  164              863.31
-  165              866.89
-  166              870.46
-  167              877.59
-  168              878.79
-  169              879.85
-  170              883.28
-  171              889.15
-  172              890.14
-  173              893.05
-  174              899.30
-  175              901.23
-  176              904.50
-  177              908.63
-  178              910.21
-  179              911.20
-  180              914.56
-  181              921.72
-  182              922.86
-  183              926.99
-  184              927.58
-  185              934.00
-  186              936.61
-  187              940.74
-  188              942.05
-  189              947.26
-  190              951.85
-  191              953.77
-  192              958.95
-  193              967.78
-  194              972.58
-  195              977.63
-  196              986.64
-  197              986.71
-  198              994.36
-  199              996.09
-  200              999.03
-  201             1000.35
-  202             1007.50
-  203             1011.94
-  204             1014.40
-  205             1019.98
-  206             1022.94
-  207             1031.14
-  208             1033.82
-  209             1036.23
-  210             1042.23
-  211             1045.65
-  212             1047.37
-  213             1055.90
-  214             1061.61
-  215             1061.92
-  216             1073.51
-  217             1080.79
-  218             1083.56
-  219             1087.91
-  220             1091.47
-  221             1100.17
-  222             1104.62
-  223             1107.77
-  224             1113.41
-  225             1115.70
-  226             1118.16
-  227             1119.50
-  228             1122.78
-  229             1126.45
-  230             1136.17
-  231             1137.84
-  232             1143.88
-  233             1145.87
-  234             1150.05
-  235             1153.03
-  236             1153.61
-  237             1162.69
-  238             1166.60
-  239             1168.80
-  240             1170.64
-  241             1178.05
-  242             1179.89
-  243             1180.07
-  244             1182.94
-  245             1188.15
-  246             1191.19
-  247             1195.24
-  248             1196.34
-  249             1202.33
-  250             1207.54
-  251             1211.17
-  252             1214.07
-  253             1223.67
-  254             1223.82
-  255             1226.38
-  256             1229.71
-  257             1232.83
-  258             1235.21
-  259             1243.41
-  260             1249.72
-  261             1251.78
-  262             1255.75
-  263             1256.01
-  264             1258.54
-  265             1265.01
-  266             1268.93
-  267             1276.12
-  268             1280.04
-  269             1285.43
-  270             1286.36
-  271             1292.42
-  272             1303.37
-  273             1304.31
-  274             1310.82
-  275             1312.64
-  276             1323.30
-  277             1324.56
-  278             1326.63
-  279             1327.95
-  280             1330.43
-  281             1330.84
-  282             1331.46
-  283             1341.22
-  284             1342.32
-  285             1346.08
-  286             1346.49
-  287             1348.00
-  288             1349.66
-  289             1352.51
-  290             1354.11
-  291             1355.83
-  292             1360.46
-  293             1360.74
-  294             1360.99
-  295             1364.90
-  296             1368.04
-  297             1368.62
-  298             1369.34
-  299             1373.92
-  300             1374.19
-  301             1378.74
-  302             1379.45
-  303             1380.83
-  304             1381.90
-  305             1382.51
-  306             1384.37
-  307             1387.02
-  308             1389.15
-  309             1392.92
-  310             1393.77
-  311             1397.46
-  312             1401.08
-  313             1401.41
-  314             1404.44
-  315             1409.47
-  316             1421.87
-  317             1427.24
-  318             1428.08
-  319             1432.49
-  320             1434.88
-  321             1438.65
-  322             1441.84
-  323             1449.48
-  324             1479.98
-  325             1486.82
-  326             1489.63
-  327             1496.65
-  328             1517.04
-  329             1526.45
-  330             1531.08
-  331             1542.00
-  332             1561.57
-  333             1607.17
-  334             1696.17
-  335             1713.06
-  336             1794.23
-  337             1812.06
-  338             1814.37
-  339             1824.62
-  340             2945.76
-  341             2960.95
-  342             2965.42
-  343             2969.11
-  344             2971.33
-  345             2975.43
-  346             2976.88
-  347             2977.46
-  348             2978.72
-  349             2979.73
-  350             2980.22
-  351             2987.77
-  352             3003.69
-  353             3016.34
-  354             3027.63
-  355             3029.87
-  356             3033.03
-  357             3034.23
-  358             3036.27
-  359             3038.68
-  360             3039.95
-  361             3043.93
-  362             3051.51
-  363             3051.93
-  364             3053.32
-  365             3054.93
-  366             3059.33
-  367             3064.32
-  368             3071.35
-  369             3075.53
-  370             3082.18
-  371             3084.38
-  372             3087.95
-  373             3089.23
-  374             3089.69
-  375             3094.65
-  376             3098.66
-  377             3099.15
-  378             3099.85
-  379             3100.86
-  380             3101.75
-  381             3101.97
-  382             3104.04
-  383             3107.02
-  384             3107.37
-  385             3107.46
-  386             3109.87
-  387             3110.12
-  388             3110.82
-  389             3111.96
-  390             3115.04
-  391             3116.72
-  392             3117.05
-  393             3117.73
-  394             3117.87
-  395             3118.04
-  396             3118.80
-  397             3120.28
-  398             3120.81
-  399             3121.75
-  400             3123.44
-  401             3123.63
-  402             3124.70
-  403             3126.21
-  404             3126.53
-  405             3127.38
-  406             3127.90
-  407             3128.17
-  408             3128.53
-  409             3129.34
-  410             3130.29
-  411             3131.84
-  412             3133.46
-  413             3135.00
+    0              296.01 i (imaginary)
+    1              274.09 i (imaginary)
+    2              227.42 i (imaginary)
+    3              200.38 i (imaginary)
+    4              163.89 i (imaginary)
+    5               81.81 i (imaginary)
+    6               24.92 i (imaginary)
+    7               45.10
+    8               52.14
+    9               56.34
+   10               72.30
+   11               79.53
+   12               85.96
+   13               93.03
+   14              100.29
+   15              106.29
+   16              109.80
+   17              123.83
+   18              131.29
+   19              139.28
+   20              141.62
+   21              149.69
+   22              158.89
+   23              164.08
+   24              167.90
+   25              174.34
+   26              180.73
+   27              189.15
+   28              193.29
+   29              204.14
+   30              212.64
+   31              220.48
+   32              233.00
+   33              234.33
+   34              240.83
+   35              250.84
+   36              256.17
+   37              260.99
+   38              263.89
+   39              275.31
+   40              278.41
+   41              288.11
+   42              296.86
+   43              315.75
+   44              321.50
+   45              331.31
+   46              344.29
+   47              348.59
+   48              352.72
+   49              361.14
+   50              366.30
+   51              373.76
+   52              382.64
+   53              390.21
+   54              414.04
+   55              415.42
+   56              428.60
+   57              440.98
+   58              448.82
+   59              460.31
+   60              479.32
+   61              506.72
+   62              516.24
+   63              528.34
+   64              548.92
+   65              557.41
+   66              566.24
+   67              573.27
+   68              576.40
+   69              601.70
+   70              607.69
+   71              614.92
+   72              627.28
+   73              636.93
+   74              660.59
+   75              673.60
+   76              681.55
+   77              689.78
+   78              694.96
+   79              699.38
+   80              709.48
+   81              717.95
+   82              719.22
+   83              730.53
+   84              739.01
+   85              748.53
+   86              755.81
+   87              785.35
+   88              786.76
+   89              790.71
+   90              800.31
+   91              813.95
+   92              829.74
+   93              841.99
+   94              851.97
+   95              855.84
+   96              859.38
+   97              878.74
+   98              889.21
+   99              890.24
+  100              892.58
+  101              897.75
+  102              902.19
+  103              905.47
+  104              908.91
+  105              919.95
+  106              922.44
+  107              927.90
+  108              930.99
+  109              935.10
+  110              946.24
+  111              952.81
+  112              962.92
+  113              966.05
+  114              967.15
+  115              977.85
+  116              991.74
+  117             1008.60
+  118             1014.11
+  119             1015.64
+  120             1019.26
+  121             1023.60
+  122             1026.83
+  123             1035.13
+  124             1041.27
+  125             1056.51
+  126             1064.80
+  127             1073.03
+  128             1074.19
+  129             1080.87
+  130             1087.20
+  131             1097.95
+  132             1111.23
+  133             1122.42
+  134             1129.86
+  135             1133.72
+  136             1140.21
+  137             1142.39
+  138             1162.32
+  139             1169.78
+  140             1173.28
+  141             1186.53
+  142             1193.19
+  143             1194.86
+  144             1202.16
+  145             1209.46
+  146             1211.60
+  147             1215.69
+  148             1234.13
+  149             1239.85
+  150             1249.03
+  151             1252.84
+  152             1257.14
+  153             1262.28
+  154             1286.96
+  155             1296.77
+  156             1300.60
+  157             1302.48
+  158             1305.49
+  159             1308.58
+  160             1315.28
+  161             1318.42
+  162             1320.38
+  163             1323.39
+  164             1327.14
+  165             1328.68
+  166             1335.30
+  167             1340.74
+  168             1341.82
+  169             1346.15
+  170             1351.92
+  171             1356.84
+  172             1361.45
+  173             1362.14
+  174             1364.56
+  175             1368.79
+  176             1370.48
+  177             1377.02
+  178             1380.97
+  179             1387.23
+  180             1389.63
+  181             1399.09
+  182             1402.69
+  183             1424.40
+  184             1435.57
+  185             1454.75
+  186             1460.03
+  187             1481.46
+  188             1514.24
+  189             1522.68
+  190             1550.16
+  191             1560.48
+  192             1593.08
+  193             1638.79
+  194             1649.11
+  195             1748.46
+  196             2938.25
+  197             2951.54
+  198             2959.87
+  199             2961.53
+  200             2963.67
+  201             2964.78
+  202             2981.40
+  203             3019.97
+  204             3030.86
+  205             3040.20
+  206             3049.94
+  207             3061.20
+  208             3081.68
+  209             3082.57
+  210             3084.07
+  211             3085.97
+  212             3090.24
+  213             3092.45
+  214             3096.18
+  215             3097.33
+  216             3100.79
+  217             3107.38
+  218             3109.88
+  219             3111.41
+  220             3111.78
+  221             3112.92
+  222             3115.21
+  223             3117.99
+  224             3118.49
+  225             3118.82
+  226             3125.51
+  227             3125.84
+  228             3128.80
+  229             3129.94
+  230             3130.68
  Saving results in set 'hess'
 
  --------------------------------------------------------------------------------
 
- End time:                               Fri Nov 26 21:38:37 2021
- Total wall-clock time:                897.063 seconds
+ End time:                               Sat Nov 27 11:24:00 2021
+ Total wall-clock time:                182.163 seconds
 ==================================================================================
