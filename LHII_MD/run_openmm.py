@@ -97,6 +97,7 @@ print(f"Time for equilibration: {str(timedelta(seconds = time.time() - equilibra
 
 # Simulate
 steps = 1e3 * int(os.environ["LENGTH"]) / dt
+steps = int(steps)
 
 dcdReporter = DCDReporter(f'{results_dir_path}/{output_name}.dcd', reporter_dt_timesteps)
 

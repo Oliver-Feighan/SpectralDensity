@@ -1,4 +1,7 @@
 optimize(
 	structure(file = 'bchla.xyz')
 	xtb()
+	no_fail=true 
+	initial_hessian='full'
+	xyz_output='opt_bchla.xyz'
 )
