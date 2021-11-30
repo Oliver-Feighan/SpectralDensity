@@ -1,0 +1,4 @@
+optimize(
+	structure(file = 'bchla.xyz')
+	xtb()
+)
