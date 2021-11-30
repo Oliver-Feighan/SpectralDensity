@@ -77,3 +77,6 @@ def get_all_displacements(molden_file, n_atoms, n_modes):
         all_displacements[:,i] = np.linalg.norm(mode_i, axis=1)
 
     return all_displacements
+
+def get_indices(symbols, symbol):
+    return np.array([enum for enum, x in enumerate(symbols) if x == f"{symbol}"])
