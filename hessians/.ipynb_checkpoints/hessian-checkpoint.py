@@ -58,7 +58,7 @@ def read_symbols(file_name):
     with open(file_name, 'r') as f:
         lines = list(f.readlines())
         
-        for line in lines:
+        for line in lines[2:]:
             symbol = re.findall(r'[A-Za-z]+', line)
             
             if len(symbol) != 0:
@@ -77,3 +77,6 @@ def get_all_displacements(molden_file, n_atoms, n_modes):
         all_displacements[:,i] = np.linalg.norm(mode_i, axis=1)
 
     return all_displacements
+
+def get_indices(symbols, symbol):
+    return np.array([enum for enum, x in enumerate(symbols) if x == f"{symbol}"])

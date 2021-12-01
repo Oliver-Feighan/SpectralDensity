@@ -58,7 +58,7 @@ def read_symbols(file_name):
     with open(file_name, 'r') as f:
         lines = list(f.readlines())
         
-        for line in lines:
+        for line in lines[2:]:
             symbol = re.findall(r'[A-Za-z]+', line)
             
             if len(symbol) != 0:
