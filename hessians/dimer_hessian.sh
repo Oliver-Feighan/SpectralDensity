@@ -10,4 +10,4 @@
 export MKL_THREADING_LAYER=TBB
 export OMP_NUM_THREADS=1
 
-~/.local/src/Qcore/release/bin/qcore hessian.in > hessian.out
+~/.local/src/Qcore/release/bin/qcore dimer_hessian.in > dimer_hessian.out
