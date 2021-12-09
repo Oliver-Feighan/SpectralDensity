@@ -1,5 +1,5 @@
 hess := hessian(
-	structure(file='monomer2.xyz')
+	structure(file='monomer.xyz')
 	xtb(model='chlorophyll')
 	save_normal_modes = 'monomer_normal_modes.molden'
 )

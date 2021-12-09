@@ -92,7 +92,7 @@ def translate_Mg_to_origin(geom, symbols):
 def rotate(geom, angle, axis):
     R = rotation_matrix(angle, axis)
     
-    return np.matmul(geom, R)
+    return np.matmul(geom, R), R
 
 def angle_between(v1, v2):
     v1_u = v1 / np.linalg.norm(v1)
@@ -118,13 +118,13 @@ def rotate_QyQx_to_xy(geom, symbols):
 def translate_and_orient(geom, symbols):
     translated = translate_Mg_to_origin(geom, symbols)
     
-    oriented = rotate_QyQx_to_xy(translated, symbols)
+    oriented, rotation_matrix = rotate_QyQx_to_xy(translated, symbols)
     
     assert(np.allclose(distance_matrix(geom), distance_matrix(translated)))
     assert(np.allclose(distance_matrix(geom), distance_matrix(oriented)))
     assert(np.allclose(distance_matrix(translated), distance_matrix(oriented)))
     
-    return oriented
+    return oriented, rotation_matrix
 
 def distance_matrix(geom):
     sqr = np.square(geom)
@@ -170,7 +170,7 @@ def plot_molecule(geom, symbols, ax, with_phytol=False):
     
 def get_bchla_in_xy_plane():
     symbols, geom = read_xyz("opt_bchla.xyz")
-    bchla_in_xy_plane = translate_and_orient(geom, symbols)
+    bchla_in_xy_plane, rotation_matrix = translate_and_orient(geom, symbols)
     
-    return bchla_in_xy_plane
+    return bchla_in_xy_plane, rotation_matrix
     

@@ -32,23 +32,32 @@ def get_wavenumbers(file_name):
     
 
 def get_mode(file_name, mode, n_atoms):
-    norm_coord = []
+    norm_coord = np.zeros((n_atoms, 3))
     
     lines = list(open(file_name))
         
     for enum, line in enumerate(lines):
         if f"vibration {mode}\n" in line:
-            for mode_line in range(enum+1, enum+1+n_atoms):
-                norm_coord.append([float(x) for x in re.findall(r'-?\d+\.\d+', lines[mode_line])])
+            for atom, mode_line in enumerate(range(enum+1, enum+1+n_atoms)):
+                norm_coord[atom]=np.array([float(x) for x in re.findall(r'-?\d+\.\d+', lines[mode_line])])
     
     return np.array(norm_coord)
+
+def get_modes(file_name, n_modes, n_atoms):
+    
+    norm_coords = np.zeros((n_atoms, 3, n_modes))
+        
+    for mode in range(n_modes):
+        norm_coords[:, :, mode] = get_mode(file_name, mode+1, n_atoms)
+        
+    return norm_coords
                 
 def wavenumber_to_frequency(wavenumber):
     c = 2.99792458e10 # cm s-1
     
     frequency = wavenumber * c # cm-1 * cm s-1
     
-    frequency_fs = frequency * 1e-15
+    frequency_fs = frequency * 1e-15 # s-1 * s fs-1
     
     return frequency_fs
 
