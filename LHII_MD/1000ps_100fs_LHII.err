@@ -1,20 +1,3 @@
-cpu-bind=MASK - bp1-gpu005, task 4294967295 4294967295 [0]: mask 0x101 set
+cpu-bind=MASK - bp1-gpu010, task 4294967295 4294967295 [0]: mask 0x101 set
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-Traceback (most recent call last):
-  File "/user/work/of15641/SpectralDensity/LHII_MD/run_openmm.py", line 116, in <module>
-    simulation.currentStep = 0
-  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/simulation.py", line 134, in step
-    self._simulate(endStep=self.currentStep+steps)
-  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/simulation.py", line 236, in _simulate
-    self._generate_reports(wrapped, True)
-  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/simulation.py", line 258, in _generate_reports
-    reporter.report(self, state)
-  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/dcdreporter.py", line 105, in report
-    simulation.currentStep, self._reportInterval, self._append
-  File "/user/home/of15641/.conda/envs/openmm/lib/python3.7/site-packages/openmm/app/dcdfile.py", line 94, in __init__
-    header = struct.pack('<i4c9if', 84, b'C', b'O', b'R', b'D', 0, firstStep, interval, 0, 0, 0, 0, 0, 0, dt)
-struct.error: required argument is not an integer
-
-real	5m23.963s
-user	5m5.866s
-sys	1m6.942s
+slurmstepd: error: *** JOB 229884 ON bp1-gpu010 CANCELLED AT 2021-12-08T19:38:33 DUE TO TIME LIMIT ***

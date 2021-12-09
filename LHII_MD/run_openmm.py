@@ -33,7 +33,7 @@ print(f"Integrator timestep : {dt_fs}")
 
 reporter_dt = int(os.environ["REPORTER_DT"]) # (int) time between saving frames in the reporters
 reporter_dt_fs = reporter_dt * femtosecond   # (openmm.unit.femtosecond)  "
-reporter_dt_timesteps = reporter_dt / dt     # time between saving frames in units of timesteps - saving every 10fs at 2fs dt should give saving every 5 timesteps
+reporter_dt_timesteps = int(reporter_dt / dt)    # time between saving frames in units of timesteps - saving every 10fs at 2fs dt should give saving every 5 timesteps
 
 print(f"Reporter timestep : {reporter_dt_fs}")
 

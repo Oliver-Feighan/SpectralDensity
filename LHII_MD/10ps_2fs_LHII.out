@@ -1,9 +1,9 @@
-Host:    bp1-gpu005.data.bp.acrc.priv
-Time:    Tue Nov 30 10:12:44 GMT 2021
+Host:    bp1-gpu010.data.bp.acrc.priv
+Time:    Wed Dec  8 19:39:02 GMT 2021
 Dir:     /user/work/of15641/SpectralDensity/LHII_MD
-Job ID:  156375
+Job ID:  230136
 Nodelist:
-  bp1-gpu005
+  bp1-gpu010
 Conda env:  openmm
 Python:     /user/home/of15641/.conda/envs/openmm/bin/python
 Job script: /user/work/of15641/SpectralDensity/LHII_MD/run_openmm.py
@@ -18,13 +18,14 @@ Reading system coordinates, topology and forcefield from /user/work/of15641/Spec
 Integrator timestep : 2 fs
 Reporter timestep : 2 fs
 Performing energy minimization...
-time for energy minimization: 0:02:34.265270
+time for energy minimization: 0:02:17.025718
 
 Equilibrating: 30000 steps at 2 fs time steps
-Time for equilibration: 0:03:00.370778
+Time for equilibration: 0:02:52.577138
 
-Production: 5000.0 steps at 2 fs time steps - total of 10.0 ps ps
+Production: 5000 steps at 2 fs time steps - total of 10.0 ps ps
  saving step every 2 fs - total of 5000.0 frames
+time for production: 3:09:20.904508
 
 [Job script finished]
 
