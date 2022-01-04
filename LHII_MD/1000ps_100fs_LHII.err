@@ -1,3 +1,6 @@
-cpu-bind=MASK - bp1-gpu010, task 4294967295 4294967295 [0]: mask 0x101 set
+cpu-bind=MASK - bp1-gpu011, task 4294967295 4294967295 [0]: mask 0x101 set
 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-slurmstepd: error: *** JOB 229884 ON bp1-gpu010 CANCELLED AT 2021-12-08T19:38:33 DUE TO TIME LIMIT ***
+
+real	430m29.330s
+user	406m1.538s
+sys	25m18.736s

@@ -57,9 +57,10 @@ def spectrum_and_domain(x, dt):
 
     spectrum = scipy.fft.fft(auto) / len(auto)
 
-    spectrum_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency, 20 for fs sample spacing
+    #spectrum_frequency_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
+    spectrum_normal_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
     
-    return spectrum, spectrum_domain
+    return spectrum, spectrum_normal_domain
     
     
 def Mg_distances(traj, top):
