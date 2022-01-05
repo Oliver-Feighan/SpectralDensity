@@ -55,11 +55,12 @@ def autocorr(x):
 def spectrum_and_domain(x, dt):
     auto = autocorr(x)
 
-    spectrum = scipy.fft.fft(auto) / len(auto)
+    spectrum = scipy.fft.fft(auto)
 
-    spectrum_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency, 20 for fs sample spacing
+    #spectrum_frequency_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
+    spectrum_normal_domain = np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
     
-    return spectrum, spectrum_domain
+    return autocorr, spectrum, spectrum_normal_domain
     
     
 def Mg_distances(traj, top):
@@ -77,16 +78,18 @@ def Mg_pair_spectral_densities(traj, top, dt):
     
     closest_neighbours = np.where(avg_d < 1.5)[0]
     
+    autocorrs = []
     spectra = []
     domain = []
     
     for i in closest_neighbours:
         x = Mg_d[:,i] - np.mean(Mg_d[:,i])
-        spectrum, domain = spectrum_and_domain(x, dt)
+        autocorr, spectrum, domain = spectrum_and_domain(x, dt)
         
+        autocorrs.append(autocorr)
         spectra.append(spectrum)
         
-    return np.array(spectra), domain
+    return np.array(autocorr), np.array(spectra), domain
 
 @timer
 def load_dcd_file(dcd_file, top_file):
@@ -121,12 +124,13 @@ if __name__ == "__main__":
     
     print("calculating spectral density...")
     dt = args.sample_period
-    spectra, domain = Mg_pair_spectral_densities(traj, traj.top, dt)
+    autocorrs, spectra, domain = Mg_pair_spectral_densities(traj, traj.top, dt)
     
     
     print("saving...")
     basename = dcd_path.name.replace(".dcd", "")
 
+    np.save(f"{basename}_autocorrs", autocorrs)
     np.save(f"{basename}_spectra", spectra)
     np.save(f"{basename}_domain", domain)
     
