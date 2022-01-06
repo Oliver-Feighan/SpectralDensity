@@ -60,7 +60,7 @@ def spectrum_and_domain(x, dt):
     #spectrum_frequency_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
     spectrum_normal_domain = np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
     
-    return autocorr, spectrum, spectrum_normal_domain
+    return auto, spectrum, spectrum_normal_domain
     
     
 def Mg_distances(traj, top):
@@ -84,12 +84,12 @@ def Mg_pair_spectral_densities(traj, top, dt):
     
     for i in closest_neighbours:
         x = Mg_d[:,i] - np.mean(Mg_d[:,i])
-        autocorr, spectrum, domain = spectrum_and_domain(x, dt)
+        auto, spectrum, domain = spectrum_and_domain(x, dt)
         
-        autocorrs.append(autocorr)
+        autocorrs.append(auto)
         spectra.append(spectrum)
         
-    return Mg_d, n np.array(autocorrs), np.array(spectra), domain
+    return Mg_d, np.array(autocorrs), np.array(spectra), domain
 
 @timer
 def load_dcd_file(dcd_file, top_file):
