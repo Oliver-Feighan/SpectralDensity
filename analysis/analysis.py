@@ -89,7 +89,7 @@ def Mg_pair_spectral_densities(traj, top, dt):
         autocorrs.append(autocorr)
         spectra.append(spectrum)
         
-    return Mg_d, n np.array(autocorrs), np.array(spectra), domain
+    return Mg_d, np.array(autocorrs), np.array(spectra), domain
 
 @timer
 def load_dcd_file(dcd_file, top_file):
