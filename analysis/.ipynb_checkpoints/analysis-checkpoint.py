@@ -89,7 +89,7 @@ def Mg_pair_spectral_densities(traj, top, dt):
         autocorrs.append(autocorr)
         spectra.append(spectrum)
         
-    return np.array(autocorrs), np.array(spectra), domain
+    return Mg_d, n np.array(autocorrs), np.array(spectra), domain
 
 @timer
 def load_dcd_file(dcd_file, top_file):
@@ -124,12 +124,13 @@ if __name__ == "__main__":
     
     print("calculating spectral density...")
     dt = args.sample_period
-    autocorrs, spectra, domain = Mg_pair_spectral_densities(traj, traj.top, dt)
+    Mg_d, autocorrs, spectra, domain = Mg_pair_spectral_densities(traj, traj.top, dt)
     
     
     print("saving...")
     basename = dcd_path.name.replace(".dcd", "")
 
+    np.save(f"{basename}_distances", Mg_d)
     np.save(f"{basename}_autocorrs", autocorrs)
     np.save(f"{basename}_spectra", spectra)
     np.save(f"{basename}_domain", domain)
