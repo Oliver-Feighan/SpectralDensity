@@ -54,13 +54,16 @@ def autocorr(x):
 
 def spectrum_and_domain(x, dt):
     auto = autocorr(x)
+    
+    n=5
+    tiled = np.tile(auto, n)
 
-    spectrum = scipy.fft.fft(auto)
+    spectrum = scipy.fft.fft(tiled)
 
     #spectrum_frequency_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
-    spectrum_normal_domain = np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
+    spectrum_normal_domain = np.fft.fftfreq(len(tiled), dt) # 2 \pi for conversion between normal to angular frequency
     
-    return auto, spectrum, spectrum_normal_domain
+    return tiled, spectrum, spectrum_normal_domain
     
     
 def Mg_distances(traj, top):
