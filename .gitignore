@@ -3,4 +3,5 @@
 *.inpcrd
 *.xml
 *.npy
+analysis/*.npy
 LHII_MD/cofactors/*
