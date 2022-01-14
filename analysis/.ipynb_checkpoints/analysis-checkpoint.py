@@ -77,15 +77,12 @@ def Mg_distances(traj, top):
 
 def Mg_pair_spectral_densities(traj, top, dt):
     Mg_d = Mg_distances(traj, top)
-    avg_d = np.mean(Mg_d, axis=0)
-    
-    closest_neighbours = np.where(avg_d < 1.5)[0]
     
     autocorrs = []
     spectra = []
     domain = []
     
-    for i in closest_neighbours:
+    for i in range(Mg_d.shape[1]):
         x = Mg_d[:,i] - np.mean(Mg_d[:,i])
         auto, spectrum, domain = spectrum_and_domain(x, dt)
         
