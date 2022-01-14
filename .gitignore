@@ -2,4 +2,5 @@
 *.prmtop
 *.inpcrd
 *.xml
+*.npy
 LHII_MD/cofactors/*
