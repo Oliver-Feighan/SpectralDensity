@@ -14,7 +14,7 @@
  Build type:   Release
  Version:      2.3.0-166-g4178ddb
 
- Start time:   Fri Jan 21 13:18:21 2022
+ Start time:   Fri Jan 21 19:47:10 2022
 
  Data directory: /user/home/of15641/.local/src/Qcore/release/share/entos/qcore/data
  Number of threads: 32
@@ -1718,6 +1718,6 @@
 
  --------------------------------------------------------------------------------
 
- End time:                               Fri Jan 21 13:22:52 2022
- Total wall-clock time:                271.475 seconds
+ End time:                               Fri Jan 21 19:51:55 2022
+ Total wall-clock time:                284.702 seconds
 ==================================================================================
