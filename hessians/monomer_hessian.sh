@@ -9,4 +9,4 @@
 export MKL_THREADING_LAYER=TBB
 export OMP_NUM_THREADS=1
 
-~/.local/src/Qcore/release/bin/qcore monomer_hessian.in > monomer_hessian.out
+~/.local/src/Qcore/release/bin/qcore -s "hess := hessian(structure(file='${MONOMER}') xtb() save_normal_modes = '${MONOMER/xyz/molden}')" > ${MONOMER/xyz/out}
