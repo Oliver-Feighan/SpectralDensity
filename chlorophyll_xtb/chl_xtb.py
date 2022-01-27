@@ -28,8 +28,8 @@ def load_dcd_file(dcd_file, top_file):
     return traj, top
 
 def run_qcore(qcore_str):
-    #qcore_path = os.environ["QCORE_PATH"]
-    qcore_path="~/qcore/cmake-build-release/bin/qcore"
+    qcore_path = os.environ["QCORE_PATH"]
+    #qcore_path="~/qcore/cmake-build-release/bin/qcore"
     json_str = " -n 1 -f json --schema none -s "
     
     json_run = subprocess.run(qcore_path + json_str + qcore_str,
@@ -97,7 +97,7 @@ def run_trajectory(dcd_file, top_file, frames):
         #single chlorophylls
         
         start = time.time()
-        with Pool(4) as p:
+        with Pool(20) as p:
             frame_energies = p.map(run_single_chl, frame)      
 
             results[f] = frame_energies
@@ -123,4 +123,7 @@ def run_trajectory(dcd_file, top_file, frames):
     return results
 
 if __name__ == "__main__":
+    print(os.environ["DCD_FILE"])
+    print(os.environ["PRMTOP_FILE"])
+
     run_trajectory("../LHII_MD/output/1ps_2fs_LHII.dcd", "../LHII_MD/LH2.prmtop", [0])
