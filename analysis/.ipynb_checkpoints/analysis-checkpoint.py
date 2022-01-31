@@ -73,7 +73,7 @@ def Mg_distances(traj, top):
 
     pairs = np.array(list(pairs_iterator))
 
-    return mdtraj.compute_distances(traj, pairs)
+    return 10 * mdtraj.compute_distances(traj, pairs) # factor of 10 as mdtraj is in nanometers
 
 def Mg_pair_spectral_densities(traj, top, dt):
     Mg_d = Mg_distances(traj, top)
