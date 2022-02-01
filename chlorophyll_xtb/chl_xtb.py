@@ -2,6 +2,7 @@ import functools
 import numpy as np
 import mdtraj
 
+import pathlib
 import subprocess
 import time
 import json
@@ -29,37 +30,50 @@ def load_dcd_file(dcd_file, top_file):
 
 def run_qcore(qcore_str):
     qcore_path = os.environ["QCORE_PATH"]
-    #qcore_path="~/qcore/cmake-build-release/bin/qcore"
-    json_str = " -f json --schema none -s "
-    
+    json_str = " -f json -s "
+ 
     json_run = subprocess.run(qcore_path + json_str + qcore_str,
                               shell=True,
                               stdout=subprocess.PIPE,
                               executable="/bin/bash",
                               universal_newlines=True)
 
-    json_results = json.loads(json_run.stdout)
+    try:
+        json_results = json.loads(json_run.stdout)
+    except:
+        debug_run = subprocess.run(qcore_path + " -s " + qcore_str,
+                              shell=True,
+                              stdout=subprocess.PIPE,
+                              executable="/bin/bash",
+                              universal_newlines=True)
 
-    return json_results
-
-
-def run_single_chl(bcl):
-    single_chl_str = f"\"res := xtb(structure(xyz = {bcl}) model='chlorophyll')\""    
-        
-    res = run_qcore(single_chl_str)
-
-    return res["res"]["excitation_1_energy"]
+        print(debug_run.stdout)
+        exit(1) 
+    else:
+        return json_results
 
 def write_xyz(file_name, geom, symbols):
     assert(len(geom) == len(symbols))
     
     n_atoms = len(symbols)
     
-    with open(file_name, 'w') as f:
-        print(f"{n_atoms} \n", file=f)
-        
-        for i in range(n_atoms):
-            print(f"{symbols[i]}\t{geom[i][0]}\t{geom[i][1]}\t{geom[i][2]}", file=f)
+    open_file = open(file_name, 'w')
+    print(f"{n_atoms} \n", file=open_file)
+ 
+    for i in range(n_atoms):
+        print(f"{symbols[i]}\t{geom[i][0]}\t{geom[i][1]}\t{geom[i][2]}", file=open_file)
+
+    open_file.close()
+
+def read_hex_data(data, key):
+	
+	hex_data = data[key]["data"]["bytes"]
+	byte_data = bytes.fromhex(" ".join([format(n, "02x") for n in hex_data]))
+
+	dtype = data[key]["dtype"]
+	shape = data[key]["shape"]
+
+	return np.frombuffer(byte_data, dtype).reshape(shape)
 
 @timer
 def run_trajectory(dcd_file, top_file, frames):
@@ -77,6 +91,9 @@ def run_trajectory(dcd_file, top_file, frames):
     
     frames_xyz = traj.xyz[frames]
     
+    transition_energies = np.empty((len(frames), len(mg_atoms)))
+    state_energies = np.empty((len(frames), len(mg_atoms)+1))
+
     for f, frame in enumerate(frames_xyz):
         for enum, mg_line in enumerate(mg_atoms):
             bcl = 10 * frame[mg_line:mg_line+140]
@@ -85,19 +102,30 @@ def run_trajectory(dcd_file, top_file, frames):
 
         #exciton system
         structure_file_str = " ".join([f"structure(file = 'bcl_{enum+1}.xyz')" for enum, x in enumerate(mg_atoms)])
-        
+    
+        print(structure_file_str)
+    
         exciton_str = f"\"res := excitons({structure_file_str} use_chlorophyll = true hamiltonian = 'states')\""
         
         start = time.time()
         res = run_qcore(exciton_str)
         print(f"Exciton, frame {frames[f]} ran in: ", time.time() - start)
         
-        print(res["res"].keys())
+        transition_energies[f] = read_hex_data(res["res"], "transition_energies")
+        state_energies[f] = read_hex_data(res["res"], "eigenvalues")
+
+    basename = pathlib.Path(dcd_file).name
+
+    transition_energies_name = basename.replace(".dcd", "_transition_energies.npy")
+    states_energies_name = basename.replace(".dcd", "_states_energies.npy")
+
+    np.save(transition_energies_name, transition_energies)
+    np.save(states_energies_name, state_energies)
         
     return 0
 
 if __name__ == "__main__":
-    print(os.environ["DCD_FILE"])
-    print(os.environ["PRMTOP_FILE"])
+    dcd_file = os.environ["DCD_FILE"]
+    prmtop_file = os.environ["PRMTOP_FILE"]
 
-    run_trajectory("../LHII_MD/output/1ps_2fs_LHII.dcd", "../LHII_MD/LH2.prmtop", [0])
+    run_trajectory(dcd_file, prmtop_file, list(range(200)))
