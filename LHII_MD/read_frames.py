@@ -11,5 +11,9 @@ def load_dcd_file(dcd_file, top_file):
 if __name__ == "__main__":
     traj, top = load_dcd_file("output/1ps_2fs_LHII.dcd", "LH2.prmtop")
 
-    traj[400:].save("all_frames.pdb")
-    traj[400::10].save("last_hundred_every_ten.pdb")
+    assert(len(traj) == 500)
+    
+    extracted_frames = traj[250::25]
+    
+    assert(len(extracted_frames) == 10)
+    
