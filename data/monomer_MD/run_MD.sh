@@ -11,4 +11,4 @@
 export MKL_THREADING_LAYER=TBB
 export OMP_NUM_THREADS=1
 
-~/.local/src/Qcore/release/bin/qcore -s "aimd(structure(file = 'monomer.xyz') xtb() output_steps=2 save_to_file=true output_coordinates='monomer_trajectory' n_steps=10000 thermostat(temperature=300 kelvin))"
+~/.local/src/Qcore/release/bin/qcore -s "aimd(structure(file = 'monomer.xyz') xtb() output_steps=2 save_to_file=true output_coordinates='monomer_trajectory' n_steps=100000 thermostat(temperature=300 kelvin))"
