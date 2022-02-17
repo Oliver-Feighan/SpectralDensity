@@ -19,13 +19,9 @@ def timer(func):
             print(f"Finished {func.__name__!r} in {run_time:4f} secs")
             return value
         return wrapper_timer
-    
-@timer
-def load_dcd_file(dcd_file, top_file):
-    traj = mdtraj.load_dcd(dcd_file, top=top_file)
-    top = traj.top
-    
-    return traj, top
+
+def first_half(arr):
+    return arr[1:len(arr)//2]
 
 @timer
 def acf(x, cutoff):
