@@ -1,0 +1,11 @@
+cpu-bind=MASK - bp1-compute132, task 4294967295 4294967295 [0]: mask 0xdbb6ddb0dbb6ddb set
+/user/home/of15641/.conda/envs/openmm/bin/python
+Finished 'load_dcd_file' in 21.950917 secs
+Traceback (most recent call last):
+  File "../../src/chl_xtb.py", line 145, in <module>
+    run_trajectory(dcd_file, prmtop_file, list(range(frame_start, frame_end)))
+  File "../../src/chl_xtb.py", line 17, in wrapper_timer
+    value = func(*args, **kwargs)
+  File "../../src/chl_xtb.py", line 95, in run_trajectory
+    frames_xyz = traj.xyz[frames]
+IndexError: index 9000 is out of bounds for axis 0 with size 5000
