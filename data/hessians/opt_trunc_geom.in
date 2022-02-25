@@ -1,0 +1,6 @@
+optimize(
+	structure(file = 'truncated.xyz')
+	xtb()
+	initial_hessian='full'
+	xyz_output='opt_truncated.xyz'
+)

@@ -10,6 +10,6 @@
 export MKL_THREADING_LAYER=TBB
 export OMP_NUM_THREADS=1
 
-MONOMER=opt_bchla.xyz
+MONOMER=opt_truncated.xyz
 
 ~/.local/src/Qcore/release/bin/qcore -s "hess := hessian(structure(file='${MONOMER}') xtb(model='chlorophyll') save_normal_modes = '${MONOMER/xyz/molden}')" >  ${MONOMER/xyz/out}
