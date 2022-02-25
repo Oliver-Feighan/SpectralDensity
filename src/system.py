@@ -5,6 +5,14 @@ import matplotlib.pyplot as plt
 from hessian import *
 from system import *
 
+def masses():
+    return {"Mg" : 24.305,
+             "H" : 1.00784,
+             "O" : 15.999,
+             "N" : 14.0067,
+             "C" : 12.0107
+            }
+
 def phytol_indices():
     return np.array([64, 134, 135, 136, 63, 65, 139, 137, 133, 138, 62,
                      132, 131, 61, 129, 60, 128, 127, 58, 123, 124, 59,
@@ -168,8 +176,8 @@ def plot_molecule(geom, symbols, ax, with_phytol=False):
     ax.set_aspect('equal')
     ax.set_facecolor('lightgrey')
     
-def get_bchla_in_xy_plane():
-    symbols, geom = read_xyz("../data/hessians/opt_bchla.xyz")
+def get_bchla_in_xy_plane(file="../data/hessians/opt_bchla.xyz"):
+    symbols, geom = read_xyz(file)
     bchla_in_xy_plane, rotation_matrix = translate_and_orient(geom, symbols)
     
     return bchla_in_xy_plane, rotation_matrix
