@@ -1,9 +1,12 @@
 import numpy as np
 import re
-import matplotlib.pyplot as plt
+
+try:
+    import matplotlib.pyplot as plt
+except:
+    print("no matplotlib")
 
 from hessian import *
-from system import *
 
 def masses():
     return {"Mg" : 24.305,

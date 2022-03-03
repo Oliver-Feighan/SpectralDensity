@@ -1,6 +1,5 @@
 import os
 
-import matplotlib.pyplot as plt
 import numpy as np
 import scipy
 import json
@@ -129,9 +128,7 @@ if __name__ == "__main__":
     results = {}
     
     for m, mode in enumerate(modes):
-        if m > 5:
-            break
-            
+ 
         print(f"Mode {m}, v : {wavenumbers[m]:4.1f} cm^-1")
 
         if wavenumbers[m] < 0:

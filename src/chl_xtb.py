@@ -80,6 +80,9 @@ def run_trajectory(dcd_file, top_file, frames):
     
     traj, top = load_dcd_file(dcd_file, top_file)    
 
+    basename = pathlib.Path(dcd_file).name
+    run = basename.replace(".dcd", "")
+
     atoms = list(top.atoms)
     
     bcl_atoms = top.select("resname =~ 'BCL'")
@@ -92,18 +95,21 @@ def run_trajectory(dcd_file, top_file, frames):
     frames_xyz = traj.xyz[frames]
     
     transition_energies = np.empty((len(frames), len(mg_atoms)))
+    transition_dipoles = np.empty((len(frames), len(mg_atoms), 3))
     state_energies = np.empty((len(frames), len(mg_atoms)+1))
+
+    distances = np.empty((len(frames), len(mg_atoms), len(mg_atoms)))
+    eigenvectors = np.empty((len(frames), len(mg_atoms)+1, len(mg_atoms)+1))
+    hamiltonians = np.empty((len(frames), len(mg_atoms)+1, len(mg_atoms)+1))
 
     for f, frame in enumerate(frames_xyz):
         for enum, mg_line in enumerate(mg_atoms):
             bcl = 10 * frame[mg_line:mg_line+140]
             
-            write_xyz(f"bcl_{enum+1}.xyz", bcl, symbols[mg_line:mg_line+140])
+            write_xyz(f"{run}_bcl_{enum+1}_{frames[0]}.xyz", bcl, symbols[mg_line:mg_line+140])
 
         #exciton system
-        structure_file_str = " ".join([f"structure(file = 'bcl_{enum+1}.xyz')" for enum, x in enumerate(mg_atoms)])
-    
-        print(structure_file_str)
+        structure_file_str = " ".join([f"structure(file = '{run}_bcl_{enum+1}_{frames[0]}.xyz')" for enum, x in enumerate(mg_atoms)])
     
         exciton_str = f"\"res := excitons({structure_file_str} use_chlorophyll = true hamiltonian = 'states')\""
         
@@ -112,20 +118,35 @@ def run_trajectory(dcd_file, top_file, frames):
         print(f"Exciton, frame {frames[f]} ran in: ", time.time() - start)
         
         transition_energies[f] = read_hex_data(res["res"], "transition_energies")
+        transition_dipoles[f] = read_hex_data(res["res"], "transition_dipoles").T
         state_energies[f] = read_hex_data(res["res"], "eigenvalues")
+        distances[f] = read_hex_data(res["res"], "distances")
+        eigenvectors[f] = read_hex_data(res["res"], "eigenvectors")
+        hamiltonians[f] = read_hex_data(res["res"], "hamiltonian")
 
-    basename = pathlib.Path(dcd_file).name
+    frame_start=frames[0]
+    frame_end  =frames[-1]
 
-    transition_energies_name = basename.replace(".dcd", "_transition_energies.npy")
-    states_energies_name = basename.replace(".dcd", "_states_energies.npy")
+    transition_energies_name = basename.replace(".dcd", f"_transition_energies_{frame_start}_{frame_end}.npy")
+    transition_dipoles_name = basename.replace(".dcd", f"_transition_dipoles_{frame_start}_{frame_end}.npy")
+    states_energies_name = basename.replace(".dcd", f"_states_energies_{frame_start}_{frame_end}.npy")
+    distances_name = basename.replace(".dcd", f"_distances_{frame_start}_{frame_end}.npy")
+    eigenvectors_name = basename.replace(".dcd", f"_eigenvectors_{frame_start}_{frame_end}.npy")
+    hamiltonians_name = basename.replace(".dcd", f"_hamiltonians_{frame_start}_{frame_end}.npy")
 
     np.save(transition_energies_name, transition_energies)
+    np.save(transition_dipoles_name, transition_dipoles)
     np.save(states_energies_name, state_energies)
-        
+    np.save(distances_name, distances)
+    np.save(eigenvectors_name, eigenvectors) 
+    np.save(hamiltonians_name, hamiltonians)
     return 0
 
 if __name__ == "__main__":
     dcd_file = os.environ["DCD_FILE"]
     prmtop_file = os.environ["PRMTOP_FILE"]
 
-    run_trajectory(dcd_file, prmtop_file, list(range(200)))
+    frame_start = int(os.environ["FRAME_START"])
+    frame_end = int(os.environ["FRAME_END"])
+
+    run_trajectory(dcd_file, prmtop_file, list(range(frame_start, frame_end)))
