@@ -2,8 +2,11 @@ import numpy as np
 import glob
 import re
 
-def read_splits(prop, shape, run):
-    files = glob.glob(f"../data/chlorophyll_xtb/{run}_LHII_states_energies*.npy")
+def read_splits(prop, shape, run, screened=False):
+    if not screened:
+        files = glob.glob(f"../data/chlorophyll_xtb/{run}_LHII_states_energies*9.npy")
+    else:
+        files = glob.glob(f"../data/chlorophyll_xtb/{run}_LHII_states_energies*9_screened.npy")
 
     starting_frames = [re.findall(r"\d+",x)[2] for x in files]
     starting_frames.sort()
@@ -11,7 +14,10 @@ def read_splits(prop, shape, run):
     res = None
 
     for i in starting_frames:
-        split = np.load(f"../data/chlorophyll_xtb/{run}_LHII_{prop}_{int(i)}_{int(i)+999}.npy")
+        if not screened:
+            split = np.load(f"../data/chlorophyll_xtb/{run}_LHII_{prop}_{int(i)}_{int(i)+999}.npy")
+        else:
+            split = np.load(f"../data/chlorophyll_xtb/{run}_LHII_{prop}_{int(i)}_{int(i)+999}_screened.npy")
 
         assert(split.shape == shape)
 

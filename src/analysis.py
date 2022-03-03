@@ -54,7 +54,10 @@ def spectrum_and_domain(x, dt):
     n=5
     tiled = np.tile(auto, n)
 
-    spectrum = scipy.fft.fft(tiled)
+    window = scipy.signal.flattop(len(tiled), sym=False)
+    windowed_tiled = window * tiled
+    
+    spectrum = scipy.fft.fft(windowed_tiled)
 
     #spectrum_frequency_domain = 2 * np.pi * np.fft.fftfreq(len(auto), dt) # 2 \pi for conversion between normal to angular frequency
     spectrum_normal_domain = np.fft.fftfreq(len(tiled), dt) # 2 \pi for conversion between normal to angular frequency
