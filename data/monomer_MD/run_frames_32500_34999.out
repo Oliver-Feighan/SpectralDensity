@@ -1,0 +1,5 @@
+cpu-bind=MASK - bp1-compute211, task 4294967295 4294967295 [0]: mask 0x1ac000001ac set
+bp1-compute211.data.bp.acrc.priv
+Job started
+03/03/2022 16:21:10
+slurmstepd: error: *** JOB 1145853 ON bp1-compute211 CANCELLED AT 2022-03-03T17:21:13 DUE TO TIME LIMIT ***

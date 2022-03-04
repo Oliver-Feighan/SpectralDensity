@@ -35,15 +35,15 @@ def run_trajectory(file, n_atoms, start, end):
         energies = np.zeros(len(frames))
         dipoles = np.zeros((len(frames), 3))
         
-        for f in frames:
+        for enum, f in enumerate(frames):
             frame_lines = lines[(n_atoms+2)*(f):(n_atoms+2)*(f+1)]
 
             xyz = extract_xyz(frame_lines[2:])
      
             energy, dipole = run_frame(xyz)
         
-            energies[f] = energy
-            dipoles[f] = dipole
+            energies[enum] = energy
+            dipoles[enum] = dipole
 
     return energies, dipoles
 

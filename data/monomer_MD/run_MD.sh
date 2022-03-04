@@ -4,9 +4,9 @@
 #SBATCH --output=monomer_MD.out
 #SBATCH --error=monomer_MD.err
 
-#SBATCH --time=0-02:00:00
+#SBATCH --time=0-20:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=10
+#SBATCH --ntasks-per-node=20
 
 export MKL_THREADING_LAYER=TBB
 export OMP_NUM_THREADS=1
