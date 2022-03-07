@@ -1,5 +1,10 @@
-cpu-bind=MASK - bp1-compute176, task 4294967295 4294967295 [0]: mask 0x80f0000080f000 set
-bp1-compute176.data.bp.acrc.priv
+cpu-bind=MASK - bp1-compute095, task 4294967295 4294967295 [0]: mask 0x3e00003e000 set
+bp1-compute095.data.bp.acrc.priv
 Job started
-03/03/2022 15:45:25
-slurmstepd: error: *** JOB 1145852 ON bp1-compute176 CANCELLED AT 2022-03-03T16:45:32 DUE TO TIME LIMIT ***
+05/03/2022 03:58:58
+Run monomer MD chl-xtb
+frames 30000 to 32499 run in : 3498.1563086509705
+
+real	58m28.076s
+user	142m18.181s
+sys	31m43.362s

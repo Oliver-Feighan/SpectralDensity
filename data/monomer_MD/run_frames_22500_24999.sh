@@ -4,7 +4,7 @@
 #SBATCH --output=run_frames_22500_24999.out
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=5
-#SBATCH --time=0-01:00:00
+#SBATCH --time=0-03:00:00
 #SBATCH --mem=15gb
 
 

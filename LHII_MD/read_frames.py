@@ -9,11 +9,12 @@ def load_dcd_file(dcd_file, top_file):
     return traj, top
 
 if __name__ == "__main__":
-    traj, top = load_dcd_file("output/1ps_2fs_LHII.dcd", "LH2.prmtop")
+    traj, top = load_dcd_file("output/1000ps_100fs_LHII.dcd", "LH2.prmtop")
 
-    assert(len(traj) == 500)
-    
-    extracted_frames = traj[250::25]
-    
-    assert(len(extracted_frames) == 10)
-    
+    assert(len(traj) == 10000)
+
+    selected_frames = traj[5000::10]
+
+    assert(len(selected_frames) == 500)
+
+    selected_frames.save("LHII_frames.pdb")
