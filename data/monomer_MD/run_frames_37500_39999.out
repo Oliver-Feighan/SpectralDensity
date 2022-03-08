@@ -1,10 +1,10 @@
-cpu-bind=MASK - bp1-compute133, task 4294967295 4294967295 [0]: mask 0x888c0000888c0000 set
-bp1-compute133.data.bp.acrc.priv
+cpu-bind=MASK - bp1-compute162, task 4294967295 4294967295 [0]: mask 0x15c0000015c00000 set
+bp1-compute162.data.bp.acrc.priv
 Job started
-05/03/2022 05:21:25
+08/03/2022 11:26:27
 Run monomer MD chl-xtb
-frames 37500 to 39999 run in : 3591.930789232254
+frames 37500 to 39999 run in : 1546.063686132431
 
-real	59m52.496s
-user	144m40.731s
-sys	35m59.445s
+real	25m46.800s
+user	51m21.162s
+sys	16m54.552s
