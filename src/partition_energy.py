@@ -19,8 +19,8 @@ def thermal_energy(energies):
 
     Z = np.sum(boltz_factor, axis=1)
 
-    w = boltz_factor / Z
+    w = (boltz_factor.T / Z).T
 
-    U = np.sum(E * w, axis=0)
+    U = np.sum(E * w, axis=1)
     
     return U

@@ -19,7 +19,7 @@ def read_LHII_data(prop, shape, run, screened=False):
     starting_frames = [re.findall(r"\d+",x)[2] for x in files]
     starting_frames.sort()
     
-    res = np.zeros(0)
+    res = None
 
     for i in starting_frames:
         if not screened:
@@ -29,13 +29,16 @@ def read_LHII_data(prop, shape, run, screened=False):
 
         assert(split.shape == shape)
 
-        res = np.concatenate((res, split))
+        if res is None:
+            res = split
+        else:
+            res = np.concatenate((res, split))
             
     return res
 
 
 def read_monomer_data():
-    files = glob.glob("../data/monomer_MD/excitation_energies*npy")
+    files = glob.glob("../data/monomer_MD/truncated_excitation_energies*npy")
     
     starts = [int(re.findall("\d+", x)[0]) for x in files]
     starts.sort()
@@ -43,7 +46,7 @@ def read_monomer_data():
     all_data = np.zeros(0)
     
     for i in starts:
-        data = np.load(f"../data/monomer_MD/excitation_energies_{i}_{i+2499}.npy")
+        data = np.load(f"../data/monomer_MD/truncated_excitation_energies_{i}_{i+2499}.npy")
         
         all_data = np.concatenate((all_data, data))
         
@@ -71,6 +74,8 @@ def all_LHII_data(run):
 
     site_e = read_LHII_data("transition_energies", (1000, 27), run)
     
+    exciton_energies = np.array([eigval[:,i] - eigval[:,0] for i in range(1, eigval.shape[1])]).T
+    
     return {
         "hamils" : hamils,
         "distances" : distances,
@@ -78,6 +83,7 @@ def all_LHII_data(run):
         "eigvec" : eigvec,
         "eigval" : eigval,
         "site_e" : site_e,
+        "exciton_energies" : exciton_energies
     }
 
 

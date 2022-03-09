@@ -1,5 +1,7 @@
 import numpy as np
 
+import utils
+
 def absorption(dipoles, eigvec):
     intensities = np.empty((len(dipoles), 27))
     
@@ -7,7 +9,7 @@ def absorption(dipoles, eigvec):
         dip_f = dipoles[f]
         eig_f = eigvec[f]
         
-        e = random_unit_vectors(1)[0]        
+        e = utils.random_unit_vectors(1)[0]        
         overlap = dip_f @ e
         
         overlap = np.repeat(overlap, 27).reshape(27, 27)
@@ -57,7 +59,7 @@ def line_shape(intensities, energies):
 
 
 def screen_hamiltonians(distances, hamiltonians, a, b, f0):
-    states, eigvec = np.linalg.eigh(make_screening(distan, a, b, f0) * hamils)
+    states, eigvec = np.linalg.eigh(make_screening(distances, a, b, f0) * hamiltonians)
 
     return states, eigvec
 
@@ -66,7 +68,7 @@ def trial_screening(distances, hamiltonians, dipoles,  a, b, f0, ax, peak_max):
     states, eigvec = screen_hamiltonians(distances, hamiltonians, a, b, f0)
     
     exciton_excitations = np.array([states[:, i] - states[:, 0] for i in range(1, 28)]).T
-    exciton_excitations_nm = hartree_to_nm(exciton_excitations)
+    exciton_excitations_nm = utils.hartree_to_nm(exciton_excitations)
 
     intensities = absorption(dipoles, eigvec)
 
@@ -79,7 +81,7 @@ def trial_screening(distances, hamiltonians, dipoles,  a, b, f0, ax, peak_max):
 
 def reference(states, dipoles, eigvecs, ax, peak_max):
     exciton_excitations = np.array([states[:, i] - states[:, 0] for i in range(1, 28)]).T
-    exciton_excitations_nm = hartree_to_nm(exciton_excitations)
+    exciton_excitations_nm = utils.hartree_to_nm(exciton_excitations)
 
     intensities = absorption(dipoles, eigvecs)
 
@@ -135,11 +137,31 @@ def transition_dipole_matrix_element(eigvec, dipoles):
 def probability(eigvec, dipoles):
     tdme  = transition_dipole_matrix_element(eigvec, dipoles)
 
-    e = random_unit_vectors(1000)
+    e = utils.random_unit_vectors(1000)
+        
+    light_interaction = np.abs(e @ tdme)
 
-    return np.square(np.mean(e @ tdme)), np.sum(np.square(tdme))
+    return np.mean(light_interaction), np.linalg.norm(tdme)
 
 
+@utils.timer
+def probabilities(eigvec, dipoles):
+    assert(len(eigvec) == len(dipoles))
+    N = len(eigvec)
+    
+    lights = np.zeros((N, 27))
+    spheres = np.zeros((N, 27))
+
+    for f in range(N):
+        for i in range(1, 28):
+            light, sphere = probability(eigvec[f][:, i], dipoles[f])
+
+            lights[f][i-1] = light
+            spheres[f][i-1] = sphere
+            
+    return lights, spheres
+
+@utils.timer
 def probabilities(eigvec, dipoles):
     assert(len(eigvec) == len(dipoles))
     N = len(eigvec)

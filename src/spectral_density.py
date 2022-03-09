@@ -5,25 +5,9 @@ import scipy.signal
 import mdtraj
 import functools
 import time
+import utils
 
-def timer(func):
-    """
-    decorator for timing functions.
-    """
-        @functools.wraps(func)
-        def wrapper_timer(*args, **kwargs):
-            start_time = time.perf_counter()
-            value = func(*args, **kwargs)
-            end_time = time.perf_counter()
-            run_time = end_time - start_time
-            print(f"Finished {func.__name__!r} in {run_time:4f} secs")
-            return value
-        return wrapper_timer
-
-def first_half(arr):
-    return arr[1:len(arr)//2]
-
-@timer
+@utils.timer
 def acf(x, cutoff):
     """
     hand-rolled auto-correlation function as described in https://doi.org/10.1016/j.chemphys.2018.08.013 , eq 2.
@@ -99,7 +83,7 @@ def gaussian(x, mu, s, a):
                 0
             
     """
-    if abs(x-s) > 3 * s:
+    if abs(x-mu) > 3 * s:
         return 0
     
     return a * np.exp(-0.5 * ((x-mu) / s)**2)
@@ -120,13 +104,15 @@ def gaussians_static_broadening(series, domain, broadening, cutoff):
 
 def gaussians_variable_broadening(series, domain, broadening, cutoff):
     
-    funcs = [make_gaussian(d0, diff * broadening, amp) for amp, d0, diff in zip(series, domain, np.diff(domain)) if amp > cutoff]
+    funcs = [make_gaussian(d0, d0 * broadening, amp) for amp, d0, diff in zip(series, domain, np.diff(domain)) if amp > cutoff]
     return lambda x : np.sum([g(x) for g in funcs])
 
 
-def plot_gaussians(broadening, max_amp, ax, color='black'):
+def plot_gaussians(broadening, max_amp, ax, p_range, color='black'):
     #plotting
-    fs = np.linspace(0, 5e-2, 1000)
+    start, end, number = p_range
+    fs = np.logspace(np.log10(start), np.log10(end), number)
+    #fs = np.linspace(start, end, number)
     b = np.array([broadening(x) for x in fs])
     
     b *= max_amp / max(b)
@@ -134,20 +120,59 @@ def plot_gaussians(broadening, max_amp, ax, color='black'):
     ax.plot(fs, b, color=color)
 
     
-def broadened_spectral_density(prop, frame_rate, ax, color='black'):
+def broadened_spectral_density(prop, frame_rate, ax, broadening, p_range, color='black'):
     #load energies
     prop_rel = prop - np.mean(prop)
 
     #spectral density
-    autocorr, spectrum, spectrum_normal_domain = analysis.spectrum_and_domain(prop_rel, frame_rate)
+    autocorr, spectrum, spectrum_normal_domain = spectrum_and_domain(prop_rel, frame_rate)
     
-    max_amp = max(analysis.first_half(np.abs(spectrum)))
+    max_amp = max(utils.first_half(np.abs(spectrum)))
     
     #gaussian broadening
     cutoff = 0.1 * max_amp
-    broadening = gaussians_variable_broadening(analysis.first_half(np.abs(spectrum)), analysis.first_half(spectrum_normal_domain), broadening=50, cutoff=cutoff)
+    broadening = gaussians_variable_broadening(utils.first_half(np.abs(spectrum)), utils.first_half(spectrum_normal_domain), broadening, cutoff=cutoff)
     
     
-    plot_gaussians(broadening, max_amp, ax)
+    plot_gaussians(broadening, max_amp, ax, color=color, p_range=p_range)
     
     return autocorr, spectrum, spectrum_normal_domain
+
+def average_spectral_density(prop, dt, indices):
+    all_autocorr = [[] for i in indices]
+    all_spectra = [[] for i in indices]
+    all_domain = [[] for i in indices]
+
+    for enum, i in enumerate(indices):
+        prop_rel = prop[:, i] - np.mean(prop[:, i])
+
+        #spectral density
+        autocorr, spectrum, spectrum_normal_domain = spectrum_and_domain(prop_rel, dt)
+   
+        all_autocorr[enum] = utils.first_half(autocorr)
+        all_spectra[enum] = utils.first_half(np.abs(spectrum))
+        all_domain[enum] = utils.first_half(spectrum_normal_domain)
+        
+    all_autocorr = np.array(all_autocorr)
+    all_spectra = np.array(all_spectra)
+    all_domain = np.array(all_domain)
+        
+    return all_autocorr, all_spectra, all_domain, np.average(all_autocorr, axis=0), np.average(all_spectra, axis=0), np.average(all_domain, axis=0)
+
+
+def broadened_average_spectral_density(prop, dt, ax, indices, broadening, p_range, color='black'):
+    #load energies
+    spectral_objects = average_spectral_density(prop, dt, indices)
+    
+    all_autocorr, all_spectra, all_domain = spectral_objects[:3]
+    avg_autocorr, avg_spectrum, avg_domain = spectral_objects[3:]
+    
+    max_amp = max(utils.first_half(avg_spectrum))
+    
+    #gaussian broadening
+    cutoff = 0.1 * max_amp
+    broadening = gaussians_variable_broadening(avg_spectrum, avg_domain, broadening=broadening, cutoff=cutoff)
+    
+    plot_gaussians(broadening, max_amp, ax, p_range, color=color)
+    
+    return all_autocorr, all_spectra, all_domain

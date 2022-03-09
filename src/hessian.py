@@ -98,6 +98,3 @@ def get_all_rel_displacements(molden_file, n_atoms, n_modes, index1, index2):
         rel_displacements[i] = np.linalg.norm(mode_i[index1] - mode_i[index2])
 
     return rel_displacements
-
-def get_indices(symbols, symbol):
-    return np.array([enum for enum, x in enumerate(symbols) if x == f"{symbol}"])

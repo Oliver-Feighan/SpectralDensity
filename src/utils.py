@@ -81,3 +81,6 @@ def reconstruct_H(vec, val):
 
 def reconstruct_val(vec, H):
     return (np.linalg.inv(vec) @ H @ vec).diagonal()
+
+def get_indices(symbols, symbol):
+    return np.array([enum for enum, x in enumerate(symbols) if x == f"{symbol}"])
