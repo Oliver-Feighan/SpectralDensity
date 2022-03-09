@@ -8,6 +8,8 @@ except:
 
 from hessian import *
 
+import utils
+
 def masses():
     return {"Mg" : 24.305,
              "H" : 1.00784,
@@ -76,7 +78,7 @@ def rotation_matrix(axis, angle):
     return R
 
 def get_Nabcd(symbols):
-    N_indices = get_indices(symbols, "N")
+    N_indices = utils.get_indices(symbols, "N")
 
     Na, Nb, Nc, Nd = N_indices[1], N_indices[2], N_indices[3], N_indices[0]
 
@@ -96,7 +98,7 @@ def translate(geom, vector):
     return geom + vector
     
 def translate_Mg_to_origin(geom, symbols):
-    Mg_index = get_indices(symbols, "Mg")[0]
+    Mg_index = utils.get_indices(symbols, "Mg")[0]
     
     return translate(geom, 0-geom[Mg_index])
 
@@ -114,8 +116,8 @@ def rotate_QyQx_to_xy(geom, symbols):
     normal = normal_to_porphoryn(geom, symbols)
     
     unit_normal = normal/np.linalg.norm(normal)
-    
-    assert(np.linalg.norm(unit_normal) == 1.)
+
+    assert(np.isclose(np.linalg.norm(unit_normal), 1.))
     
     z_axis = np.array([0.,0.,1.])
     
@@ -150,25 +152,20 @@ def distance_matrix(geom):
     
     return np.sqrt(d)
 
-def plot_molecule(geom, symbols, ax, with_phytol=False):
+def plot_molecule(geom, symbols, ax):
     symbol_colors = {"Mg" : "gold", "H" : "white", "O" : "red", "N" : "blue", "C" : "grey"}
 
     atom_types = set(symbols)
 
     for symbol in atom_types:
-        indices = get_indices(symbols, symbol)
+        indices = utils.get_indices(symbols, symbol)
         
-        if not with_phytol:
-            indices = [x for x in indices if x not in phytol_indices()]
-    
         ax.scatter(geom[:,0][indices], geom[:,1][indices], color=symbol_colors[symbol])
 
     distances = distance_matrix(geom)
     
     for i in range(len(geom)):
         for j in range(0, i):
-            if (i in phytol_indices() or j in phytol_indices()) and not with_phytol:
-                continue
             
             if distances[i][j] < 1.7:
                 x = [geom[:, 0][i], geom[:, 0][j]]
