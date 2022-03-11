@@ -54,6 +54,9 @@ if __name__ == "__main__":
     start = int(os.environ["FRAME_START"])
     end = int(os.environ["FRAME_END"])
     
+    traj_file = os.environ["TRAJ_FILE"]
+    n_atoms = int(os.environ["N_ATOMS"])
+    
     start_time = time.time()
     energies, dipoles = run_trajectory("monomer_trajectory.xyz", 140, start, end+1)
     
