@@ -8,6 +8,8 @@ from simtk.unit import *
 import time
 from datetime import timedelta
 
+from chl_reporter import CHLReporter
+
 print(f"Running MD with GPU platform\n")
 
 # Files
@@ -100,13 +102,16 @@ steps = 1e3 * int(os.environ["LENGTH"]) / dt
 steps = int(steps)
 
 dcdReporter = DCDReporter(f'{results_dir_path}/{output_name}.dcd', reporter_dt_timesteps)
+chlReporter = CHLReporter(f'{results_dir_path}/chl_{output_name}.dcd', reporter_dt_timesteps)
+
 
 dataReporter = StateDataReporter(f'{results_dir_path}/{output_name}.txt', reporter_dt_timesteps, totalSteps=steps,
                                  step=True, speed=True, progress=True, potentialEnergy=True, temperature=True, separator='\t')
 
 checkpointReporter = CheckpointReporter(f'{results_dir_path}/{output_name}.chk', 5000)
 
-simulation.reporters.append(dcdReporter)
+#simulation.reporters.append(dcdReporter)
+simulation.reporters.append(chlReporter)
 simulation.reporters.append(dataReporter)
 simulation.reporters.append(checkpointReporter)
 
