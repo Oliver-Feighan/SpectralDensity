@@ -1,0 +1,7 @@
+cpu-bind=MASK - bp1-compute152, task 4294967295 4294967295 [0]: mask 0x59ffff0059ffff set
+Run Ether MD chl-xtb
+frames 25000 to 29999 run in : 6556.0385320186615
+
+real	109m26.271s
+user	606m59.999s
+sys	160m29.804s
