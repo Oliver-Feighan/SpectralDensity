@@ -1,4 +1,6 @@
 import functools
+import openmm
+import openmm.app
 import numpy as np
 import mdtraj
 
@@ -22,11 +24,23 @@ def timer(func):
         return wrapper_timer
     
 @timer
-def load_dcd_file(dcd_file, top_file):
-    traj = mdtraj.load_dcd(dcd_file, top=top_file)
-    top = traj.top
+def load_dcd_file(dcd_file, top_file, only_chl):
+    if only_chl:
+        prmtop_top = openmm.app.AmberPrmtopFile(top_file)
+        full_top = mdtraj.Topology.from_openmm(prmtop_top.topology)
+        chl_indices = full_top.select("resname =~ 'BCL*'")
+        chl_top = full_top.subset(self._chl_indices)
+
+        traj = mdtraj.load_dcd(dcd_file, top=chl_top)
+        top = traj.top
+        
+        return traj, top
     
-    return traj, top
+    else:
+        traj = mdtraj.load_dcd(dcd_file, top=top_file)
+        top = traj.top
+        
+        return traj, top
 
 def run_qcore(qcore_str):
     qcore_path = os.environ["QCORE_PATH"]
@@ -76,9 +90,9 @@ def read_hex_data(data, key):
 	return np.frombuffer(byte_data, dtype).reshape(shape)
 
 @timer
-def run_trajectory(dcd_file, top_file, frames):
+def run_trajectory(dcd_file, top_file, frames, only_chl):
     
-    traj, top = load_dcd_file(dcd_file, top_file)    
+    traj, top = load_dcd_file(dcd_file, top_file, only_chl)    
 
     basename = pathlib.Path(dcd_file).name
     run = basename.replace(".dcd", "")
@@ -145,8 +159,9 @@ def run_trajectory(dcd_file, top_file, frames):
 if __name__ == "__main__":
     dcd_file = os.environ["DCD_FILE"]
     prmtop_file = os.environ["PRMTOP_FILE"]
+    only_chl = os.environ["ONLY_CHL"] if "ONLY_CHL" in os.inviron else False
 
     frame_start = int(os.environ["FRAME_START"])
     frame_end = int(os.environ["FRAME_END"])
 
-    run_trajectory(dcd_file, prmtop_file, list(range(frame_start, frame_end)))
+    run_trajectory(dcd_file, prmtop_file, list(range(frame_start, frame_end)), only_chl)
