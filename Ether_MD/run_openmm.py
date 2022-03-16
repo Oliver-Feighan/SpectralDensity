@@ -16,13 +16,13 @@ results_dir_path = Path.cwd() / "output"
 print(f"output folder made at {results_dir_path}")
 results_dir_path.mkdir(exist_ok=True)
 
-xml_path = Path(os.environ["XML_PATH"])
-pdb_path = Path(os.environ["PDB_PATH"])
-assert xml_path.exists()
-assert pdb_path.exists()
-print(f"Reading system coordinates, topology and forcefield from {pdb_path}, {xml_path}")
-system = XmlSerializer.deserialize(xml_path.read_text())
-pdb = PDBFile(os.environ["PDB_PATH"]) # for some reason, PDBFile doesn't like PosixPath
+prmtop_path = Path(os.environ["PRMTOP_PATH"])
+inpcrd_path = Path(os.environ["INPCRD_PATH"])
+assert prmtop_path.exists()
+assert inpcrd_path.exists()
+print(f"Reading system coordinates, topology and forcefield from {inpcrd_path}, {prmtop_path}")
+prmtop = AmberPrmtopFile(prmtop_path)
+inpcrd = AmberInpcrdFile(inpcrd_path)
 
 
 # Timestep Options
@@ -38,21 +38,19 @@ reporter_dt_timesteps = int(reporter_dt / dt)    # time between saving frames in
 print(f"Reporter timestep : {reporter_dt_fs}")
 
 
-#-- These are already written into the system, and are slightly different. nbM is LJPME, cutoff is 0.8nm, 
-# unsure about constraints and rigidWater
-#nonbondedMethod = PME
-#nonbondedCutoff = 1.0*nanometers
-#ewaldErrorTolerance = 0.0005
-#constraints = HBonds
-#rigidWater = True
+nonbondedMethod = PME
+nonbondedCutoff = 1.0*nanometers
+ewaldErrorTolerance = 0.0005
+constraints = HBonds
+rigidWater = True
 
 
-topology = pdb.topology
-positions = pdb.positions
+topology = prmtop.topology
+positions = inpcrd.positions
 
 
-#system = xml.createSystem(topology, nonbondedMethod=nonbondedMethod, nonbondedCutoff=nonbondedCutoff, 
-#                             constraints=constraints, rigidWater=rigidWater, ewaldErrorTolerance=ewaldErrorTolerance)
+system = prmtop.createSystem(nonbondedMethod=nonbondedMethod, nonbondedCutoff=nonbondedCutoff, 
+                             constraints=constraints, rigidWater=rigidWater, ewaldErrorTolerance=ewaldErrorTolerance)
 
 
 temperature = 300*kelvin
@@ -75,8 +73,8 @@ simulation = Simulation(topology, system, integrator, platformProperties=platfor
 
 
 simulation.context.setPositions(positions)
-#if inpcrd.boxVectors is not None:
-#	simulation.context.setPeriodicBoxVectors(*inpcrd.boxVectors)
+if inpcrd.boxVectors is not None:
+	simulation.context.setPeriodicBoxVectors(*inpcrd.boxVectors)
 
 
 # Minimize and Equilibrate
@@ -102,7 +100,6 @@ steps = 1e3 * int(os.environ["LENGTH"]) / dt
 steps = int(steps)
 
 dcdReporter = DCDReporter(f'{results_dir_path}/{output_name}.dcd', reporter_dt_timesteps)
-
 
 dataReporter = StateDataReporter(f'{results_dir_path}/{output_name}.txt', reporter_dt_timesteps, totalSteps=steps,
                                  step=True, speed=True, progress=True, potentialEnergy=True, temperature=True, separator='\t')
