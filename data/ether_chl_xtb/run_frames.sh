@@ -11,8 +11,8 @@
 
 export QCORE_PATH=~/qcore/cmake-build-release/bin/qcore
 
-export DCD_FILE=../../Ether_MD/output/10ps_2fs_Ether.dcd
-export PDB_FILE=../../Ether_MD/cla_in_ether.pdb
+export DCD_FILE=../../Ether_MD/output/100ps_10fs_ether.dcd
+export PRMTOP_FILE=../../Ether_MD/forcefield_prep/bchla_in_diethyl_ether.prmtop
 
 export FRAME_START=0
 export FRAME_END=5

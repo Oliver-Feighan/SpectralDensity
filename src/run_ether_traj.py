@@ -5,6 +5,7 @@ import time
 import mdtraj
 
 import chl_xtb
+import read_files
 
 
 def extract_xyz(symbols, coords):
@@ -23,16 +24,16 @@ def run_frame(xyz):
 
     return energy, dipole
 
-def run_trajectory(dcd_file, pdb_file, start, end):
+def run_trajectory(dcd_file, top_file, start, end):
     
-    pdb = mdtraj.load_pdb(pdb_file)
-    traj = mdtraj.load_dcd(dcd_file, pdb.top)
+    traj = read_files.load_dcd_file(dcd_file, top_file)
+    top = traj.top
     
-    cla_indices = pdb.top.select("resname =~ 'CLA'")
+    bcl_indices = top.select("resname =~ 'BCL'")
 
-    cla_atoms = traj.atom_slice(cla_indices)
+    bcl_atoms = traj.atom_slice(bcl_indices)
     
-    symbols = [a.element.symbol for a in cla_atoms.top.atoms]
+    symbols = [a.element.symbol for a in bcl_atoms.top.atoms]
     
     frames = list(range(start, end))
 
@@ -40,8 +41,10 @@ def run_trajectory(dcd_file, pdb_file, start, end):
     dipoles = np.zeros((len(frames), 3))
 
     for enum, f in enumerate(frames):
-        xyz = extract_xyz(symbols, cla_atoms.xyz[f] * 10) #x10 for nm to A conversion
+        xyz = extract_xyz(symbols, bcl_atoms.xyz[f] * 10) #x10 for nm to A conversion
 
+        print(xyz)
+        
         energy, dipole = run_frame(xyz)
 
         energies[enum] = energy
@@ -54,13 +57,13 @@ if __name__ == "__main__":
     print("Run Ether MD chl-xtb")
     
     dcd_file = os.environ["DCD_FILE"]
-    pdb_file = os.environ["PDB_FILE"]
+    top_file = os.environ["PRMTOP_FILE"]
     
     start = int(os.environ["FRAME_START"])
     end = int(os.environ["FRAME_END"])
     
     start_time = time.time()
-    energies, dipoles = run_trajectory(dcd_file, pdb_file, start, end+1)
+    energies, dipoles = run_trajectory(dcd_file, top_file, start, end+1)
     
     print(f"frames {start} to {end} run in : {time.time() - start_time}")
 
