@@ -1,0 +1,1538 @@
+log started: Wed Mar 16 10:22:22 2022
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff.dat
+Loading parameters: /Users/of15641/opt/anaconda3/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+> 
+> loadamberparams ETH.lib
+Loading parameters: ./ETH.lib
+Reading title:
+!!index array str
+
+Warning: "ETH": mass not read - omitting
+
+Warning: !entry.ETH.unit.atoms: mass not read - omitting
+
+Warning: "C1": mass not read - omitting
+
+Warning: "C2": mass not read - omitting
+
+Warning: "O1": mass not read - omitting
+
+Warning: "C3": mass not read - omitting
+
+Warning: "C4": mass not read - omitting
+
+Warning: "H1": mass not read - omitting
+
+Warning: "H2": mass not read - omitting
+
+Warning: "H3": mass not read - omitting
+
+Warning: "H4": mass not read - omitting
+
+Warning: "H5": mass not read - omitting
+
+Warning: "H6": mass not read - omitting
+
+Warning: "H7": mass not read - omitting
+
+Warning: "H8": mass not read - omitting
+
+Warning: "H9": mass not read - omitting
+
+Warning: "H10": mass not read - omitting
+
+Warning: !entry.ETH.unit.atomspertinfo: mass not read - omitting
+
+Warning: "C1": mass not read - omitting
+
+Warning: "C2": mass not read - omitting
+
+Warning: "O1": mass not read - omitting
+
+Warning: "C3": mass not read - omitting
+
+Warning: "C4": mass not read - omitting
+
+Warning: "H1": mass not read - omitting
+
+Warning: "H2": mass not read - omitting
+
+Warning: "H3": mass not read - omitting
+
+Warning: "H4": mass not read - omitting
+
+Warning: "H5": mass not read - omitting
+
+Warning: "H6": mass not read - omitting
+
+Warning: "H7": mass not read - omitting
+
+Warning: "H8": mass not read - omitting
+
+Warning: "H9": mass not read - omitting
+
+Warning: "H10": mass not read - omitting
+
+Warning: !entry.ETH.unit.boundbox: mass not read - omitting
+
+Warning: -1.000000: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: !entry.ETH.unit.childsequence: mass not read - omitting
+
+Warning: 2: mass not read - omitting
+
+Warning: !entry.ETH.unit.connect: mass not read - omitting
+
+Warning: 0: mass not read - omitting
+
+Warning: 0: mass not read - omitting
+
+Warning: !entry.ETH.unit.connectivity: mass not read - omitting
+
+Warning: !entry.ETH.unit.hierarchy: mass not read - omitting
+
+Warning: !entry.ETH.unit.name: mass not read - omitting
+
+Warning: "ETH": mass not read - omitting
+
+Warning: !entry.ETH.unit.positions: mass not read - omitting
+
+Warning: 0.995000: mass -2.049000 - omitting
+
+Warning: 1.099000: mass -0.542000 - omitting
+
+Warning: -0.233000: mass -0.034000 - omitting
+
+Warning: 2.019000: mass -2.492000 - omitting
+
+Warning: 0.443000: mass -2.401000 - omitting
+
+Warning: 0.443000: mass -2.401000 - omitting
+
+Warning: 1.640000: mass -0.173000 - omitting
+
+Warning: 1.640000: mass -0.173000 - omitting
+
+Warning: 0.260000: polarization -0.913000 - omitting
+
+Warning: -2.240000: polarization -0.904000 - omitting
+
+Warning: !entry.ETH.unit.residueconnect: mass not read - omitting
+
+Warning: atom type 0 - unknown hybridization 0
+
+Warning: !entry.ETH.unit.residues: mass not read - omitting
+
+Warning: "ETH": polarization 16.000000
+
+Warning: !entry.ETH.unit.residuesPdbSequenceNumber: mass not read - omitting
+
+Warning: 0: mass not read - omitting
+
+Warning: !entry.ETH.unit.solventcap: mass not read - omitting
+
+Warning: -1.000000: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: 0.0: mass not read - omitting
+
+Warning: !entry.ETH.unit.velocities: mass not read - omitting
+> loadoff ETH.lib
+Loading library: ./ETH.lib
+Loading: ETH
+> loadamberparams ETH.frcmod
+Loading parameters: ./ETH.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+> list
+ETH       gaff      
+> loadoff BCL.lib
+Loading library: ./BCL.lib
+Loading: BCL
+> loadamberparams BCL.frcmod
+Loading parameters: ./BCL.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Force Field for BCL (J. Comp. Chem. Ceccarelli et al. 2003) [Corretto]
+(UNKNOWN ATOM TYPE: mg)
+(UNKNOWN ATOM TYPE: ns)
+(UNKNOWN ATOM TYPE: cs)
+(UNKNOWN ATOM TYPE: cb)
+(UNKNOWN ATOM TYPE: cn)
+(UNKNOWN ATOM TYPE: c6)
+(UNKNOWN ATOM TYPE: cr)
+(UNKNOWN ATOM TYPE: ck)
+(UNKNOWN ATOM TYPE: c4)
+(UNKNOWN ATOM TYPE: o1)
+(UNKNOWN ATOM TYPE: c7)
+(UNKNOWN ATOM TYPE: c5)
+(UNKNOWN ATOM TYPE: c8)
+(UNKNOWN ATOM TYPE: kp)
+> SOLV = loadpdb bchla_in_diethyl_ether.pdb
+Loading PDB file: ./bchla_in_diethyl_ether.pdb
+ (starting new molecule for chain A)
+Matching PDB residue names to LEaP variables.
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+Starting new chain with ETH
+  total atoms in file: 15950
+> list
+BCL       ETH       SOLV      gaff      
+> saveamberparm SOLV bchla_in_diethyl_ether.prmtop bchla_in_diethyl_ether.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-c3
+        atoms are: C17 C19 C18 C20
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-hc
+        atoms are: C17 C19 C18 H68
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-hc
+        atoms are: C17 C20 C18 H68
+ ** Warning: No sp2 improper torsion term for  c3-c3-c1-hc
+        atoms are: C19 C20 C18 H68
+ ** Warning: No sp2 improper torsion term for  c2-c1-c2-hc
+        atoms are: C16 C18 C17 H66
+ ** Warning: No sp2 improper torsion term for  c2-c1-c2-hc
+        atoms are: C16 C18 C17 H67
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C16 H66 C17 H67
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C18 H66 C17 H67
+ ** Warning: No sp2 improper torsion term for  c2-c2-c2-hc
+        atoms are: C15 C17 C16 H64
+ ** Warning: No sp2 improper torsion term for  c2-c2-c2-hc
+        atoms are: C15 C17 C16 H65
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C15 H64 C16 H65
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C17 H64 C16 H65
+ ** Warning: No sp2 improper torsion term for  c1-c2-c2-hc
+        atoms are: C13 C16 C15 H62
+ ** Warning: No sp2 improper torsion term for  c1-c2-c2-hc
+        atoms are: C13 C16 C15 H63
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C13 H62 C15 H63
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C16 H62 C15 H63
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-c2
+        atoms are: C12 C14 C13 C15
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-hc
+        atoms are: C12 C14 C13 H58
+ ** Warning: No sp2 improper torsion term for  c2-c2-c1-hc
+        atoms are: C12 C15 C13 H58
+ ** Warning: No sp2 improper torsion term for  c3-c2-c1-hc
+        atoms are: C14 C15 C13 H58
+ ** Warning: No sp2 improper torsion term for  c2-c1-c2-hc
+        atoms are: C11 C13 C12 H56
+ ** Warning: No sp2 improper torsion term for  c2-c1-c2-hc
+        atoms are: C11 C13 C12 H57
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C11 H56 C12 H57
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C13 H56 C12 H57
+ ** Warning: No sp2 improper torsion term for  c2-c2-c2-hc
+        atoms are: C10 C12 C11 H54
+ ** Warning: No sp2 improper torsion term for  c2-c2-c2-hc
+        atoms are: C10 C12 C11 H55
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C10 H54 C11 H55
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C12 H54 C11 H55
+ ** Warning: No sp2 improper torsion term for  c1-c2-c2-hc
+        atoms are: C8 C11 C10 H52
+ ** Warning: No sp2 improper torsion term for  c1-c2-c2-hc
+        atoms are: C8 C11 C10 H53
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C8 H52 C10 H53
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C11 H52 C10 H53
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-c2
+        atoms are: C7 C9 C8 C10
+ ** Warning: No sp2 improper torsion term for  c2-c3-c1-hc
+        atoms are: C7 C9 C8 H48
+ ** Warning: No sp2 improper torsion term for  c2-c2-c1-hc
+        atoms are: C7 C10 C8 H48
+ ** Warning: No sp2 improper torsion term for  c3-c2-c1-hc
+        atoms are: C9 C10 C8 H48
+ ** Warning: No sp2 improper torsion term for  c2-c1-c2-hc
+        atoms are: C6 C8 C7 H46
+ ** Warning: No sp2 improper torsion term for  c2-c1-c2-hc
+        atoms are: C6 C8 C7 H47
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C6 H46 C7 H47
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C8 H46 C7 H47
+ ** Warning: No sp2 improper torsion term for  c2-c2-c2-hc
+        atoms are: C5 C7 C6 H44
+ ** Warning: No sp2 improper torsion term for  c2-c2-c2-hc
+        atoms are: C5 C7 C6 H45
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C5 H44 C6 H45
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C7 H44 C6 H45
+ ** Warning: No sp2 improper torsion term for  c5-c2-c2-hc
+        atoms are: C3 C6 C5 H42
+ ** Warning: No sp2 improper torsion term for  c5-c2-c2-hc
+        atoms are: C3 C6 C5 H43
+ ** Warning: No sp2 improper torsion term for  c5-hc-c2-hc
+        atoms are: C3 H42 C5 H43
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: C6 H42 C5 H43
+ ** Warning: No sp2 improper torsion term for  o1-c8-c2-hc
+        atoms are: O2A C2 C1 H36
+ ** Warning: No sp2 improper torsion term for  o1-c8-c2-hc
+        atoms are: O2A C2 C1 H37
+ ** Warning: No sp2 improper torsion term for  o1-hc-c2-hc
+        atoms are: O2A H36 C1 H37
+ ** Warning: No sp2 improper torsion term for  c8-hc-c2-hc
+        atoms are: C2 H36 C1 H37
+ ** Warning: No sp2 improper torsion term for  cs-ck-c1-c4
+        atoms are: CHA CAD CBD CGD
+ ** Warning: No sp2 improper torsion term for  cs-ck-c1-hc
+        atoms are: CHA CAD CBD H32
+ ** Warning: No sp2 improper torsion term for  cs-c4-c1-hc
+        atoms are: CHA CGD CBD H32
+ ** Warning: No sp2 improper torsion term for  ck-c4-c1-hc
+        atoms are: CAD CGD CBD H32
+ ** Warning: No sp2 improper torsion term for  c1-c3-c2-hc
+        atoms are: C3C CBC CAC H24
+ ** Warning: No sp2 improper torsion term for  c1-c3-c2-hc
+        atoms are: C3C CBC CAC H25
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C3C H24 CAC H25
+ ** Warning: No sp2 improper torsion term for  c3-hc-c2-hc
+        atoms are: CBC H24 CAC H25
+ ** Warning: No sp2 improper torsion term for  c1-cc-c1-c2
+        atoms are: C2C C4C C3C CAC
+ ** Warning: No sp2 improper torsion term for  c1-cc-c1-hc
+        atoms are: C2C C4C C3C H20
+ ** Warning: No sp2 improper torsion term for  c1-c2-c1-hc
+        atoms are: C2C CAC C3C H20
+ ** Warning: No sp2 improper torsion term for  cc-c2-c1-hc
+        atoms are: C4C CAC C3C H20
+ ** Warning: No sp2 improper torsion term for  cc-c1-c1-c3
+        atoms are: C1C C3C C2C CMC
+ ** Warning: No sp2 improper torsion term for  cc-c1-c1-hc
+        atoms are: C1C C3C C2C H19
+ ** Warning: No sp2 improper torsion term for  cc-c3-c1-hc
+        atoms are: C1C CMC C2C H19
+ ** Warning: No sp2 improper torsion term for  c1-c3-c1-hc
+        atoms are: C3C CMC C2C H19
+ ** Warning: No sp2 improper torsion term for  c2-c4-c2-hc
+        atoms are: CAA CGA CBA H11
+ ** Warning: No sp2 improper torsion term for  c2-c4-c2-hc
+        atoms are: CAA CGA CBA H12
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: CAA H11 CBA H12
+ ** Warning: No sp2 improper torsion term for  c4-hc-c2-hc
+        atoms are: CGA H11 CBA H12
+ ** Warning: No sp2 improper torsion term for  c1-c2-c2-hc
+        atoms are: C2A CBA CAA H9
+ ** Warning: No sp2 improper torsion term for  c1-c2-c2-hc
+        atoms are: C2A CBA CAA H10
+ ** Warning: No sp2 improper torsion term for  c1-hc-c2-hc
+        atoms are: C2A H9 CAA H10
+ ** Warning: No sp2 improper torsion term for  c2-hc-c2-hc
+        atoms are: CBA H9 CAA H10
+ ** Warning: No sp2 improper torsion term for  c1-cc-c1-c3
+        atoms are: C2A C4A C3A CMA
+ ** Warning: No sp2 improper torsion term for  c1-cc-c1-hc
+        atoms are: C2A C4A C3A H5
+ ** Warning: No sp2 improper torsion term for  c1-c3-c1-hc
+        atoms are: C2A CMA C3A H5
+ ** Warning: No sp2 improper torsion term for  cc-c3-c1-hc
+        atoms are: C4A CMA C3A H5
+ ** Warning: No sp2 improper torsion term for  cc-c1-c1-c2
+        atoms are: C1A C3A C2A CAA
+ ** Warning: No sp2 improper torsion term for  cc-c1-c1-hc
+        atoms are: C1A C3A C2A H4
+ ** Warning: No sp2 improper torsion term for  cc-c2-c1-hc
+        atoms are: C1A CAA C2A H4
+ ** Warning: No sp2 improper torsion term for  c1-c2-c1-hc
+        atoms are: C3A CAA C2A H4
+ total 26 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	BCL	1
+	ETH	1054
+  )
+ (no restraints)
+> quit
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 72; Notes = 0.

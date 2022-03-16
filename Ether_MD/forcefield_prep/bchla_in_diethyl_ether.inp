@@ -1,0 +1,20 @@
+#
+# A mixture of water and bchla
+#
+
+tolerance 2.0
+filetype pdb
+output bchla_in_diethyl_ether.pdb
+
+structure BCL.pdb
+  number 1 
+  fixed 0. 0. 0. 0. 0. 0.
+  center
+  resname 1
+end structure
+
+structure diethyl_ether.pdb 
+  number 1054
+  inside cube -32. -32. -32. 64.
+  resname 3
+end structure

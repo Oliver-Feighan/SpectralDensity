@@ -1,0 +1,389 @@
+Force Field for BCL (J. Comp. Chem. Ceccarelli et al. 2003) [Corretto]
+
+MASS
+mg 24.305        0.000         
+nm 14.007        0.000         
+ns 14.007        0.000         
+nh 14.007        0.000
+o2 15.999        0.000         
+o1 15.999        0.000
+ot 15.999        0.000         
+cs 12.011        0.000         
+ca 12.011        0.000         
+cc 12.011        0.000         
+c1 12.011        0.000         
+c3 12.011        0.000         
+c2 12.011        0.000         
+c4 12.011        0.000         
+cr 12.011        0.000         
+cb 12.011        0.000         
+cn 12.011        0.000         
+ce 12.011        0.000         
+cp 12.011        0.000         
+c6 12.011        0.000         
+ck 12.011        0.000         
+c8 12.011        0.000         
+c5 12.011        0.000
+c7 12.011        0.000         
+ha  1.008        0.000
+hn  1.008        0.000
+hc  1.008        0.000         
+kp 39.100        0.000
+cl 35.450        0.000
+os 15.999        0.000
+hs  1.008        0.000
+
+BOND
+nm-mg   50.00   2.025        Mg
+ns-mg   50.00   2.096        Mg
+nh-hn  494.00   1.026        Pyrrole ring 
+nh-cn  316.00   1.375        Pyrrole ring 
+nh-cr  316.00   1.381        Pyrrole ring
+nh-cp  316.00   1.394        Pyrrole ring
+nh-c6  316.00   1.352        Pyrrole ring
+nm-cn  316.00   1.375        Pyrrole ring
+nm-cr  316.00   1.380        Pyrrole ring
+nm-cp  316.00   1.393        Pyrrole ring
+nm-c6  316.00   1.348        Pyrrole ring
+cn-cb  263.00   1.456        Pyrrole ring
+cr-cb  263.00   1.439        Pyrrole ring
+cp-cb  263.00   1.441        Pyrrole ring
+c6-cb  283.00   1.421        Pyrrole ring
+cb-cb  340.00   1.402        Pyrrole ring
+cb-c3  200.00   1.497        Pyrrole ring
+cb-ce  190.00   1.479        Pyrrole ring
+c3-ce  170.00   1.522        Pyrrole ring
+ns-cc  296.00   1.362        Saturated Pyrrole ring
+cc-c1  250.00   1.527        Saturated Pyrrole ring
+c1-c1  250.00   1.552        Saturated Pyrrole ring
+c1-c2  250.00   1.541        Saturated Pyrrole ring
+c1-c3  250.00   1.541        Saturated Pyrrole ring
+c1-hc  358.00   1.090        Saturated Pyrrole ring
+ck-o2  700.00   1.226        Isocyclic ring 
+ck-cb  263.00   1.455        Isocyclic ring
+ck-c1  170.00   1.604        Isocyclic ring
+cs-c1  250.00   1.525        Isocyclic ring
+c6-cs  305.00   1.404        Skeleton ring 
+cn-ca  350.00   1.404        Skeleton ring
+cr-ca  350.00   1.406        Skeleton ring
+cp-ca  350.00   1.407        Skeleton ring
+cc-ca  370.00   1.393        Skeleton ring
+cc-cs  370.00   1.390        Skeleton ring
+ca-ha  376.00   1.092        Skeleton ring
+c4-o2  700.00   1.222        Methylacetate-like group
+c4-o1  380.00   1.363        Methylacetate-like group
+o1-c2  358.00   1.457        Methylacetate-like group
+o1-c3  358.00   1.457        Methylacetate-like group
+c4-c1  250.00   1.522        Methylacetate-like group
+c4-c2  250.00   1.522        Methylacetate-like group
+c2-c2  260.00   1.526        External group
+c2-c3  260.00   1.526        External group
+c2-hc  358.00   1.090        External group
+c3-hc  358.00   1.090        External group
+ce-o2  650.00   1.229        External group
+c7-o2  650.0    1.241        U10
+c5-c8  510.0    1.343        U10
+c5-c5  430.0    1.363        U10
+c5-c7  250.0    1.495        U10
+c5-o1  380.0    1.362        U10
+c5-c2  270.0    1.510        U10
+c5-c3  270.0    1.510        U10
+c8-c2  270.0    1.510        U10
+c8-c3  270.0    1.510        U10
+c8-ha  358.0    1.090        U10
+
+ANGL
+nm-mg-ns   50.0        90.0       Mg group
+nm-mg-nm   50.0       178.9       Mg group
+ns-mg-ns   50.0       176.1       Mg group
+mg-nm-cn   70.0       125.7       Mg group
+mg-nm-cp   70.0       131.9       Mg group
+mg-nm-c6   70.0       122.4       Mg group
+mg-nm-cr   70.0       126.4       Mg group
+mg-ns-cc   70.0       124.9       Mg group
+cn-nm-cr  100.0       107.7       Pyrrole ring
+cp-nm-c6  100.0       105.7       Pyrrole ring
+cn-nh-cr  100.0       111.4       Pyrrole ring
+cp-nh-c6  100.0       109.4       Pyrrole ring
+nm-cn-cb   70.0       109.5       Pyrrole ring
+nm-cr-cb   70.0       109.9       Pyrrole ring
+nm-cp-cb   70.0       110.6       Pyrrole ring
+nm-c6-cb   70.0       111.9       Pyrrole ring
+nh-cn-cb   70.0       106.2       Pyrrole ring
+nh-cr-cb   70.0       107.3       Pyrrole ring
+nh-cp-cb   70.0       108.3       Pyrrole ring
+nh-c6-cb   70.0       108.0       Pyrrole ring
+cn-cb-cb   63.0       107.1       Pyrrole ring
+cr-cb-cb   63.0       106.9       Pyrrole ring
+cp-cb-cb   63.0       105.0       Pyrrole ring
+c6-cb-cb   63.0       108.0       Pyrrole ring
+nm-cn-ca   70.0       126.0       Pyrrole ring
+nm-cr-ca   70.0       124.5       Pyrrole ring
+nm-cp-ca   70.0       121.8       Pyrrole ring
+nh-cn-ca   70.0       128.3       Pyrrole ring
+nh-cr-ca   70.0       125.3       Pyrrole ring
+nh-cp-ca   70.0       121.7       Pyrrole ring
+nm-c6-cs   70.0       133.6       Pyrrole ring
+nh-c6-cs   70.0       137.7       Pyrrole ring
+cn-nh-hn   30.0       126.9       Pyrrole ring
+cr-nh-hn   30.0       122.3       Pyrrole ring
+cp-nh-hn   30.0       120.1       Pyrrole ring
+c6-nh-hn   30.0       130.4       Pyrrole ring
+cb-cb-ck   63.0       143.1       Pyrrole ring
+cb-cb-c3   63.0       129.0       Pyrrole ring
+cr-cb-c3   63.0       123.5       Pyrrole ring
+cp-cb-c3   63.0       126.2       Pyrrole ring
+cn-cb-ce   63.0       124.4       Pyrrole ring
+cb-cb-ce   63.0       128.5       Pyrrole ring
+cb-cn-ca   63.0       125.0       Pyrrole ring
+cb-cr-ca   63.0       126.5       Pyrrole ring
+cb-cp-ca   63.0       128.4       Pyrrole ring
+cc-ns-cc  120.0       109.7       Saturated Pyrrole ring 
+ns-cc-c1   70.0       112.1       Saturated Pyrrole ring
+cc-c1-c1   63.0       102.5       Saturated Pyrrole ring
+ns-cc-ca   70.0       125.5       Saturated Pyrrole ring
+ns-cc-cs   70.0       121.9       Saturated Pyrrole ring
+cc-c1-c2   63.0       112.1       Saturated Pyrrole ring
+cc-c1-c3   63.0       112.1       Saturated Pyrrole ring
+c1-c1-c2   63.0       114.0       Saturated Pyrrole ring
+c1-c1-c3   63.0       114.0       Saturated Pyrrole ring
+c1-c2-c2   63.0       114.0       Saturated Pyrrole ring
+c1-c2-c3   63.0       114.0       Saturated Pyrrole ring
+cc-c1-hc   35.0       109.5       Saturated Pyrrole ring
+c1-c1-hc   35.0       109.5       Saturated Pyrrole ring
+c1-c2-hc   35.0       109.5       Saturated Pyrrole ring
+c2-c1-hc   35.0       109.5       Saturated Pyrrole ring
+cb-ck-c1   63.0       105.4       Isocyclic ring
+cb-ck-o2   80.0       130.7       Isocyclic ring
+c1-ck-o2   80.0       124.0       Isocyclic ring
+ck-c1-cs   63.0       104.6       Isocyclic ring
+c6-cs-c1   63.0       106.6       Isocyclic ring
+c6-cb-ck   63.0       108.9       Isocyclic ring
+c1-cs-cc   63.0       128.0       Isocyclic ring
+ck-c1-c4   63.0       111.0       Isocyclic ring
+cs-c1-c4   63.0       112.5       Isocyclic ring
+cs-c1-hc   35.0       109.5       Isocyclic ring
+ck-c1-hc   35.0       109.5       Isocyclic ring
+cs-c6-cb   63.0       114.4       Isocyclic ring
+cn-ca-cc   63.0       129.9       Skeleton ring
+cr-ca-cc   63.0       125.1       Skeleton ring
+cp-ca-cc   63.0       123.3       Skeleton ring
+c6-cs-cc   63.0       125.4       Skeleton ring
+cn-ca-ha   25.0       113.4       Skeleton ring
+cr-ca-ha   25.0       115.8       Skeleton ring
+cp-ca-ha   25.0       116.6       Skeleton ring
+cc-ca-ha   25.0       116.5       Skeleton ring
+ca-cc-c1   63.0       122.0       Skeleton ring
+cs-cc-c1   63.0       126.2       Skeleton ring
+c4-o1-c2   45.0       106.0       Methyl acetate-like group
+c4-o1-c3   45.0       106.0       Methyl acetate-like group
+o1-c4-c1   70.0       111.5       Methyl acetate-like group
+o1-c4-c2   70.0       111.5       Methyl acetate-like group
+o2-c4-c1   90.0       126.5       Methyl acetate-like group
+o2-c4-c2   90.0       126.5       Methyl acetate-like group
+o2-c4-o1  100.0       122.0       Methyl acetate-like group
+c4-c1-hc   35.0       109.5       Methyl acetate-like group
+c4-c2-hc   35.0       109.5       Methyl acetate-like group
+o1-c2-hc   35.0       109.5       Methyl acetate-like group
+o1-c3-hc   35.0       109.5       Methyl acetate-like group
+c4-c2-c2   63.0       116.6       Methyl acetate-like group
+cb-c3-hc   35.0       109.5       External group
+cb-ce-o2   80.0       121.9       External group
+cb-ce-c3   63.0       118.0       External group
+c1-c3-c3   40.0       114.2       External group
+c1-c3-hc   35.0       109.5       External group
+c3-c1-hc   35.0       109.5       External group
+c3-ce-o2   80.0       122.4       Amber
+ce-c3-hc   35.0       109.5       Amber
+c2-c2-hc   35.0       109.5       Amber
+c2-c3-hc   35.0       109.5       Amber
+c3-c2-hc   35.0       109.5       Amber
+c3-c3-hc   35.0       109.5       Amber
+hc-c2-hc   35.0       109.5       Amber
+hc-c3-hc   35.0       109.5       Amber
+o2-c7-c5   60.0       120.0       U10 
+o1-c5-c7   60.0       120.0       U10
+o1-c5-c5   60.0       120.0       U10
+c5-o1-c3   60.0       112.0       U10
+c7-c5-c5   30.0       120.0       U10
+c5-c7-c5   30.0       120.0       U10
+c7-c5-c2   50.0       115.7       U10
+c5-c5-c2   50.0       124.1       U10
+c7-c5-c3   50.0       115.2       U10
+c5-c5-c3   50.0       124.9       U10
+c5-c2-c8   50.0       112.0       U10
+c2-c2-c8   50.0       112.0       U10
+o1-c2-c8   50.0       109.6       U10
+c5-c8-c2   50.0       125.9       U10
+ha-c8-c5   34.0       117.1       U10
+ha-c8-c2   34.0       117.1       U10
+c8-c5-c2   50.0       120.2       U10
+c8-c5-c3   50.0       123.7       U10
+c2-c5-c3   50.0       116.0       U10
+c3-c5-c3   50.0       116.0       U10
+c5-c2-c2   50.0       114.5       U10
+c5-c2-c3   50.0       114.5       U10
+hc-c2-c5   35.0       109.5       U10
+hc-c3-c5   35.0       109.5       U10
+hc-c2-c8   35.0       109.5       U10
+c2-c2-c2   58.0       109.5       U10
+c2-c2-c3   58.0       109.5       U10
+c2-c1-c3   58.0       111.5       Phytil chain
+c2-c1-c2   58.0       111.5       Phytil chain
+c3-c1-c2   58.0       111.5       Phytil chain
+c3-c1-c3   58.0       111.5       Phytil chain
+
+DIHE
+X -nm-mg-X    1    0.00          0.0             2.         Mg group
+X -ns-mg-X    1    0.00          0.0             2.         Mg group
+X -nm-cn-X    1    2.500       180.0             2.         Pyrrole Ring 
+X -nm-cr-X    1    2.500       180.0             2.         Pyrrole Ring
+X -nm-cp-X    1    2.500       180.0             2.         Pyrrole Ring
+X -nm-c6-X    1    2.500       180.0             2.         Pyrrole Ring
+X -nh-cn-X    1    2.500       180.0             2.         Pyrrole Ring
+X -nh-cr-X    1    2.500       180.0             2.         Pyrrole Ring
+X -nh-cp-X    1    2.500       180.0             2.         Pyrrole Ring
+X -nh-c6-X    1    2.500       180.0             2.         Pyrrole Ring
+X -cn-cb-X    1    3.50        180.0             2.         Pyrrole Ring
+X -cr-cb-X    1    3.50        180.0             2.         Pyrrole Ring
+X -cp-cb-X    1    3.50        180.0             2.         Pyrrole Ring
+X -c6-cb-X    1    3.50        180.0             2.         Pyrrole Ring
+X -cb-cb-X    1    5.00        180.0             2.         Pyrrole Ring
+X -ns-cc-X    1    2.500       180.0             2.         Saturated Pyrrole ring 
+c1-c1-cc-X    1    1.575       180.0             2.         Saturated Pyrrole ring 
+c1-c1-cc-ca   1    1.575       180.0             2.         Saturated Pyrrole ring
+c1-c1-cc-ns   1    1.575       180.0             2.         Saturated Pyrrole ring
+c1-c1-cc-cs   1    1.575       180.0             2.         Saturated Pyrrole ring
+hc-c1-cc-X    1    0.00          0.0             2.         Saturated Pyrrole ring
+hc-c1-cc-ns   1    0.00          0.0             2.         Saturated Pyrrole ring
+hc-c1-cc-cs   1    0.00          0.0             2.         Saturated Pyrrole ring
+hc-c1-cc-ca   1    0.00          0.0             2.         Saturated Pyrrole ring
+c2-c1-cc-X    1    0.00          0.0             2.         Saturated Pyrrole ring
+c2-c1-cc-ns   1    0.00          0.0             2.         Saturated Pyrrole ring
+c2-c1-cc-cs   1    0.00          0.0             2.         Saturated Pyrrole ring
+c2-c1-cc-ca   1    0.00          0.0             2.         Saturated Pyrrole ring
+c3-c1-cc-X    1    0.00          0.0             2.         Saturated Pyrrole ring
+c3-c1-cc-ns   1    0.00          0.0             2.         Saturated Pyrrole ring
+c3-c1-cc-ca   1    0.00          0.0             2.         Saturated Pyrrole ring
+X -c1-c1-X    1    0.00          0.0             3.         Saturated Pyrrole ring
+X -cb-ck-X    1    5.000       180.0             2.         Isocyclic ring
+cs-c1-ck-X    1    1.575       180.0             2.         Isocyclic ring
+cs-c1-ck-o2   1    1.575       180.0             2.         Isocyclic ring
+cs-c1-ck-cb   1    1.575       180.0             2.         Isocyclic ring
+hc-c1-ck-X    1    0.000         0.0             2.         Isocyclic ring
+hc-c1-ck-o2   1    0.000         0.0             2.         Isocyclic ring
+hc-c1-ck-cb   1    0.000         0.0             2.         Isocyclic ring
+c4-c1-ck-X    1    0.000         0.0             2.         Isocyclic ring
+c4-c1-ck-o2   1    0.000         0.0             2.         Isocyclic ring
+c4-c1-ck-cb   1    0.000         0.0             2.         Isocyclic ring
+ck-c1-cs-X    1    1.575       180.0             2.         Isocyclic ring
+ck-c1-cs-c6   1    1.575       180.0             2.         Isocyclic ring
+ck-c1-cs-cc   1    1.575       180.0             2.         Isocyclic ring
+hc-c1-cs-X    1    0.000         0.0             2.         Isocyclic ring
+hc-c1-cs-c6   1    0.000         0.0             2.         Isocyclic ring
+hc-c1-cs-cc   1    0.000         0.0             2.         Isocyclic ring
+c4-c1-cs-X    1    0.000         0.0             2.         Isocyclic ring
+c4-c1-cs-c6   1    0.000         0.0             2.         Isocyclic ring
+c4-c1-cs-cc   1    0.000         0.0             2.         Isocyclic ring
+X -ca-cc-X    1    3.500       180.0             2.         Skeleton ring
+X -cs-cc-X    1    3.500       180.0             2.         Skeleton ring
+X -ca-cn-X    1    3.500       180.0             2.         Skeleton ring
+X -ca-cr-X    1    3.500       180.0             2.         Skeleton ring
+X -ca-cp-X    1    3.500       180.0             2.         Skeleton ring
+X -cs-c6-X    1    3.500       180.0             2.         Skeleton ring
+o2-c4-o1-X    1    1.000       180.0            -1.         Metyl acetate-like group
+o2-c4-o1-X    1    6.000       180.0             2.         Metyl acetate-like group
+o2-c4-o1-c3   1    1.000       180.0            -1.         Metyl acetate-like group
+o2-c4-o1-c3   1    6.000       180.0             2.         Metyl acetate-like group
+o2-c4-o1-c2   1    1.000       180.0            -1.         Metyl acetate-like group
+o2-c4-o1-c2   1    6.000       180.0             2.         Metyl acetate-like group
+c1-c4-o1-X    1    1.500       180.0             2.         Metyl acetate-like group
+c1-c4-o1-c3   1    1.500       180.0             2.         Metyl acetate-like group
+c2-c4-o1-X    1    1.500       180.0             2.         Metyl acetate-like group
+c2-c4-o1-c2   1    1.500       180.0             2.         Metyl acetate-like group
+o1-c4-c2-X    1   -0.030       180.0             3.         Metyl acetate-like group
+o2-c4-c2-X    1    0.030       180.0             3.         Metyl acetate-like group
+X -c4-c1-X    1    0.000         0.0             3.         Metyl acetate-like group
+X -o1-c2-X    1   -0.180       180.0             3.         Metyl acetate-like group
+X -o1-c3-hc   1   -0.180       180.0             3.         Metyl acetate-like group
+c4-o1-c3-hc   1   -0.180       180.0             3.         Metyl acetate-like group
+X -cb-ce-X    1    5.000       180.0             2.         External group
+X -cb-c3-X    1    0.000         0.0             2.         External group
+X -c1-c2-X    1   -0.156       180.0             3.         External group
+X -c1-c3-X    1   -0.156       180.0             3.         External group
+X -c2-c2-X    1   -0.156       180.0             3.         Amber
+X -c2-c3-X    1   -0.156       180.0             3.         Amber
+X -c3-c3-X    1   -0.156       180.0             3.         Amber
+X -ce-c3-X    1    0.000         0.0             2.         Amber
+c5-c5-o1-c3   1    0.0           0.0             2.         U10  --- fino a qui manca fase
+c7-c5-o1-c3   1   -0.632       180.0            -1.         U10
+c7-c5-o1-c3   1    4.208       180.0            -2.         U10
+c7-c5-o1-c3   1   -0.427       180.0            -3.         U10
+c7-c5-o1-c3   1   -0.195       180.0            -4.         U10
+c7-c5-o1-c3   1    0.215       180.0             6.         U10
+c5-c5-c2-X    1    0.000       180.0             3.         C=C in the ring
+c7-c5-c2-X    1    0.000         0.0             3.         C=C in the ring
+c5-c5-c3-hc   1    0.333       180.0             3.         C=C in the ring
+c7-c5-c3-hc   1    0.020         0.0             3.         C=C in the ring
+c5-c8-c2-X    1    0.333       180.0             3.         Before C=C  
+ha-c8-c2-X    1    0.104         0.0             3.         Before C=C
+c8-c5-c2-X    1    0.333       180.0             3.         After C=C
+c3-c5-c2-X    1    0.020         0.0             3.         After C=C
+c8-c5-c3-hc   1    0.333       180.0             3.         After C=C
+c3-c5-c3-hc   1    0.020         0.0             3.         After C=C
+c2-c5-c3-hc   1    0.020         0.0             3.         After C=C
+X -c8-c5-X    1    5.20        180.0             2.         Phytyl chain
+
+IMPROPER
+X -cc-ns-mg         1.100        180.          2.           Improper torsion
+X -X -nm-mg         1.100        180.          2.           Improper torsion
+X -X -nh-hn         1.100        180.          2.           Improper torsion
+X -X -ca-ha         1.100        180.          2.           Improper torsion
+c6-c1-cs-cc         1.100        180.          2.           Improper torsion
+X -cb-cb-X          1.100        180.          2.           Improper torsion
+ns-c1-cc-X          1.100        180.          2.           Improper torsion
+X -X -cn-ca         1.100        180.          2.           Improper torsion
+X -X -cr-ca         1.100        180.          2.           Improper torsion
+X -X -cp-ca         1.100        180.          2.           Improper torsion
+X -X -c6-cs         1.100        180.          2.           Improper torsion
+X -X -ck-o2        10.500        180.          2.           Improper torsion
+X -o2-c4-o1        10.500        180.          2.           Metyl acetate-like 
+X -X -ce-o2        10.500        180.          2.           Amber 
+c5-c5-o2-c7        10.500        180.          2.           U10
+c7-c5-o1-c5         1.1          180.          2.           U10
+c7-c5-c2-c5         1.1          180.          2.           U10
+c7-c5-c3-c5         1.1          180.          2.           U10
+X -X -c8-ha         1.100        180.          2.           Phytyl chain 
+c3-c8-c5-c2         1.100        180.          2.           Phytyl chain 
+c3-c8-c5-c3         1.100        180.          2.           Phytyl chain 
+
+NONBON   'RE'
+mg      0.650   0.250  
+nh      1.824   0.170  
+ns      1.824   0.170  
+nm      1.824   0.170  
+hn      0.600   0.0157 
+ca      1.908   0.086      
+cs      1.908   0.086      
+cb      1.908   0.086  
+cc      1.908   0.086  
+cn      1.908   0.086  
+cp      1.908   0.086  
+c6      1.908   0.086  
+cr      1.908   0.086  
+ck      1.908   0.086  
+c4      1.908   0.086  
+o1      1.6637  0.17   
+o2      1.6612  0.21   
+ce      1.908   0.086  
+c1      1.908   0.1094 
+c2      1.908   0.1094 
+c3      1.908   0.1094 
+c7      1.908   0.086            U10
+c5      1.908   0.086            U10
+c8      1.908   0.086            Phytyl Chain
+kp      2.6580  0.000328         K+ and Cl-
+cl      2.47    0.10             K+ and Cl-
+ha      1.459   0.015
+hc      1.487   0.016
+
