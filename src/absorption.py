@@ -2,6 +2,8 @@ import numpy as np
 
 import utils
 
+import numba
+
 def absorption(dipoles, eigvec):
     intensities = np.empty((len(dipoles), 27))
     
@@ -144,24 +146,6 @@ def probability(eigvec, dipoles):
     return np.mean(light_interaction), np.linalg.norm(tdme)
 
 
-@utils.timer
-def probabilities(eigvec, dipoles):
-    assert(len(eigvec) == len(dipoles))
-    N = len(eigvec)
-    
-    lights = np.zeros((N, 27))
-    spheres = np.zeros((N, 27))
-
-    for f in range(N):
-        for i in range(1, 28):
-            light, sphere = probability(eigvec[f][:, i], dipoles[f])
-
-            lights[f][i-1] = light
-            spheres[f][i-1] = sphere
-            
-    return lights, spheres
-
-@utils.timer
 def probabilities(eigvec, dipoles):
     assert(len(eigvec) == len(dipoles))
     N = len(eigvec)

@@ -118,6 +118,8 @@ def plot_gaussians(broadening, max_amp, ax, p_range, color='black'):
     b *= max_amp / max(b)
     
     ax.plot(fs, b, color=color)
+    
+    return b
 
     
 def broadened_spectral_density(prop, frame_rate, ax, broadening, p_range, color='black'):
@@ -130,13 +132,13 @@ def broadened_spectral_density(prop, frame_rate, ax, broadening, p_range, color=
     max_amp = max(utils.first_half(np.abs(spectrum)))
     
     #gaussian broadening
-    cutoff = 0.1 * max_amp
+    cutoff = 0.05 * max_amp
     broadening = gaussians_variable_broadening(utils.first_half(np.abs(spectrum)), utils.first_half(spectrum_normal_domain), broadening, cutoff=cutoff)
     
     
-    plot_gaussians(broadening, max_amp, ax, color=color, p_range=p_range)
+    broadened = plot_gaussians(broadening, max_amp, ax, color=color, p_range=p_range)
     
-    return autocorr, spectrum, spectrum_normal_domain
+    return autocorr, spectrum, spectrum_normal_domain, broadened
 
 def average_spectral_density(prop, dt, indices):
     all_autocorr = [[] for i in indices]
@@ -170,9 +172,9 @@ def broadened_average_spectral_density(prop, dt, ax, indices, broadening, p_rang
     max_amp = max(utils.first_half(avg_spectrum))
     
     #gaussian broadening
-    cutoff = 0.1 * max_amp
+    cutoff = 0.05 * max_amp
     broadening = gaussians_variable_broadening(avg_spectrum, avg_domain, broadening=broadening, cutoff=cutoff)
     
-    plot_gaussians(broadening, max_amp, ax, p_range, color=color)
+    broadened = plot_gaussians(broadening, max_amp, ax, p_range, color=color)
     
-    return all_autocorr, all_spectra, all_domain
+    return all_autocorr, all_spectra, all_domain, broadened
