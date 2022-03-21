@@ -15,8 +15,8 @@ export MKL_THREADING_LAYER=TBB
 export QCORE_PATH=~/.local/src/Qcore/release/bin/qcore
 
 
-export DCD_FILE=../../Ether_MD/output/100ps_2fs_Ether.dcd
-export PDB_FILE=../../Ether_MD/cla_in_ether.pdb
+export DCD_FILE=../../Ether_MD/output/100ps_10fs_ether.dcd
+export PRMTOP_FILE=../../Ether_MD/forcefield_prep/bchla_in_diethyl_ether.prmtop
 
 export FRAME_START=5000
 export FRAME_END=9999

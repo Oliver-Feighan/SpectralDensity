@@ -1,9 +1,9 @@
-Host:    bp1-gpu026.data.bp.acrc.priv
-Time:    Wed Mar 16 12:22:02 GMT 2022
+Host:    bp1-gpu008.data.bp.acrc.priv
+Time:    Wed Mar 16 14:47:53 GMT 2022
 Dir:     /user/work/of15641/SpectralDensity/Ether_MD
-Job ID:  1228899
+Job ID:  1231089
 Nodelist:
-  bp1-gpu026
+  bp1-gpu008
 Conda env:  openmm
 Python:     /user/home/of15641/.conda/envs/openmm/bin/python
 Job script: /user/work/of15641/SpectralDensity/Ether_MD/run_openmm.py
@@ -18,14 +18,14 @@ Reading system coordinates, topology and forcefield from /user/work/of15641/Spec
 Integrator timestep : 2 fs
 Reporter timestep : 10 fs
 Performing energy minimization...
-time for energy minimization: 0:00:03.881988
+time for energy minimization: 0:00:04.068397
 
 Equilibrating: 30000 steps at 2 fs time steps
-Time for equilibration: 0:00:08.745159
+Time for equilibration: 0:00:08.875241
 
 Production: 50000 steps at 2 fs time steps - total of 100.0 ps ps
  saving step every 10 fs - total of 10000.0 frames
-time for production: 0:15:26.382351
+time for production: 0:16:51.799253
 
 [Job script finished]
 

@@ -1,7 +1,2 @@
-cpu-bind=MASK - bp1-compute158, task 4294967295 4294967295 [0]: mask 0xe3e63a7ee3e63a7e set
-Run Ether MD chl-xtb
-frames 5000 to 9999 run in : 6965.0831134319305
-
-real	116m13.436s
-user	658m42.538s
-sys	152m48.853s
+cpu-bind=MASK - bp1-compute183, task 4294967295 4294967295 [0]: mask 0x2fedf88b2fedf88b set
+slurmstepd: error: *** JOB 1235949 ON bp1-compute183 CANCELLED AT 2022-03-17T18:27:31 DUE TO TIME LIMIT ***
