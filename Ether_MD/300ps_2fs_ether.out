@@ -1,0 +1,33 @@
+Host:    bp1-gpu014.data.bp.acrc.priv
+Time:    Wed Mar 23 22:17:25 GMT 2022
+Dir:     /user/work/of15641/SpectralDensity/Ether_MD
+Job ID:  1259509
+Nodelist:
+  bp1-gpu014
+Conda env:  openmm
+Python:     /user/home/of15641/.conda/envs/openmm/bin/python
+Job script: /user/work/of15641/SpectralDensity/Ether_MD/run_openmm.py
+Result dir: /user/work/of15641/SpectralDensity/Ether_MD/output
+
+[Running job script]
+
+Running MD with GPU platform
+
+output folder made at /user/work/of15641/SpectralDensity/Ether_MD/output
+Reading system coordinates, topology and forcefield from /user/work/of15641/SpectralDensity/Ether_MD/forcefield_prep/bchla_in_diethyl_ether.inpcrd, /user/work/of15641/SpectralDensity/Ether_MD/forcefield_prep/bchla_in_diethyl_ether.prmtop
+Integrator timestep : 2 fs
+Reporter timestep : 2 fs
+Performing energy minimization...
+time for energy minimization: 0:00:04.032065
+
+Equilibrating: 30000 steps at 2 fs time steps
+Time for equilibration: 0:00:08.775969
+
+Production: 150000 steps at 2 fs time steps - total of 300.0 ps ps
+ saving step every 2 fs - total of 150000.0 frames
+time for production: 3:59:18.774124
+
+[Job script finished]
+
+Copying job script results to /user/work/of15641/SpectralDensity/Ether_MD/output
+

@@ -43,8 +43,6 @@ def run_trajectory(dcd_file, top_file, start, end):
     for enum, f in enumerate(frames):
         xyz = extract_xyz(symbols, bcl_atoms.xyz[f] * 10) #x10 for nm to A conversion
 
-        print(xyz)
-        
         energy, dipole = run_frame(xyz)
 
         energies[enum] = energy
@@ -68,7 +66,7 @@ if __name__ == "__main__":
     print(f"frames {start} to {end} run in : {time.time() - start_time}")
 
     energies_name = f"excitation_energies_{start}_{end}.npy"
-    dipoles_name = f"transition_dipoles_energies_{start}_{end}.npy"
+    dipoles_name = f"transition_dipoles_{start}_{end}.npy"
     
     np.save(energies_name, energies)
     np.save(dipoles_name, dipoles)

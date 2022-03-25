@@ -29,7 +29,7 @@ def load_dcd_file(dcd_file, top_file, only_chl):
         prmtop_top = openmm.app.AmberPrmtopFile(top_file)
         full_top = mdtraj.Topology.from_openmm(prmtop_top.topology)
         chl_indices = full_top.select("resname =~ 'BCL*'")
-        chl_top = full_top.subset(self._chl_indices)
+        chl_top = full_top.subset(chl_indices)
 
         traj = mdtraj.load_dcd(dcd_file, top=chl_top)
         top = traj.top
@@ -159,7 +159,7 @@ def run_trajectory(dcd_file, top_file, frames, only_chl):
 if __name__ == "__main__":
     dcd_file = os.environ["DCD_FILE"]
     prmtop_file = os.environ["PRMTOP_FILE"]
-    only_chl = os.environ["ONLY_CHL"] if "ONLY_CHL" in os.inviron else False
+    only_chl = bool(os.environ["ONLY_CHL"]) if "ONLY_CHL" in os.environ else False
 
     frame_start = int(os.environ["FRAME_START"])
     frame_end = int(os.environ["FRAME_END"])
