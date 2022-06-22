@@ -3,6 +3,13 @@ import numpy as np
 import functools
 import time
 
+J_to_eV  = 6.242e18
+Eh_to_eV = 27.2114
+per_fs_to_eV = 4.14
+
+b850a = list(range(0, 27, 3))
+b800 = list(range(1, 27, 3))
+b850b = list(range(2, 27, 3))
 
 def timer(func):
         @functools.wraps(func)

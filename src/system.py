@@ -152,6 +152,7 @@ def distance_matrix(geom):
     
     return np.sqrt(d)
 
+
 def plot_molecule(geom, symbols, ax):
     symbol_colors = {"Mg" : "gold", "H" : "white", "O" : "red", "N" : "blue", "C" : "grey"}
 
@@ -170,7 +171,8 @@ def plot_molecule(geom, symbols, ax):
             if distances[i][j] < 1.7:
                 x = [geom[:, 0][i], geom[:, 0][j]]
                 y = [geom[:, 1][i], geom[:, 1][j]]
-
+                z = -min(geom[:, 1][i], geom[:, 1][j])
+                
                 ax.plot(x, y, color='black', zorder=0)
 
     ax.set_aspect('equal')

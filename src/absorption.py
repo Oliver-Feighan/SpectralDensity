@@ -3,6 +3,7 @@ import numpy as np
 import utils
 
 import numba
+import tqdm
 
 def absorption(dipoles, eigvec):
     intensities = np.empty((len(dipoles), 27))
@@ -66,7 +67,7 @@ def screen_hamiltonians(distances, hamiltonians, a, b, f0):
     return states, eigvec
 
     
-def trial_screening(distances, hamiltonians, dipoles,  a, b, f0, ax, peak_max):
+def trial_screening(distances, hamiltonians, dipoles,  a, b, f0, ax, peak_max, args={}):
     states, eigvec = screen_hamiltonians(distances, hamiltonians, a, b, f0)
     
     exciton_excitations = np.array([states[:, i] - states[:, 0] for i in range(1, 28)]).T
@@ -78,10 +79,10 @@ def trial_screening(distances, hamiltonians, dipoles,  a, b, f0, ax, peak_max):
 
     shift = peak_max - bins[np.argmax(summed_ints)]
     
-    ax.plot(bins+shift, summed_ints);
+    ax.plot(bins+shift, summed_ints, **args);
     
 
-def reference(states, dipoles, eigvecs, ax, peak_max):
+def reference(states, dipoles, eigvecs, ax, peak_max, args={}):
     exciton_excitations = np.array([states[:, i] - states[:, 0] for i in range(1, 28)]).T
     exciton_excitations_nm = utils.hartree_to_nm(exciton_excitations)
 
@@ -91,7 +92,7 @@ def reference(states, dipoles, eigvecs, ax, peak_max):
 
     shift = peak_max - bins[np.argmax(summed_ints)]
     
-    ax.plot(bins+shift, summed_ints);
+    ax.plot(bins+shift, summed_ints, **args);
 
     
 def gaussian_value_generator(peak, FWHM, x):
@@ -99,7 +100,7 @@ def gaussian_value_generator(peak, FWHM, x):
     return 1/((np.pi * gamma) * (1 + ((x - peak)/gamma)**2))
 
 
-def plot_experimental(ax):
+def plot_experimental(ax, args={}):
     """
     data got from "G. Absorption and CD Spectroscopy and Modelling of Various LH2 Complexes from Purple Bacteria. Biophys. J. 2002, 82, 2184−2197"
     using Rps. acidophila (10050), RT row of data from Table 1 for values
@@ -124,7 +125,7 @@ def plot_experimental(ax):
 
     spectrum = [sum(x) for x in zip(B800_line, B850_line)]
     
-    ax.plot(nanometer_range, spectrum)
+    ax.plot(nanometer_range, spectrum, **args)
 
     
 def transition_dipole_matrix_element(eigvec, dipoles):
@@ -153,7 +154,7 @@ def probabilities(eigvec, dipoles):
     lights = np.zeros((N, 27))
     spheres = np.zeros((N, 27))
 
-    for f in range(N):
+    for f in tqdm.tqdm(range(N)):
         for i in range(1, 28):
             light, sphere = probability(eigvec[f][:, i], dipoles[f])
 

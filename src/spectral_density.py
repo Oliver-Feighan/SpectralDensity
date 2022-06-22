@@ -25,6 +25,22 @@ def acf(x, cutoff):
                 
     return correlations
 
+
+def thermal_correction(freq, T=300):
+    """
+    prefactor in the spectral density as defined in:
+    https://doi.org/10.1016/j.chemphys.2018.08.013 , eq 1.
+    
+    in units of eV^-1 rad fs^-1
+    
+    """
+    ang_freq = freq * 2 * np.pi # fs^-1 to rad fs^-1
+    
+    beta = 1 /(scipy.constants.Boltzmann * T * utils.J_to_eV) # eV^-1
+    
+    return beta * ang_freq / np.pi
+
+
 def autocorr(x):
     """
     autocorrelation function that uses scipy correlate. Faster than hand-rolled version
