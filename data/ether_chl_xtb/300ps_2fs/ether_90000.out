@@ -1,0 +1,8 @@
+cpu-bind=MASK - bp1-compute135, task 4294967295 4294967295 [0]: mask 0xfffff000fffff set
+Run Ether MD chl-xtb
+Finished 'load_dcd_file' in 57.779698 secs
+frames 90000 to 95000 run in : 7361.327318906784
+
+real	122m45.023s
+user	715m35.544s
+sys	181m35.191s
