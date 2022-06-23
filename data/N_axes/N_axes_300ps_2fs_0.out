@@ -1,0 +1,7 @@
+cpu-bind=MASK - bp1-compute038, task  0  0 [209510]: mask 0x3c04003c04 set
+/user/home/of15641/.conda/envs/openmm/bin/python
+running Na-Nc/Nb-Nd axis...
+
+real	1m43.171s
+user	1m26.446s
+sys	0m7.817s
